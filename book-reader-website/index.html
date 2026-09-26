@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book Library</title>
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+</head>
+<body>
+<div class="lib-wrap">
+  <div class="lib-head">
+    <h1>Books</h1>
+    <div class="skin-row" role="group" aria-label="Pick a world">
+      <button class="skin-pick" data-skin-pick="parchment" aria-pressed="false"><span class="swatch"></span>Parchment</button>
+      <button class="skin-pick" data-skin-pick="fantasy"   aria-pressed="false"><span class="swatch"></span>Fantasy</button>
+      <button class="skin-pick" data-skin-pick="scifi"     aria-pressed="false"><span class="swatch"></span>Sci-Fi</button>
+      <button class="skin-pick" data-skin-pick="detective" aria-pressed="false"><span class="swatch"></span>Detective</button>
+    </div>
+    <button class="icon-btn" data-mode-toggle title="Light or dark">&#9681;</button>
+  </div>
+  <div class="book-grid" id="grid"></div>
+</div>
+<script>
+fetch('../books/index.json')
+  .then(r => r.json())
+  .then(books => {
+    const grid = document.getElementById('grid');
+    const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch =>
+      ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+    grid.innerHTML = books.map(b => `
+      <a class="book-card" href="reader.html?book=${encodeURIComponent(b.id)}">
+        <div class="cover">${esc(b.title)}</div>
+        <div class="book-meta">
+          <div class="title">${esc(b.title)}</div>
+          <div class="status">${esc(b.status)}</div>
+        </div>
+      </a>
+    `).join('');
+  })
+  .catch(() => {
+    document.getElementById('grid').textContent =
+      'Could not load ../books/index.json. Serve the project root and open /book-reader-website/.';
+  });
+</script>
+</body>
+</html>

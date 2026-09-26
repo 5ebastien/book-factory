@@ -1,0 +1,80 @@
+{
+  "note": "Pictures the reader shows between chapters and after each ending. A chapter is a station: its start node and every node named <prefix>_*. Leaving a chapter shows its picture and a 'Next chapter' button. Made with illustration-prompts.json. `cover` replaces the graph's cover in the reader (`titled`: the title is in the picture, so it is not printed again); `back_cover` closes the book after an ending.",
+  "cover": {
+    "image": "images/cover_front.webp",
+    "titled": true,
+    "alt": "Odin's Lost Raven: Elsie on a root of the World Tree, the raven on her shoulder, looking through the sunstone; Jorvik and a longship below, the wolf chasing the sun in the sky."
+  },
+  "back_cover": {
+    "image": "images/cover_back.webp",
+    "alt": "A black raven on an old post, oak leaves around it and the World Tree faint behind."
+  },
+  "chapters": [
+    {
+      "prefix": "h1",
+      "image": "images/ch1_end.webp",
+      "alt": "Elsie, a raven on her shoulder, in a muddy lane of wattle houses in Viking Jorvik, long ships beyond."
+    },
+    {
+      "prefix": "h2",
+      "image": "images/ch2_end.webp",
+      "alt": "Elsie and Ketil on the old wall at night, looking at countless enemy fires on the western hills."
+    },
+    {
+      "prefix": "h3",
+      "image": "images/ch3_end.webp",
+      "alt": "The Sea-Hart under her striped sail on the wide river, Elsie and Ketil hauling a rope, the town's smoke far behind."
+    },
+    {
+      "prefix": "h4",
+      "image": "images/ch4_end.webp",
+      "alt": "Fog lifting from the sea to show the cliffs and waterfalls of a Norwegian fjord, Ketil in the bow."
+    },
+    {
+      "prefix": "h5",
+      "image": "images/ch5_end.webp",
+      "alt": "Elsie's small runestone on the fjord shore at dusk, a raven on it, the ship grave on the hill and a giant tree faint in the sky."
+    },
+    {
+      "prefix": "h6",
+      "image": "images/ch6_end.webp",
+      "alt": "Elsie on a root of the World Tree with two ravens, a giant wolf chasing the sun far off in the sky."
+    },
+    {
+      "prefix": "h7",
+      "image": "images/ch7_end.webp",
+      "alt": "The lone gate Valgrind on a hillside, Elsie beside it, and the vast shield-roofed hall of Valhalla beyond."
+    },
+    {
+      "prefix": "h8",
+      "image": "images/ch8_end.webp",
+      "alt": "Valhalla's west door splitting as the wolf Sköll pushes his muzzle through, Elsie small in the foreground."
+    }
+  ],
+  "endings": {
+    "e_hero": {
+      "image": "images/e_hero.webp",
+      "alt": "Elsie and Grandad at the museum case holding the sunstone, a raven on the roof outside the window."
+    },
+    "e_clean": {
+      "image": "images/e_clean.webp",
+      "alt": "Elsie and Grandad detecting in a frosty field, a raven circling high above."
+    },
+    "e_scarred": {
+      "image": "images/e_scarred.webp",
+      "alt": "Elsie alone at the museum case with the sunstone, puzzled, a black feather at her feet."
+    },
+    "e_wounded": {
+      "image": "images/e_wounded.webp",
+      "alt": "Elsie touching the crooked runes of an old stone in the museum, Grandad watching behind her."
+    },
+    "e_costly": {
+      "image": "images/e_costly.webp",
+      "alt": "Elsie waking in the frozen field with Grandad bending over her, a raven far off that she does not see."
+    },
+    "e_pyrrhic": {
+      "image": "images/e_pyrrhic.webp",
+      "alt": "York at noon under a dim brown sun, people staring up, Elsie walking home alone, a wolf shape faint in the clouds."
+    }
+  }
+}

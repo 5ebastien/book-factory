@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Reader</title>
+<link rel="stylesheet" href="style.css">
+<script src="theme.js"></script>
+</head>
+<body>
+<svg class="icon-defs" aria-hidden="true">
+  <symbol id="i-blade"   viewBox="0 0 24 24"><path d="M4 20l3-3M7 17l9-12 3 3-12 9-3 3z"/><path d="M14 4l6 6"/></symbol>
+  <symbol id="i-light"   viewBox="0 0 24 24"><path d="M9 18h6M10 21h4M12 3a6 6 0 0 0-3 11v2h6v-2a6 6 0 0 0-3-11z"/></symbol>
+  <symbol id="i-ward"    viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4-3 7-7 9-4-2-7-5-7-9V6z"/></symbol>
+  <symbol id="i-token"   viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><path d="M12 8l1.4 2.9 3.1.4-2.3 2.2.6 3.1-2.8-1.6-2.8 1.6.6-3.1-2.3-2.2 3.1-.4z"/></symbol>
+  <symbol id="i-guide"   viewBox="0 0 24 24"><path d="M12 4c2 3 3 5 3 7a3 3 0 0 1-6 0c0-2 1-4 3-7z"/><path d="M9 13c-2.5.5-4 2-4 4M15 13c2.5.5 4 2 4 4"/></symbol>
+  <symbol id="i-generic" viewBox="0 0 24 24"><circle cx="12" cy="12" r="7"/></symbol>
+  <symbol id="i-lock"    viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></symbol>
+</svg>
+
+<div class="reader-header">
+  <a class="home" href="index.html">&larr; Library</a>
+  <div class="book-title" id="bookTitle">Loading&hellip;</div>
+  <div class="controls">
+    <button class="icon-btn" data-mode-toggle title="Light or dark">&#9681;</button>
+    <button class="icon-btn" id="settingsBtn" title="Look and feel"
+            aria-haspopup="true" aria-expanded="false" aria-controls="panel">Aa</button>
+    <button class="icon-btn" id="restartTop" title="Back to the first page">&#8635;</button>
+    <button class="icon-btn" id="reportBtn" title="Report a problem">&#9873;</button>
+
+    <div class="panel" id="panel" hidden>
+      <section>
+        <h3>World</h3>
+        <div class="skin-row">
+          <button class="skin-pick" data-skin-pick="parchment" aria-pressed="false"><span class="swatch"></span>Parchment</button>
+          <button class="skin-pick" data-skin-pick="fantasy"   aria-pressed="false"><span class="swatch"></span>Fantasy</button>
+          <button class="skin-pick" data-skin-pick="scifi"     aria-pressed="false"><span class="swatch"></span>Sci-Fi</button>
+          <button class="skin-pick" data-skin-pick="detective" aria-pressed="false"><span class="swatch"></span>Detective</button>
+        </div>
+      </section>
+      <section>
+        <h3>Light</h3>
+        <div class="seg">
+          <button data-mode-pick="light" aria-pressed="false">Day</button>
+          <button data-mode-pick="dark" aria-pressed="false">Night</button>
+        </div>
+      </section>
+      <section>
+        <h3>Text size</h3>
+        <div class="size-row">
+          <button class="icon-btn" id="fontDown" title="Smaller text">A-</button>
+          <span class="size-now" id="sizeNow">19px</span>
+          <button class="icon-btn" id="fontUp" title="Bigger text">A+</button>
+        </div>
+      </section>
+      <section>
+        <h3>Typeface</h3>
+        <select id="fontFamily" title="Typeface">
+          <option value="theme">This world&rsquo;s face</option>
+          <option value="serif">Serif</option>
+          <option value="sans">Sans</option>
+          <option value="mono">Typewriter</option>
+        </select>
+      </section>
+    </div>
+  </div>
+</div>
+<div class="progress" id="progress"></div>
+
+<div class="reader-layout">
+  <main class="reader-main">
+    <div class="reader-frame">
+      <div class="frame-tag" aria-hidden="true"></div>
+      <div class="frame-inner">
+        <div class="book-cover" id="cover" hidden>
+          <img class="book-cover-art" id="coverArt" alt="">
+          <h1 class="book-cover-title" id="coverTitle"></h1>
+          <button class="book-cover-open" id="coverOpen">Open the book</button>
+        </div>
+        <div class="book-plate" id="plate" hidden>
+          <div class="plate-frame">
+            <img class="book-plate-art" id="plateArt" alt="">
+            <div class="plate-caption" id="plateCaption" hidden>The End</div>
+          </div>
+          <button class="book-cover-open" id="plateNext">Next chapter</button>
+        </div>
+        <div class="reader-body">
+          <div class="not-written" id="notWritten" hidden>Not written yet &mdash; showing the beat from the graph.</div>
+          <div class="prose" id="pageText">Loading&hellip;</div>
+        </div>
+        <div class="choices" id="choices"></div>
+        <div class="ending" id="ending" hidden>
+          <div class="ending-label" id="endingLabel">The End</div>
+          <button id="closeBtn" hidden>Close the book</button>
+          <button id="restartBtn">Start again</button>
+        </div>
+        <div class="nav-buttons">
+          <button id="backBtn">&larr; Back</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <aside class="inventory" id="inventory" aria-label="What you are carrying">
+    <h2>Carrying</h2>
+    <ul class="slots" id="slots"></ul>
+  </aside>
+</div>
+
+<dialog class="report" id="report">
+  <form method="dialog" id="reportForm">
+    <h3>Report a problem on this page</h3>
+    <label><input type="radio" name="kind" value="text" required> Text / paragraph error or inconsistency</label>
+    <label><input type="radio" name="kind" value="choices"> Choices error or inconsistency</label>
+    <label><input type="radio" name="kind" value="loop"> Loop in the graph</label>
+    <label><input type="radio" name="kind" value="other"> Something else</label>
+    <textarea id="reportText" rows="4" maxlength="2000" placeholder="Describe what is wrong"></textarea>
+    <div class="report-status" id="reportStatus" role="status"></div>
+    <div class="report-actions">
+      <button type="button" id="reportCancel">Cancel</button>
+      <button type="submit" id="reportSend">Send</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+/* Interface language. English is the markup itself; a book sets `lang` in its
+   graph.json and this table supplies the words, keyed by the English text.
+   No `lang`, or no table for it, and the page stays English. */
+const UI = {
+  fr: {
+    'Loading…': 'Chargement…', '← Library': '← Bibliothèque',
+    'Light or dark': 'Clair ou sombre', 'Look and feel': 'Apparence',
+    'Back to the first page': 'Retour à la première page', 'Report a problem': 'Signaler un problème',
+    'World': 'Univers', 'Parchment': 'Parchemin', 'Fantasy': 'Fantasy', 'Sci-Fi': 'Science-fiction', 'Detective': 'Policier',
+    'Light': 'Clarté', 'Day': 'Jour', 'Night': 'Nuit',
+    'Text size': 'Taille du texte', 'Smaller text': 'Texte plus petit', 'Bigger text': 'Texte plus grand',
+    'Typeface': 'Police', 'This world’s face': 'Celle de cet univers', 'Serif': 'Avec empattements',
+    'Sans': 'Sans empattements', 'Typewriter': 'Machine à écrire',
+    'Open the book': 'Ouvrir le livre', 'Next chapter': 'Chapitre suivant',
+    'Chapter': 'Chapitre', 'Turn the page': 'Tourner la page', 'Close the book': 'Fermer le livre',
+    'Not written yet — showing the beat from the graph.': 'Pas encore écrit — voici le résumé prévu.',
+    'The End': 'Fin', 'Start again': 'Recommencer', '← Back': '← Retour',
+    'What you are carrying': 'Ce que tu portes', 'Carrying': 'Tu portes',
+    'Report a problem on this page': 'Signaler un problème sur cette page',
+    'Text / paragraph error or inconsistency': 'Erreur ou incohérence dans le texte',
+    'Choices error or inconsistency': 'Erreur ou incohérence dans les choix',
+    'Loop in the graph': 'Boucle dans le graphe', 'Something else': 'Autre chose',
+    'Describe what is wrong': 'Décris le problème', 'Cancel': 'Annuler', 'Send': 'Envoyer',
+    'Page': 'Page', 'Restart?': 'Recommencer ?', 'Go on': 'Continuer',
+    'page not in this graph': 'page absente du livre', 'needs': 'il faut', 'carrying': 'tu portes', 'of': 'sur',
+    'This page cannot work out where to go next': 'Cette page ne sait pas où continuer',
+    'This page has no way on — the graph stops here': 'Cette page n’a pas de suite — le livre s’arrête ici',
+    'That page is not in this book.': 'Cette page n’est pas dans ce livre.',
+    'Sending…': 'Envoi…', 'Thanks — saved.': 'Merci — c’est noté.',
+    'Could not save it. Reports need the nginx server (docker compose).': 'Impossible d’enregistrer. Les signalements demandent le serveur nginx (docker compose).',
+    'No book': 'Aucun livre',
+    'light': 'lumière', 'blade': 'lame', 'ward': 'talisman', 'token': 'jeton', 'guide': 'guide',
+    'tier.best': 'la meilleure', 'tier.clean': 'sans dégâts', 'tier.costly': 'au prix fort',
+    'tier.wounded': 'blessé', 'tier.scarred': 'marqué', 'tier.pyrrhic': 'victoire à la Pyrrhus'
+  }
+};
+let lang = 'en';
+const t = (k, d) => (UI[lang] && UI[lang][k]) || (d !== undefined ? d : k);
+function translateStatic(){
+  if (!UI[lang]) return;
+  const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+  for (let n; (n = w.nextNode());){
+    if (n.parentNode.closest('script,style')) continue;
+    const k = n.nodeValue.trim();
+    if (UI[lang][k]) n.nodeValue = n.nodeValue.replace(k, UI[lang][k]);
+  }
+  document.querySelectorAll('[title],[aria-label],[placeholder]').forEach(el => {
+    ['title', 'aria-label', 'placeholder'].forEach(a => {
+      const v = el.getAttribute(a);
+      if (v && UI[lang][v]) el.setAttribute(a, UI[lang][v]);
+    });
+  });
+}
+
+/* Where the books live, relative to this page. The repo keeps one copy at the
+   root, so serve the project root and open /book-reader-website/. */
+const BOOKS_BASE = '../books/';
+/* Prose: one markdown file per node, exactly where build.py writes it:
+   <book>/paragraphs/<node_id>.md. A node with no file yet falls back to its
+   beat, so a half-built book still reads end to end. */
+const TEXT_DIR = 'paragraphs/';
+
+const FONT_STACKS = {
+  theme: null,        // null: no override, so the skin's own face shows
+  serif: "Georgia, 'Times New Roman', serif",
+  sans: "-apple-system, 'Helvetica Neue', Arial, sans-serif",
+  mono: "'Courier New', Courier, monospace"
+};
+const KNOWN_ICONS = ['blade','light','ward','token','guide','generic'];
+/* Nothing here caps the graph. The gate allows 2-4 choices and 2-5 item types
+   today; a bigger skeleton renders as-is. Only the number-key shortcuts stop,
+   at 9. */
+const MAX_SHORTCUTS = 9;
+/* Choices stay grey this long after a page appears, so a reader cannot tap
+   through a book without reading it. Seb, 2026-09-22: 2 s now, longer later. */
+const CHOICE_DELAY_MS = 2000;
+
+const params = new URLSearchParams(location.search);
+const bookId = params.get('book');
+/* ?path=a,b,c opens the book part-way along that road (the control room's
+   "open in the reader"). It is a look, not a read: nothing is saved over the
+   reader's own bookmark. */
+const previewPath = (params.get('path') || '').split(',').filter(Boolean);
+const root = document.documentElement;
+
+let graph = null;
+let nodesById = {};
+let itemsBySlot = {};   // slot id -> {slot, type, name}
+let types = [];         // the item types, in graph order, capped at 5
+let typeRole = {};      // type -> what it is for
+let path = [];          // node ids visited; the last one is on screen
+let carried = {};       // type -> slot id, replayed from `path`
+const textCache = {};
+let textSeq = 0;
+let choiceTimer = null;
+let onCover = false;
+let pics = { chapters: [], endings: {} };   // <book>/illustrations.json, if there is one
+let onPlate = null;     // the picture on show between two pages, or null
+
+/* ---------- settings ---------- */
+const key = k => 'reader:' + k;
+function loadSetting(k, fallback){
+  try { const v = localStorage.getItem(key(k)); return v === null ? fallback : v; }
+  catch (e) { return fallback; }
+}
+function saveSetting(k, v){ try { localStorage.setItem(key(k), v); } catch (e) {} }
+
+function applyFontSize(px){
+  root.style.setProperty('--reader-fs', px + 'px');
+  document.getElementById('sizeNow').textContent = px + 'px';
+  saveSetting('fontSize', px);
+}
+function applyFontFamily(name){
+  if (!(name in FONT_STACKS)) name = 'theme';
+  const stack = FONT_STACKS[name];
+  if (stack) root.style.setProperty('--reader-ff', stack);
+  else root.style.removeProperty('--reader-ff');
+  document.getElementById('fontFamily').value = name;
+  saveSetting('fontFamily', name);
+}
+/* Skin and light/dark live in theme.js, which both pages load. */
+
+/* ---------- the graph ---------- */
+// An array of records, or a map of id -> record, comes out the same way.
+function byId(collection, idField){
+  const out = {};
+  if (Array.isArray(collection)){
+    collection.forEach(r => { if (r && r[idField] != null) out[String(r[idField])] = r; });
+  } else if (collection && typeof collection === 'object'){
+    Object.keys(collection).forEach(k => {
+      out[k] = Object.assign({}, collection[k], { [idField]: k });
+    });
+  }
+  return out;
+}
+
+function ingest(g){
+  graph = g;
+  lang = g.lang || 'en';
+  document.documentElement.lang = lang;
+  translateStatic();
+  nodesById = byId(g.nodes, 'id');
+  itemsBySlot = byId(g.items, 'slot');
+
+  typeRole = {};
+  (g.item_types || []).forEach(t => { typeRole[t.type] = t.role || ''; });
+  types = (g.item_types || []).map(t => t.type);
+  if (!types.length){
+    // no declared types: take them from the items, in the order they appear
+    types = [...new Set(Object.values(itemsBySlot).map(i => i.type).filter(Boolean))];
+  }
+}
+
+const list = v => v == null ? [] : (Array.isArray(v) ? v : [v]);
+
+// What you carry is a function of where you have been, so Back unwinds it exactly.
+function replayCarried(){
+  const held = {};
+  path.forEach(id => {
+    const node = nodesById[id];
+    if (!node) return;
+    list(node.grants).forEach(slot => {
+      slot = String(slot);
+      const item = itemsBySlot[slot];
+      const type = item ? item.type : null;
+      if (!type || !types.includes(type)){
+        console.warn(`Node "${id}" grants "${slot}", which has no known item type.`);
+        return;
+      }
+      if (held[type]) return;   // one of each kind; the graph should not do this
+      held[type] = slot;
+    });
+  });
+  carried = held;
+}
+const carriedCount = () => Object.keys(carried).length;
+
+// A choice's `requires` names item types ("light"), or a specific slot.
+function meets(choice){
+  return list(choice.requires).every(r => {
+    r = String(r);
+    return types.includes(r) ? !!carried[r]
+                             : Object.values(carried).includes(r);
+  });
+}
+
+function choicesOf(node){
+  return list(node && node.choices);
+}
+
+// A fight node resolves to an ending by how much you are carrying.
+function resolvedTarget(node){
+  const table = node && node.resolve && node.resolve.by_count;
+  if (!table) return null;
+  const n = carriedCount();
+  for (let i = n; i >= 0; i--){          // exact, else the next one down
+    if (table[String(i)]) return String(table[String(i)]);
+  }
+  return null;
+}
+
+/* ---------- screens ---------- */
+/* A node marked `joins` is printed on the same screen as the page before it,
+   under a scene break, so a run of page turns reads as one longer page
+   (bind_graph.py sets it; a joined node always has one way in). The path still
+   holds every node, joined or not, so what you carry replays exactly. */
+/* Chapters come from illustrations.json, not the graph: a chapter is a prefix,
+   and a node is in it if its id is the prefix or starts with prefix + '_'.
+   A join never crosses into another chapter, so a chapter always opens on a
+   fresh screen, under its heading. */
+function chapterOf(id){
+  id = String(id);
+  return pics.chapters.findIndex(c => id === c.prefix || id.startsWith(c.prefix + '_'));
+}
+const joinsAt = i => i > 0 && !!(nodesById[path[i]] && nodesById[path[i]].joins) &&
+                     chapterOf(path[i - 1]) === chapterOf(path[i]);
+function joinedNext(id){
+  const cs = choicesOf(nodesById[id]);
+  if (cs.length !== 1 || list(cs[0].requires).length) return null;
+  const to = String(cs[0].to);
+  return nodesById[to] && nodesById[to].joins && chapterOf(id) === chapterOf(to) ? to : null;
+}
+function screenFrom(id){
+  const ids = [String(id)];
+  for (let nx = joinedNext(id); nx && ids.length < 50; nx = joinedNext(nx)) ids.push(nx);
+  return ids;
+}
+// Where the screen on show begins, as an index into `path`.
+function screenStart(){
+  let i = path.length - 1;
+  while (joinsAt(i)) i--;
+  return i;
+}
+const screensRead = () => path.filter((id, i) => !joinsAt(i)).length;
+// The heading a screen opens with, when it is the first screen of a chapter.
+function chapterHead(start){
+  const ch = chapterOf(path[start]);
+  if (ch < 0 || (start > 0 && chapterOf(path[start - 1]) === ch)) return '';
+  return `<h2 class="chapter-head">${t('Chapter')} ${ch + 1}</h2>`;
+}
+
+/* ---------- prose ---------- */
+function tidy(t){
+  return String(t)
+    .split('\n')
+    .filter(line => !/^\s*#/.test(line))   // the worker never writes headings; drop any that appear
+    .join('\n')
+    .trim();
+}
+function fetchText(id){
+  if (id in textCache) return Promise.resolve(textCache[id]);
+  return fetch(`${BOOKS_BASE}${bookId}/${TEXT_DIR}${id}.md`)
+    .then(r => r.ok ? r.text() : Promise.reject())
+    .then(t => (textCache[id] = tidy(t)))
+    .catch(() => (textCache[id] = null));
+}
+// Blank line between paragraphs; a line of --- or * * * is a scene break.
+function proseHtml(text, cls){
+  return String(text).split(/\n\s*\n/).map(block => {
+    const b = block.trim();
+    if (!b) return '';
+    if (/^(-{3,}|\*\s*\*\s*\*)$/.test(b)) return '<hr class="scene-break">';
+    return `<p${cls ? ` class="${cls}"` : ''}>${escapeHtml(b.replace(/\s*\n\s*/g, ' '))}</p>`;
+  }).join('');
+}
+// The sentence the book prints when a choice is made, from the choice itself.
+function echoInto(i){
+  if (i < 1) return '';
+  const from = nodesById[path[i - 1]];
+  const c = choicesOf(from).find(c => String(c.to) === path[i]);
+  return c && c.echo ? proseHtml(c.echo) : '';
+}
+// Picking something up is said plainly, in its own colour, so nobody misses it.
+function pickupHtml(node){
+  return list(node.grants).map(slot => {
+    const item = itemsBySlot[String(slot)];
+    return item && item.pickup ? proseHtml(item.pickup, 'found') : '';
+  }).join('');
+}
+function showScreen(start){
+  const ids = path.slice(start);
+  const el = document.getElementById('pageText');
+  const flag = document.getElementById('notWritten');
+  const seq = ++textSeq;
+  if (!ids.every(id => id in textCache)) el.innerHTML = '<p>…</p>';
+  Promise.all(ids.map(fetchText)).then(texts => {
+    if (seq !== textSeq) return;
+    let anyBeat = false;
+    el.innerHTML = chapterHead(start) + echoInto(start) + ids.map((id, k) => {
+      const node = nodesById[id];
+      const t = texts[k];
+      if (t === null) anyBeat = true;
+      return (k ? '<hr class="scene-break">' : '') +
+             (t === null ? proseHtml(node.beat || '', 'is-beat') : proseHtml(t)) +
+             pickupHtml(node);
+    }).join('');
+    flag.hidden = !anyBeat;
+  });
+}
+
+// The prose for a page is one small file. Fetching the pages you could turn to
+// next means the turn itself never waits on the network.
+function prefetchNext(node){
+  const outs = choicesOf(node).map(c => String(c.to));
+  const r = node.resolve && resolvedTarget(node);
+  if (r) outs.push(r);
+  outs.forEach(id => { if (nodesById[id]) screenFrom(id).forEach(fetchText); });
+}
+
+/* ---------- drawing ---------- */
+const escapeHtml = s => String(s == null ? '' : s).replace(/[&<>"']/g, ch =>
+  ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const iconFor = type => KNOWN_ICONS.includes(type) ? type : 'generic';
+
+function renderRail(){
+  document.getElementById('slots').innerHTML = types.map(type => {
+    const slot = carried[type];
+    const item = slot ? itemsBySlot[slot] : null;
+    if (item){
+      return `<li class="slot filled" title="${escapeHtml(item.name)}">
+        <svg class="item-icon" aria-hidden="true"><use href="#i-${iconFor(type)}"></use></svg>
+        <span class="item-name">${escapeHtml(item.name)}</span>
+      </li>`;
+    }
+    return `<li class="slot empty" title="${escapeHtml(typeRole[type] || type)}">
+      <svg class="item-icon" aria-hidden="true"><use href="#i-${iconFor(type)}"></use></svg>
+      <span class="item-name">${escapeHtml(t(type))}</span>
+    </li>`;
+  }).join('');
+  document.getElementById('inventory').classList.toggle('is-empty', carriedCount() === 0);
+}
+
+/* Every choice on a new page starts grey and wakes up after CHOICE_DELAY_MS.
+   Buttons the graph locks stay locked; only the open ones are held. */
+function holdChoices(box){
+  clearTimeout(choiceTimer);
+  const held = [...box.querySelectorAll('button.choice:not([disabled])')];
+  if (!held.length || CHOICE_DELAY_MS <= 0) return box.classList.remove('waiting');
+  held.forEach(b => { b.disabled = true; b.classList.add('held'); });
+  box.style.setProperty('--wait', CHOICE_DELAY_MS + 'ms');
+  box.classList.remove('waiting'); void box.offsetWidth;   // restart the fill bar
+  box.classList.add('waiting');
+  choiceTimer = setTimeout(() => {
+    box.classList.remove('waiting');
+    held.forEach(b => { b.disabled = false; b.classList.remove('held'); });
+  }, CHOICE_DELAY_MS);
+}
+
+function renderChoices(node){
+  const box = document.getElementById('choices');
+  const ending = document.getElementById('ending');
+  const cs = choicesOf(node);
+
+  if (cs.length){
+    ending.hidden = true;
+    box.innerHTML = cs.map((c, i) => {
+      const here = !!nodesById[String(c.to)];
+      const ok = here && meets(c);
+      const mark = ok && i < MAX_SHORTCUTS ? `<span class="num">${i + 1}</span>`
+                 : ok ? `<span class="num num-plain"></span>`
+                 : `<svg class="lock" aria-hidden="true"><use href="#i-lock"></use></svg>`;
+      const why = !here ? `<span class="why">${t('page not in this graph')}</span>`
+                : ok ? ''
+                : `<span class="why">${t('needs')} ${escapeHtml(list(c.requires).join(' + '))}</span>`;
+      return `<button class="choice" data-to="${escapeHtml(String(c.to))}" data-i="${i}" ${ok ? '' : 'disabled'}>
+        ${mark}<span class="label">${escapeHtml(c.gist || c.label || t('Go on'))}</span>${why}
+      </button>`;
+    }).join('');
+    return holdChoices(box);
+  }
+
+  if (node.resolve){
+    const target = resolvedTarget(node);
+    ending.hidden = true;
+    box.innerHTML = target
+      ? `<button class="choice" data-to="${escapeHtml(target)}" data-i="0">
+           <span class="num">1</span><span class="label">${t('Go on')}</span>
+           <span class="why">${t('carrying')} ${carriedCount()} ${t('of')} ${types.length}</span>
+         </button>`
+      : `<button class="choice" disabled>
+           <svg class="lock" aria-hidden="true"><use href="#i-lock"></use></svg>
+           <span class="label">${t('This page cannot work out where to go next')}</span>
+           <span class="why">${t('carrying')} ${carriedCount()}</span>
+         </button>`;
+    if (!target) console.warn(`Node "${node.id}" has a resolve table with nothing for ${carriedCount()}.`);
+    return holdChoices(box);
+  }
+
+  // An ending with a picture turns one more page, to the picture and The End.
+  if (node.ending && pics.endings[node.id]){
+    ending.hidden = true;
+    box.innerHTML = `<button class="choice" data-plate="end" data-i="0">
+      <span class="num">1</span><span class="label">${t('Turn the page')}</span></button>`;
+    return holdChoices(box);
+  }
+
+  // No choices and no resolve: either the graph says this is an ending, or the
+  // graph is unfinished. Say which, rather than showing a false ending.
+  clearTimeout(choiceTimer);
+  box.classList.remove('waiting');
+  box.innerHTML = '';
+  ending.hidden = false;
+  endingLabel(node);
+}
+function endingLabel(node){
+  const label = document.getElementById('endingLabel');
+  if (node.ending){
+    label.textContent = node.ending.tier ? `${t('The End')} — ${t('tier.' + node.ending.tier, node.ending.tier)}` : t('The End');
+    label.classList.remove('is-broken');
+  } else {
+    label.textContent = t('This page has no way on — the graph stops here');
+    label.classList.add('is-broken');
+    console.warn(`Node "${node.id}" has no choices, no resolve table and no ending.`);
+  }
+}
+
+function render(){
+  const node = nodesById[path[path.length - 1]];
+  replayCarried();
+  if (!node) return fail(t('That page is not in this book.'));
+  showCover(false);
+  showPlate(null);
+
+  const start = screenStart();
+  showScreen(start);
+  document.getElementById('progress').textContent = `${t('Page')} ${screensRead()}`;
+  document.getElementById('backBtn').disabled = start < 1;
+  renderChoices(node);
+  renderRail();
+  prefetchNext(node);
+  if (!previewPath.length) saveSetting('path:' + bookId, JSON.stringify(path));
+}
+
+// A choice lands on a page and brings along every page joined to it.
+function go(to){
+  to = String(to);
+  if (!nodesById[to]) return console.warn(`Choice points at "${to}", which is not a node.`);
+  // Leaving a chapter that has a picture: the picture first, then the page.
+  const from = chapterOf(path[path.length - 1]);
+  const pic = from >= 0 && from !== chapterOf(to) && pics.chapters[from].image ? pics.chapters[from] : null;
+  if (pic && onPlate !== pic) return showPlate(pic, to);
+  path.push(...screenFrom(to));
+  render();
+  window.scrollTo(0, 0);
+}
+
+/* ---------- pictures between pages ---------- */
+/* A picture is a page of its own, not a node: it is never in `path`, so Back
+   from the page after it skips it, and a saved read never stops on one.
+   `to` is where "Next chapter" goes; with no `to` it is an ending's picture,
+   and The End sits under it. */
+function showPlate(pic, to){
+  onPlate = pic;
+  document.getElementById('plate').hidden = !pic;
+  if (!pic){
+    document.getElementById('endingLabel').hidden = false;
+    document.getElementById('closeBtn').hidden = true;
+    return;
+  }
+  document.querySelector('.reader-body').hidden = true;
+  document.getElementById('inventory').hidden = true;
+  clearTimeout(choiceTimer);
+  const box = document.getElementById('choices');
+  box.classList.remove('waiting');
+  box.innerHTML = '';
+  const art = document.getElementById('plateArt');
+  art.src = /^(data:|https?:)/.test(pic.image) ? pic.image : `${BOOKS_BASE}${bookId}/${pic.image}`;
+  art.alt = pic.alt || '';
+  const next = document.getElementById('plateNext');
+  next.hidden = !to;
+  next.onclick = to ? () => go(to) : null;
+  const back = pic === pics.back;
+  document.getElementById('ending').hidden = !!to;
+  document.getElementById('endingLabel').hidden = back;
+  document.getElementById('closeBtn').hidden = !!to || back || !pics.back;
+  // An ending's picture says THE END across its sky; the label under it keeps
+  // only the tier, so the words are not printed twice.
+  const end = !to && !back;
+  document.getElementById('plateCaption').hidden = !end;
+  if (end){
+    const node = nodesById[path[path.length - 1]];
+    endingLabel(node);
+    const tier = node.ending && node.ending.tier;
+    const label = document.getElementById('endingLabel');
+    label.textContent = tier ? t('tier.' + tier, tier) : '';
+    label.hidden = !tier;
+  }
+  document.getElementById('backBtn').disabled = false;
+  window.scrollTo(0, 0);
+}
+
+/* ---------- the cover ---------- */
+/* A book with `cover` in its graph opens on it: the picture, the title and one
+   button. Shown before a fresh read and after a restart, never mid-book. */
+function showCover(show){
+  const c = graph && graph.cover;
+  onCover = !!(show && c);
+  if (onCover) showPlate(null);
+  document.getElementById('cover').hidden = !onCover;
+  document.querySelector('.reader-body').hidden = onCover;
+  document.querySelector('.nav-buttons').hidden = onCover;
+  document.getElementById('inventory').hidden = onCover;
+  if (!onCover) return;
+  clearTimeout(choiceTimer);
+  document.getElementById('choices').innerHTML = '';
+  document.getElementById('ending').hidden = true;
+  document.getElementById('progress').textContent = '';
+  const art = document.getElementById('coverArt');
+  art.hidden = !c.image;
+  if (c.image) art.src = /^(data:|https?:)/.test(c.image) ? c.image : `${BOOKS_BASE}${bookId}/${c.image}`;
+  art.alt = c.alt || '';
+  art.classList.toggle('is-plate', !!pics.cover);   // an engraving: dim it in the dark, never invert
+  const title = document.getElementById('coverTitle');
+  title.textContent = graph.title || bookId;
+  title.hidden = !!c.titled;   // the title is already in the picture
+}
+document.getElementById('coverOpen').addEventListener('click', () => { render(); window.scrollTo(0, 0); });
+
+/* ---------- wiring ---------- */
+document.getElementById('choices').addEventListener('click', e => {
+  const btn = e.target.closest('button.choice');
+  if (!btn || btn.disabled) return;
+  if (btn.dataset.plate) showPlate(pics.endings[path[path.length - 1]]);
+  else go(btn.dataset.to);
+});
+document.getElementById('backBtn').addEventListener('click', () => {
+  if (onPlate){ render(); window.scrollTo(0, 0); return; }   // back to the page it followed
+  const start = screenStart();
+  if (start > 0){ path.length = start; render(); window.scrollTo(0, 0); }
+});
+function restart(){
+  if (!graph) return;
+  path = screenFrom(startId());
+  graph.cover ? showCover(true) : render();
+  window.scrollTo(0, 0);
+}
+document.getElementById('restartBtn').addEventListener('click', restart);
+document.getElementById('closeBtn').addEventListener('click', () => showPlate(pics.back));
+/* The top button is one tap from losing a whole read, so it asks first: tap
+   once and it says "Restart?", tap again within 3 seconds to do it. Not
+   confirm(): a sandboxed artifact frame can block dialogs silently. */
+(function(){
+  const btn = document.getElementById('restartTop');
+  const idle = btn.innerHTML;
+  let armed = null;
+  btn.addEventListener('click', () => {
+    if (armed){
+      clearTimeout(armed); armed = null; btn.innerHTML = idle;
+      return restart();
+    }
+    btn.textContent = t('Restart?');
+    armed = setTimeout(() => { armed = null; btn.innerHTML = idle; }, 3000);
+  });
+})();
+document.addEventListener('keydown', e => {
+  if (e.metaKey || e.ctrlKey || e.altKey) return;
+  if (e.target.closest && e.target.closest('.panel, .report')) return;
+  const next = document.getElementById('plateNext');
+  if (onPlate && !next.hidden && (e.key === '1' || e.key === 'ArrowRight')) return next.click();
+  if (/^[1-9]$/.test(e.key)){
+    const btn = document.querySelector(`button.choice[data-i="${Number(e.key) - 1}"]`);
+    if (btn && !btn.disabled) btn.click();
+  } else if (e.key === 'Backspace' || e.key === 'ArrowLeft'){
+    document.getElementById('backBtn').click();
+  } else if (e.key === 'ArrowRight'){
+    const open = document.querySelectorAll('button.choice:not([disabled])');
+    if (open.length === 1) open[0].click();
+  }
+});
+document.getElementById('fontUp').addEventListener('click', () =>
+  applyFontSize(Math.min(parseInt(loadSetting('fontSize', 19), 10) + 2, 32)));
+document.getElementById('fontDown').addEventListener('click', () =>
+  applyFontSize(Math.max(parseInt(loadSetting('fontSize', 19), 10) - 2, 14)));
+document.getElementById('fontFamily').addEventListener('change', e => applyFontFamily(e.target.value));
+
+/* ---------- the look-and-feel panel ---------- */
+const panel = document.getElementById('panel');
+const settingsBtn = document.getElementById('settingsBtn');
+function openPanel(open){
+  panel.hidden = !open;
+  settingsBtn.setAttribute('aria-expanded', String(open));
+}
+settingsBtn.addEventListener('click', () => openPanel(panel.hidden));
+/* Click away to close. No stopPropagation: theme.js listens on the document
+   too, and swallowing the click there would swallow the skin buttons with it. */
+document.addEventListener('click', e => {
+  if (e.target.closest('#panel') || e.target.closest('#settingsBtn')) return;
+  openPanel(false);
+});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') openPanel(false); });
+
+/* ---------- report a problem ---------- */
+/* POST to /report, which nginx appends to a log file on disk (see nginx.conf).
+   The report carries the whole path, so a loop can be traced from it. */
+const REPORT_URL = '/report';
+const report = document.getElementById('report');
+const reportForm = document.getElementById('reportForm');
+const reportStatus = document.getElementById('reportStatus');
+const reportText = document.getElementById('reportText');
+document.getElementById('reportBtn').addEventListener('click', () => {
+  reportForm.reset();
+  reportStatus.textContent = '';
+  document.getElementById('reportSend').disabled = false;
+  report.showModal();
+});
+document.getElementById('reportCancel').addEventListener('click', () => report.close());
+reportForm.addEventListener('change', () => {
+  reportText.required = reportForm.kind.value === 'other';   // "something else" needs words
+});
+reportForm.addEventListener('submit', e => {
+  e.preventDefault();
+  const send = document.getElementById('reportSend');
+  send.disabled = true;
+  reportStatus.textContent = t('Sending…');
+  fetch(REPORT_URL, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({
+      book: bookId,
+      page: path[path.length - 1] || null,
+      path: path,
+      kind: reportForm.kind.value,
+      text: reportText.value.trim()
+    })
+  })
+    .then(r => { if (!r.ok) throw new Error(r.status); })
+    .then(() => { reportStatus.textContent = t('Thanks — saved.'); setTimeout(() => report.close(), 900); })
+    .catch(() => { reportStatus.textContent = t('Could not save it. Reports need the nginx server (docker compose).'); send.disabled = false; });
+});
+
+applyFontSize(parseInt(loadSetting('fontSize', 19), 10));
+applyFontFamily(loadSetting('fontFamily', 'theme'));
+
+function fail(msg){
+  document.getElementById('bookTitle').textContent = bookId || t('No book');
+  document.getElementById('pageText').textContent = msg;
+  document.getElementById('pageText').classList.remove('is-beat');
+  document.getElementById('notWritten').hidden = true;
+  document.getElementById('choices').innerHTML = '';
+  document.getElementById('ending').hidden = true;
+  document.getElementById('backBtn').disabled = true;
+  document.getElementById('progress').textContent = '';
+  document.getElementById('inventory').hidden = true;
+}
+
+function startId(){
+  const named = graph.start != null ? String(graph.start) : null;
+  if (named && nodesById[named]) return named;
+  const first = Object.keys(nodesById)[0];
+  if (named) console.warn(`start "${named}" is not a node; falling back to "${first}".`);
+  return first;
+}
+
+function restorePath(){
+  let saved = null;
+  try { saved = JSON.parse(loadSetting('path:' + bookId, 'null')); } catch (e) {}
+  if (previewPath.length) saved = previewPath;
+  path = (Array.isArray(saved) && saved.length && saved.every(id => nodesById[String(id)]))
+    ? saved.map(String)
+    : [startId()];
+  // A path saved before its pages were joined ends part-way through a screen.
+  for (let nx = joinedNext(path[path.length - 1]); nx; nx = joinedNext(nx)) path.push(nx);
+}
+
+if (!bookId){
+  fail('Open this page from the library with a ?book=… link.');
+} else {
+  fetch(`${BOOKS_BASE}${bookId}/graph.json`)
+    .then(r => r.json())
+    .then(g => fetch(`${BOOKS_BASE}${bookId}/illustrations.json`)
+      .then(r => r.ok ? r.json() : null).catch(() => null)
+      .then(p => {
+        if (p) pics = { chapters: list(p.chapters), endings: p.endings || {},
+                        cover: p.cover || null, back: p.back_cover || null };
+        if (p && p.cover) g.cover = Object.assign({}, g.cover, p.cover);
+        return g;
+      }))
+    .then(g => {
+      ingest(g);
+      document.getElementById('bookTitle').textContent = g.title || bookId;
+      if (!Object.keys(nodesById).length) return fail('This graph has no pages.');
+      restorePath();
+      // A read that has not got past its first screen opens on the cover.
+      const fresh = !previewPath.length && path.length === screenFrom(startId()).length;
+      fresh && g.cover ? (replayCarried(), showCover(true)) : render();
+    })
+    .catch(() => fail('Could not load this book. Serve the project root and open ' +
+                      '/book-reader-website/, so that ' + BOOKS_BASE + ' resolves.'));
+}
+</script>
+</body>
+</html>

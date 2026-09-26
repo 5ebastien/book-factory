@@ -1,0 +1,3534 @@
+{
+  "id": "book-vikings-odins-lost-raven",
+  "title": "Odin's Lost Raven",
+  "skeleton": "long-hubs",
+  "shape": "eight stations; between them short braided stretches of three or four layers; the last page of a stretch reaches the station or past it; one express skips a stretch and a station and carries nothing",
+  "start": "p1_field",
+  "item_types": [
+    {
+      "type": "light",
+      "role": "the thing you see by, and in the dark it is also the thing that shows where you are"
+    },
+    {
+      "type": "blade",
+      "role": "the thing you open a way with; not a weapon so much as a lever"
+    },
+    {
+      "type": "ward",
+      "role": "the thing that keeps the danger off you, and the only thing the last door will answer to"
+    },
+    {
+      "type": "token",
+      "role": "the thing that makes a stranger help you instead of moving you on"
+    },
+    {
+      "type": "guide",
+      "role": "what was shut in below and knows the last mile better than any map"
+    }
+  ],
+  "cover": {
+    "image": "cover.jpg",
+    "alt": "An engraving of Odin riding the eight-legged horse Sleipnir, with his two ravens and his two wolves around him.",
+    "credit": "Lorenz Frølich, 1895, from Den ældre Eddas Gudesange. Public domain, via Wikimedia Commons."
+  },
+  "items": [
+    {
+      "slot": "s_light_1",
+      "type": "light",
+      "hint": "between station 1 and the next",
+      "name": "Grandad's head-torch",
+      "description": "The head-torch Grandad wears for detecting on winter evenings: a lamp on a stretchy band, too big for Elsie, smelling of his woolly hat. It throws a white beam a long way into the dark, and while it is on, anybody looking for her can see exactly where she is.",
+      "pickup": "Elsie kept Grandad's head-torch. It was too big and it smelled of his hat, and wherever she went now, anybody looking for her would be able to see exactly where she was."
+    },
+    {
+      "slot": "s_blade_1",
+      "type": "blade",
+      "hint": "between station 3 and the next",
+      "name": "the shipwright's wedge",
+      "description": "An iron wedge as long as a hand, dark and blunt, made for splitting oak logs into planks along the grain, because ships were split and not sawn. Not a weapon. A thing for opening what is stuck shut.",
+      "pickup": "Elsie kept the shipwright's wedge. It was heavy and blunt and dark with use, and it was made for opening things that did not want to open."
+    },
+    {
+      "slot": "s_ward_1",
+      "type": "ward",
+      "hint": "between station 4 and the next",
+      "name": "the silver hammer",
+      "description": "A little silver hammer on a leather thong, Thor's sign, worn smooth by fifty years against an old steersman's chest. Thor keeps the giants and the sea-snake off, and the hammer is how a sailor asks him to.",
+      "pickup": "Elsie wore the silver hammer now, still warm from old Grim's neck. Thor kept things off, he had said, and that was what it was for."
+    },
+    {
+      "slot": "s_ward_2",
+      "type": "ward",
+      "hint": "between station 4 and the next",
+      "name": "the small shield",
+      "description": "A round shield of lime wood, painted yellow and black like the others on the Sea-Hart's rail and smaller than all of them, because it was made for a ship's boy. It has kept the spray, the wind and worse off one child already.",
+      "pickup": "Elsie had a shield of her own now, yellow and black, the smallest on the Sea-Hart's rail. It had kept things off Bard when he was a boy, and now it was hers."
+    },
+    {
+      "slot": "s_token_1",
+      "type": "token",
+      "hint": "between station 6 and the next",
+      "name": "the Norns' thread",
+      "description": "A length of plain grey thread bitten off the spindle of the Norn who spins what is happening now, tied round Elsie's wrist. Anybody among the worlds of the Tree who sees it knows the Norns sent her, and nobody argues with the Norns.",
+      "pickup": "Elsie kept the Norns' thread tied round her wrist. It was only grey thread, and anybody under the Tree who saw it would know who had sent her."
+    },
+    {
+      "slot": "s_token_2",
+      "type": "token",
+      "hint": "between station 6 and the next",
+      "name": "Huginn's feather",
+      "description": "A long black feather from the wing of Huginn, Odin's raven of Thought, that shines blue-green when it moves. A stranger who sees it knows whose business she is on, and helps her instead of moving her on.",
+      "pickup": "Elsie kept Huginn's feather in the zip pocket of her coat. It was long and black and shone blue-green when it moved, and anybody who knew whose it was would help her."
+    },
+    {
+      "slot": "s_guide_vault",
+      "type": "guide",
+      "hint": "shut in below since it happened, and the door only opens for the ward",
+      "name": "Sleipnir",
+      "description": "Odin's grey horse, with eight legs, shut in his stall under the hall since the morning Muninn did not come home. He knows every road between the worlds, and the last mile of this one better than any map.",
+      "pickup": "Sleipnir would not leave Elsie after that. The eight-legged horse knew the way up from under the hall, and every other road there was."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "p1_field",
+      "role": "the opening, before the reader is asked anything",
+      "prologue": true,
+      "hand": true,
+      "beat": "The detector gave its double note by the hedge at the bottom of the field, and Elsie dug for it because Grandad's knees were worse in the cold. It was not a ring-pull. It was a clear crystal in a silver mount, on a thong of black leather, and when she held it up to the cloud one bright point showed through it where the sun had to be. When they looked round, a one-eyed man in a wide hat was leaning on the gate, and he asked if they had found anything. Grandad said only rubbish. When he looked again the lane was empty.",
+      "choices": [
+        {
+          "to": "p2_kitchen",
+          "gist": "You go home with Grandad, and the find goes home in his pocket."
+        }
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "opening": [
+        "Elsie Thorpe, thirteen, from York: stubborn, funny, and bored stiff by museums",
+        "Grandad Len Thorpe, seventy-one, retired bus driver: out metal-detecting every Saturday of the year, whatever the weather, and Elsie comes with him",
+        "where: a ploughed field outside York, a Saturday in early January, frost in the furrows and the sun lost behind cloud",
+        "the find: a clear crystal in a silver mount on a leather thong; held up to the cloud it shows the hidden sun as one bright point",
+        "what goes wrong: a one-eyed man in a wide hat is watching them from the gate, and he wants to know what they have found"
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "wanderer"
+        ],
+        "where": "field",
+        "when": "t_saturday",
+        "facts": [
+          "+stone",
+          "+wanderer_asked"
+        ],
+        "mentions": [
+          "york"
+        ]
+      }
+    },
+    {
+      "id": "p2_kitchen",
+      "role": "the opening, before the reader is asked anything",
+      "prologue": true,
+      "hand": true,
+      "beat": "At the kitchen table that evening Grandad looked the stone up, reading bits off the laptop with his glasses pushed up on his forehead. The old stories talked about a sunstone that could find the sun behind cloud, but nobody had ever dug one up at a real Viking site. Then he went serious and told her the law: a find like this had to be reported to the coroner within fourteen days, and they would take it to the museum on Monday. Elsie went to bed with it round her neck anyway. A raven was sitting on the sill of the back bedroom, and when she banged on the glass it did not go away.",
+      "choices": [
+        {
+          "to": "p3_muninn",
+          "gist": "You pull the curtains shut on the raven and try to sleep, with the stone still on."
+        }
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad"
+        ],
+        "where": "grandads_house",
+        "when": "t_saturday_night",
+        "facts": [
+          "stone",
+          "+sunstone_saga",
+          "+treasure_law",
+          "+raven"
+        ],
+        "mentions": [
+          "yorkshire_museum"
+        ]
+      },
+      "joins": true
+    },
+    {
+      "id": "p3_muninn",
+      "role": "the opening, before the reader is asked anything",
+      "prologue": true,
+      "hand": true,
+      "beat": "The raven was still there on Sunday morning, in the frost. Elsie looked at it through the stone, and it spoke: one memory, of the morning it flew from its master's shoulder and did not come back, eleven hundred winters ago. At breakfast Grandad did not laugh. Odin had two ravens, he said, Thought and Memory, Huginn and Muninn, and an old poem said Odin feared for Thought but feared more for Memory. And there was a wolf, Sköll, who ran after the sun and would catch it at the end of the world. Elsie looked at the bright point in the stone and did not finish her toast.",
+      "choices": [
+        {
+          "to": "h1",
+          "gist": "You go into York with Grandad on Monday, and the raven follows the car."
+        }
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "grandads_house",
+        "when": "t_sunday",
+        "facts": [
+          "stone",
+          "raven",
+          "+muninn",
+          "+sun_wolf"
+        ],
+        "mentions": [
+          "odin"
+        ]
+      }
+    },
+    {
+      "id": "h1",
+      "role": "station 1",
+      "choices": [
+        {
+          "to": "h1_1a",
+          "gist": "You listen to Grandad. It is the law, and in forty years of driving buses he never once went through a red light.",
+          "echo": "Elsie stood up, and Grandad looked so relieved that she almost changed her mind."
+        },
+        {
+          "to": "h1_1b",
+          "gist": "You listen to the man in the wide hat, who seems to know more about the stone than Grandad does, and walk with him to the river.",
+          "echo": "The man stood, touched his hat to Grandad, and set off down the path as if he had known all along that she would come."
+        },
+        {
+          "to": "h1_1c",
+          "gist": "You listen to Muninn. It has flown off the ruins towards the gate, and it keeps looking back to see if you are coming.",
+          "echo": "Elsie was up and running before Grandad had finished saying her name."
+        }
+      ],
+      "beat": "On Monday afternoon they sat on a bench in Museum Gardens with the stone in a sandwich bag, waiting to show the finds officer, and the raven sat on the abbey ruins and watched them. Then the one-eyed man in the wide hat was sitting at the other end of the bench, and nobody had seen him sit down. Grandad said the find was going in today, because it was the law and because a museum case was where everybody could see it. The man said some things were lent, not found. And the raven, when Elsie looked at it through the stone, remembered a long road home that did not start in a museum.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "wanderer",
+          "muninn"
+        ],
+        "where": "museum_gardens",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "treasure_law",
+          "muninn",
+          "+lent"
+        ],
+        "mentions": [
+          "yorkshire_museum"
+        ]
+      },
+      "decision": "listen",
+      "joins": true
+    },
+    {
+      "id": "h1_1a",
+      "role": "between station 1 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h1_2a",
+          "gist": "You tell Grandad you need some air, and go down to the river with him the slow way, to fill the time until four.",
+          "echo": "Grandad said he could do with a walk himself, and they went out past the ticket desk together."
+        },
+        {
+          "to": "h1_2b",
+          "gist": "You slip out while Grandad is bent over the label, and go after the tapping round the outside of the building.",
+          "echo": "Grandad had his nose almost on the glass, and he did not look up."
+        }
+      ],
+      "beat": "The finds officer was out until four, so they waited in the Viking gallery in front of the Vale of York Hoard. Grandad told its story as if he had been there: a father and son with detectors, a January day near Harrogate, and a silver cup full of coins, one of them from as far away as Samarkand. Elsie looked at the cup through the stone, and for a second it was new and bright and full. Behind her something tapped on the gallery window. The raven was on the sill outside, waiting.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "yorkshire_museum",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "+vale_hoard"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_1b",
+      "role": "between station 1 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h1_2a",
+          "gist": "You phone Grandad and wait for him on Ouse Bridge, though Muninn is already flying on without you.",
+          "echo": "Grandad answered on the first ring, and he did not sound cross, which was worse."
+        },
+        {
+          "to": "h1_2b",
+          "gist": "You go after Muninn, up the steps from the river and into the narrow streets, before you lose sight of it.",
+          "echo": "The raven let her get within ten steps and then flew on, low, as if it were being patient with her."
+        }
+      ],
+      "beat": "The man in the wide hat walked Elsie down to the river and along it, and he talked about names. York was full of the settlers who had come over the sea: a -by was a farm, a -thorpe was a farm further out. So her own name was a farm, he said, and he seemed to find that very funny. He asked her what she would give to get back something she had lost. She was still thinking about it when she noticed he was gone, and the raven was standing on the path where he had been.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "wanderer",
+          "muninn"
+        ],
+        "where": "ouse_path",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "lent",
+          "+place_names"
+        ],
+        "mentions": [
+          "grandad"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_1c",
+      "role": "between station 1 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h1_2a",
+          "gist": "You turn back towards the river, ring Grandad, and tell him to meet you on Ouse Bridge.",
+          "echo": "Grandad said he was on his way, and that they would be having words."
+        },
+        {
+          "to": "h1_2b",
+          "gist": "You let the phone ring and go on after Muninn, down into the old streets where it is heading.",
+          "echo": "Elsie put the phone face down in her pocket and felt it buzz against her leg twice more."
+        }
+      ],
+      "beat": "The raven led Elsie out of the gardens and up Stonegate, from one hanging sign to the next, and every time she caught up with it, it remembered something out loud: a hall with a roof of shields, a man on a high seat with one eye, a wolf running under the sun. At the top of the street the Minster stood up grey against the sky. The raven settled on a lamp bracket and waited. Elsie's phone buzzed in her pocket: Grandad, for the third time.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "stonegate",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "muninn"
+        ],
+        "mentions": [
+          "grandad",
+          "minster"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h1_2a",
+      "role": "between station 1 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h1_3a",
+          "gist": "You go down the steps to King's Staith, where Muninn is waiting, with Grandad right behind you.",
+          "echo": "Grandad went down the steps one at a time, holding the rail and grumbling about his knees."
+        },
+        {
+          "to": "h1_3b",
+          "gist": "You go along with Grandad's idea instead: something hot on Coppergate first, and the raven can come to you.",
+          "echo": "Grandad went into the café for two hot chocolates and told her not to move an inch."
+        }
+      ],
+      "grants": [
+        "s_light_1"
+      ],
+      "beat": "The light was going by half past three, and Elsie and Grandad stood on Ouse Bridge with the river running brown and high beneath them. Grandad said that if there were going to be ravens and dusk and a granddaughter all at once, he wanted to be able to see where she was, and he took off the head-torch he wore for detecting on winter evenings and put it on her. Downstream, the raven sat on the railings of King's Staith and waited.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "ouse_bridge",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "muninn"
+        ],
+        "mentions": [
+          "kings_staith",
+          "coppergate"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h1_2b",
+      "role": "between station 1 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h1_3b",
+          "gist": "You follow Muninn down onto Coppergate, to the Jorvik centre you were so bored in on the school trip.",
+          "echo": "The raven hopped along the pavement ahead of her like a dog that wanted a walk."
+        },
+        {
+          "to": "h1_3c",
+          "gist": "You look through the stone at the Minster tower over the rooftops, and walk towards what you see there.",
+          "echo": "Elsie held the stone to her eye and walked, and nobody on the Shambles seemed to notice a girl walking with one eye shut."
+        }
+      ],
+      "beat": "The Shambles was dark already between its leaning houses, with the shop lights on and the tourists going home. The raven walked along a shop sign above Elsie's head. Every window she passed showed her something odd through the stone: not her own reflection but a girl in a wool dress, and then a lane of mud. She let the stone drop against her coat and the windows were windows again. At the bottom of the street the raven hopped down onto the cobbles and looked back at her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "shambles",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "muninn"
+        ],
+        "mentions": [
+          "coppergate",
+          "minster"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_3a",
+      "role": "between station 1 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h1_4a",
+          "gist": "You look through the stone again, on purpose this time, at a lane of mud leading up from the jetties.",
+          "echo": "Elsie lifted the stone, and this time she did not lower it."
+        },
+        {
+          "to": "h1_4b",
+          "gist": "You hold on to Grandad's sleeve and look through the stone at the ships, to show him what you are seeing.",
+          "echo": "She reached for Grandad's sleeve, and her hand closed on nothing at all."
+        }
+      ],
+      "beat": "At the bottom of the steps the river had come up over the staith, the way it did most winters, and the lamps along it were coming on. Elsie looked through the stone at the water and the lamps went out. The stone showed her the same river with no embankment at all, only mud and a row of wooden jetties, and long low ships drawn up on the bank. When she lowered it Grandad was saying her name, and he sounded a very long way away.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "kings_staith",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "+the_fading"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_3b",
+      "role": "between station 1 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h1_4a",
+          "gist": "You walk into the lane you can see through the stone, keeping it to your eye so that you do not lose it.",
+          "echo": "Elsie walked, and her trainers went from paving stones to something soft that sucked at them."
+        },
+        {
+          "to": "h1_4b",
+          "gist": "You follow Muninn downhill towards the river, where it has gone, looking through the stone as you go.",
+          "echo": "The raven flew low along the street, and the street changed under it as it went."
+        }
+      ],
+      "beat": "Coppergate was a shopping street with a museum underneath it, where they had dug up a whole Viking street in the seventies. The raven sat on the sign of the Jorvik Viking Centre. Elsie held the stone up to the queue and the queue was gone: a woman in a wool dress was carrying a bucket through mud, and a man was turning a wooden cup on a lathe at his door. The street had kept its name, she realised. Coppergate was the street of the cup-makers.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "coppergate",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "+the_fading",
+          "+coppergate_dig"
+        ],
+        "mentions": [
+          "grandad"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h1_3c",
+      "role": "between station 1 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h1_4a",
+          "gist": "You walk towards the gate you can see through the stone, where Muninn is waiting for you.",
+          "echo": "Elsie walked, and her trainers went from paving stones to something soft that sucked at them."
+        },
+        {
+          "to": "h1_4b",
+          "gist": "You turn away from the towers and follow the sound of water downhill, with the stone to your eye.",
+          "echo": "The bells stopped, all at once, and the sound of the water got louder."
+        }
+      ],
+      "beat": "Elsie came out under the west front of the Minster as the bells started, and looked up at the towers through the stone. They faded. The great church went thin, like breath on glass, and under it stood something older and lower, of timber and stone, with a wall of Roman stone round everything and a gate in the wall. The raven was on the gate. It remembered, out loud, that it had been in this town before, when the town had another name.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "minster",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "+the_fading"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h1_4a",
+      "role": "between station 1 and the next, layer 4, way a",
+      "choices": [
+        {
+          "to": "h2",
+          "gist": "You ask the woman with the bucket where a stranger ought to go, and go where she points.",
+          "echo": "The woman pointed with her chin down the lane, at a door with a raven's wing nailed over it."
+        },
+        {
+          "to": "h2_1a",
+          "gist": "You follow the noise at the end of the lane, where it sounds as though half the town is shouting prices.",
+          "echo": "The noise got louder with every step, and so did the smell of fish."
+        }
+      ],
+      "beat": "Elsie stood in a lane of mud between houses of woven wattle, in a cold that smelled of smoke and pigs and wet wood, and when she lowered the stone the lane stayed. York had gone, and Grandad with it, and the dusk: it was morning here, a raw spring morning. A woman with a bucket stopped and stared at her jeans, and said the town was the army's now, and Elsie understood every word. The raven dropped onto her shoulder as if it had always sat there.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "coppergate_867",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+jorvik"
+        ],
+        "mentions": []
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h1_4b",
+      "role": "between station 1 and the next, layer 4, way b",
+      "choices": [
+        {
+          "to": "h2",
+          "gist": "You go up from the river into the town with Muninn on your shoulder, to a house with a wing nailed over its door.",
+          "echo": "At the door with the wing over it, the raven leaned down off her shoulder and knocked with its beak."
+        },
+        {
+          "to": "h2_1b",
+          "gist": "You stay by the ships, where the work is, and see if anybody needs another pair of hands.",
+          "echo": "Nobody told her to go away, which on that strand was the same as saying yes."
+        }
+      ],
+      "beat": "Elsie came down onto a riverbank of trampled mud where a dozen long ships lay drawn up, and when she lowered the stone the ships stayed. It was morning here, a grey spring morning, and the cold smelled of tar and smoke and fish. Men were rolling barrels up a plank. One of them told her the town was the army's now and she had better keep out of its way, and Elsie understood every word. The raven dropped onto her shoulder as if it had always sat there.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "strand_867",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+jorvik"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2",
+      "role": "station 2",
+      "choices": [
+        {
+          "to": "h2_1a",
+          "gist": "You go to the market and ask the traders which of them is sailing north, the way Aud says a sensible girl would.",
+          "echo": "Aud nodded as if that settled it, and turned back to her fire."
+        },
+        {
+          "to": "h2_1b",
+          "gist": "You go down to the ships and ask the ship's boys, who Aud says hear about the sailings before their masters do.",
+          "echo": "Aud laughed, a dry little laugh, and said that was what she would have done at thirteen."
+        }
+      ],
+      "beat": "The door with the raven's wing over it belonged to Aud, a very old woman with a staff and a string of glass beads, and she knew what the stone was before Elsie had it out of her coat. A sun-stone, she said, and clearer than any she had heard of. She bowed her head to the raven. Muninn's road home went north, she said, over the sea to where the ships went every spring, and on past that to where only the dead went. The market would have traders going north, and so would the ships.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "aud"
+        ],
+        "where": "auds_house",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "jorvik",
+          "+north"
+        ],
+        "mentions": [
+          "market",
+          "shipyard"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h2_1a",
+      "role": "between station 2 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h2_2a",
+          "gist": "You help Ketil win his argument about the skates, and go with him to try them on the last of the ice.",
+          "echo": "The skate-seller gave in at last, mostly to get rid of the pair of them."
+        },
+        {
+          "to": "h2_2b",
+          "gist": "You ask Ketil to show you the army that took this town, since he talks about it as if it were the weather.",
+          "echo": "Ketil shrugged and said he would show her, but she was to keep her mouth shut near the gate."
+        }
+      ],
+      "beat": "Jorvik's market was mud and noise and more things for sale than Elsie had ever seen in one place: walrus tusks from the far north, amber, furs, and silver coins with curly writing that had come all the way from the Caliphate. Nobody counted the coins. They cut them up and weighed the bits on little folding scales. A boy of about thirteen in a tar-stained tunic was arguing over a pair of bone skates and losing. He was Ketil, a ship's boy on the Sea-Hart, which was going home to Norway as soon as the army let it, and he wanted to know why a raven was sitting on her shoulder.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "market",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+north",
+          "+ketil_north",
+          "+dirhams"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_1b",
+      "role": "between station 2 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h2_2b",
+          "gist": "You go with Ketil up to the army's gate, where he has been sent with a message and does not want to go alone.",
+          "echo": "Ketil wiped his hands on his tunic, which made them no cleaner, and led the way."
+        },
+        {
+          "to": "h2_2c",
+          "gist": "You pick up a spare iron and help Ketil finish the seam, so that he can show you over his ship.",
+          "echo": "Ketil showed her how to push the wool in and not through, and she got it right the third time."
+        }
+      ],
+      "beat": "Down on the strand the ships were being got ready for the sea, and every one of them smelled of tar. A boy about Elsie's age was pushing tarred wool into a seam with a blunt iron and muttering at it. He was Ketil, the ship's boy on the Sea-Hart, and the Sea-Hart was going home to Norway the day the army let it go. He had not seen his mother's fjord for two winters. He looked at the raven on her shoulder for a long time before he asked about it.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "shipyard",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+north",
+          "+ketil_north"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_2a",
+      "role": "between station 2 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h2_3a",
+          "gist": "You climb up onto the old town wall with Ketil, where everybody seems suddenly to be looking out at the hills.",
+          "echo": "People were running along the top of the wall, and nobody stopped two children climbing up."
+        },
+        {
+          "to": "h2_3b",
+          "gist": "You go back with Ketil to his crew's hall, because the light is going and his uncle will be counting heads.",
+          "echo": "Ketil took the skates off and hung them round his neck, and they walked back fast."
+        }
+      ],
+      "beat": "The last ice of the winter was still on the marsh by the river Foss, grey and thin at the edges, and half the children of Jorvik were out on it. Ketil strapped the bone skates over his shoes and pushed himself along with an iron-tipped stick, the way everybody did, and fell over twice. Elsie was better at it. When they sat on the bank afterwards Ketil told her about his fjord, where the ice stayed in the shadows until summer, and about his mother, who would be watching the sea for him.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "foss_marsh",
+        "when": "t_867",
+        "facts": [
+          "ketil_north",
+          "+bone_skates"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h2_2b",
+      "role": "between station 2 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h2_3a",
+          "gist": "You climb the old wall beside the gate to see what the army's men keep staring at, out past the town.",
+          "echo": "Nobody on the wall had time for two children, which suited them both."
+        },
+        {
+          "to": "h2_3b",
+          "gist": "You get Ketil away from the gate and back to his crew's hall, before anybody asks what a raven is doing here.",
+          "echo": "Ketil did not need telling twice. He walked fast and did not look back."
+        }
+      ],
+      "beat": "The Great Army had taken Jorvik on the first day of November, Ketil said, and the army's men were everywhere around the old Roman gate, big and loud, and not one of them had horns on his helmet. Ketil pointed out their leaders from a long way off: Ivar, and Ubba, and Halfdan. They were not people anybody went near. A man at the gate looked at the raven on Elsie's shoulder, made a sign with his fingers, and let them by.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "army_gate",
+        "when": "t_867",
+        "facts": [
+          "jorvik",
+          "ketil_north",
+          "+great_army"
+        ],
+        "mentions": [
+          "army_leaders"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_2c",
+      "role": "between station 2 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h2_3a",
+          "gist": "You go up onto the town wall with Ketil, where people have started running, to see why.",
+          "echo": "Bard shouted after them to be back before dark, and they were already over the side."
+        },
+        {
+          "to": "h2_3b",
+          "gist": "You stay aboard and ask Bard, straight out, for a place on the Sea-Hart when she sails north.",
+          "echo": "Bard looked at her for a long moment, and then at the raven, and said he would think about it over supper."
+        }
+      ],
+      "beat": "The Sea-Hart was long and low, built of oak planks that overlapped like the scales of a fish. Ketil's uncle Bard, her master, was in the stern, and when he heard about the stone he wanted to see it. He held it up to the cloud, found the bright point, and whistled. Some said there were stones like this that found the sun in fog, he said, but he had never met a man who owned one. He asked her what she wanted for it. She said it was not hers to sell.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "sea_hart",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "ketil_north",
+          "+sunstone_navigation"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_3a",
+      "role": "between station 2 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h3",
+          "gist": "You stay up on the wall with Ketil through the night, watching the fires, so that you will see it coming.",
+          "echo": "Nobody sent them down, and they did not go."
+        },
+        {
+          "to": "h3_1a",
+          "gist": "You get Ketil down off the wall and find somewhere below ground to hide before the light comes.",
+          "echo": "Ketil let her lead him down the steps, and his hand was shaking."
+        }
+      ],
+      "beat": "From the top of the old wall the hills to the west were dotted with fires, too many to count. The Northumbrians had come back for their town, people were saying, both their kings together, and they would come at first light. Men ran along the wall with shields and spears. Ketil went white. Muninn, on Elsie's shoulder, remembered out loud a wolf running, and the sun running ahead of it, and she shivered.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "town_wall",
+        "when": "t_867_evening",
+        "facts": [
+          "jorvik",
+          "sun_wolf",
+          "+attack_coming"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_3b",
+      "role": "between station 2 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h3",
+          "gist": "You stay in the hall with the crew through the night, and sleep if you can, the way Bard tells everybody to.",
+          "echo": "Elsie lay down by the fire and did not expect to sleep, and near dawn Muninn came back in through the smoke-hole and got inside her coat."
+        },
+        {
+          "to": "h3_1b",
+          "gist": "You go out after Muninn, who has flown off into the dark towards the gate, before anybody can stop you.",
+          "echo": "Ketil swore under his breath and came after her, because he was not going to let her go alone."
+        }
+      ],
+      "beat": "The Sea-Hart's crew slept in a long hall by the river, and that evening nobody in it was sleeping. The news had come in with a boy on a pony: the Northumbrians had gathered in the hills, both their kings together, to take their town back in the morning. Bard said the Sea-Hart would sail when the fighting was over, whoever won it. Ketil sat by the fire and told Elsie, very quietly, that he had never been in a fight and did not want to start now.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "crew_hall",
+        "when": "t_867_evening",
+        "facts": [
+          "ketil_north",
+          "+attack_coming"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h3",
+      "role": "station 3",
+      "choices": [
+        {
+          "to": "h3_1a",
+          "gist": "You help Ketil hide. The houses here have a pit dug under the floor, and nobody looks in a pit in a hurry.",
+          "echo": "Ketil caught her sleeve and pulled her in through the nearest doorway."
+        },
+        {
+          "to": "h3_1b",
+          "gist": "You follow Muninn into the smoke, because the raven has been right about everything so far.",
+          "echo": "Elsie ran, bent double, and heard Ketil's feet behind her, running too."
+        },
+        {
+          "to": "h3_1c",
+          "gist": "You run with the women and children down to the river, where the ships are, and do not look back.",
+          "echo": "The crowd took them both along with it, down the lane towards the water."
+        }
+      ],
+      "beat": "The horns went at first light. The Northumbrians came over the broken part of the old wall, and after that the noise was everywhere at once: shouting, iron on wood, running feet, and smoke from a thatch that had caught. Ketil stood very still, then said he was going to hide, and asked Elsie to come with him. Muninn flew up off her shoulder into the smoke, straight towards the noise, remembering a road that ran through a battle. Down the lanes, the women and children were running for the river.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "jorvik_lanes",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": [
+          "strand_867"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_1a",
+      "role": "between station 3 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h3_2a",
+          "gist": "You go out the back way, through the yards behind the houses, where the fences are low and nobody seems to be.",
+          "echo": "They went out through a gap in the back wall that was meant for the pig."
+        },
+        {
+          "to": "h3_2b",
+          "gist": "You go out the front, into the market, which is the straightest way to the river even if it is the most open.",
+          "echo": "Elsie counted to ten under her breath, and then they ran."
+        }
+      ],
+      "beat": "Elsie and Ketil crouched in the pit under a house floor, which was cold and smelled of earth and apples, with the boards over their heads, while the fighting went past outside: horns, running feet, shouting. Ketil talked to keep himself steady: about his mother's farm, the goats, the waterfall that froze solid every winter. Once somebody came into the house above them and stood still for a long moment, and went out again. When it was quieter, Elsie pushed up a board and looked out.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "ketil"
+        ],
+        "where": "sunken_house",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": [
+          "muninn"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h3_1b",
+      "role": "between station 3 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h3_2a",
+          "gist": "You turn away from the gate and take Ketil through the yards behind the houses, the quiet way.",
+          "echo": "Ketil did not argue. He was over the first fence before she was."
+        },
+        {
+          "to": "h3_2b",
+          "gist": "You cut across the empty market, where the stalls are knocked flat and there is nowhere at all to hide.",
+          "echo": "They ran out from the lane into the open, with Muninn flying low ahead."
+        },
+        {
+          "to": "h3_2c",
+          "gist": "You go on after Muninn, down past the end of the wall to the water's edge, where it is flying now.",
+          "echo": "The raven dropped down over the wall towards the river, and they went after it."
+        }
+      ],
+      "beat": "By the time the light came the fighting was everywhere, and Muninn flew low through the smoke and Elsie went after it with her sleeve over her mouth, and Ketil came after her. She never saw the fighting properly, only the edge of it: a wall of shields across the end of a lane, a horse with no rider, a man sitting against a fence holding his arm. Muninn led them round all of it as if it had done this before. When it stopped on a gatepost, it remembered, very calmly, another battle in another town.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "by_the_gate",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_1c",
+      "role": "between station 3 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h3_2b",
+          "gist": "You go back up through the market against the crowd, because it is the short way round to the shipyard.",
+          "echo": "They pushed back up the lane, the only two people in Jorvik going the wrong way."
+        },
+        {
+          "to": "h3_2c",
+          "gist": "You stay down by the water and go along the bank to the shipyard, wading where you have to.",
+          "echo": "Elsie stepped down off the strand into the river, and the cold took her breath away."
+        }
+      ],
+      "beat": "Elsie ran with the crowd down the lanes towards the river, women with babies and old men and children carrying hens. Ketil ran beside her carrying a small girl who had lost her mother, until a woman shouted a name and took the girl from him without a word. Muninn found them at the strand and dropped onto Elsie's shoulder. The first ships were already pushing off, full. The Sea-Hart was not one of them: she was still up on her rollers at the shipyard, further along, and nobody was with her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "strand_867",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": [
+          "sea_hart",
+          "shipyard"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h3_2a",
+      "role": "between station 3 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h3_3a",
+          "gist": "You believe the old woman and go looking for Bard first, down by the staithe where she says the crew went.",
+          "echo": "The old woman nodded and pegged out one more shirt, as if the day might still dry."
+        },
+        {
+          "to": "h3_3b",
+          "gist": "You go straight to the shipyard and the Sea-Hart, even if there is nobody there to sail her.",
+          "echo": "Ketil said a ship with nobody on her was still a ship, and ran."
+        }
+      ],
+      "beat": "Behind the houses every yard had a fence of woven hazel, a pig or two, a pit for rubbish and a privy, and Elsie and Ketil went through them one after another, over fences and round pigs. It was nearly quiet back here. In one yard an old woman was calmly taking her washing in, as if the fighting were rain. She told them the Sea-Hart was still on the shipyard slip, and that Bard and his crew had gone down to the staithe and not come back.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "washing_woman"
+        ],
+        "where": "back_yards",
+        "when": "t_attack",
+        "facts": [
+          "attack"
+        ],
+        "mentions": [
+          "bard",
+          "sea_hart"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_2b",
+      "role": "between station 3 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h3_3a",
+          "gist": "You go down the lane to the staithe, after the men with shields, because Bard and the crew may be with them.",
+          "echo": "They kept to the side of the lane, in the shadow of the houses, and did not run."
+        },
+        {
+          "to": "h3_3b",
+          "gist": "You go the other way, to the shipyard, and hope the Sea-Hart is still where Ketil left her.",
+          "echo": "Ketil said she would be. He said it twice, as though saying it made it true."
+        }
+      ],
+      "beat": "The market was empty and wrecked: stalls pushed over, a whole basket of eggs broken in the mud and a dog eating them. On the far side a line of men with shields went past at a run, and Elsie and Ketil lay flat behind a stall until they were gone. A cut half of one of the curly-lettered silver coins lay in the mud by her hand. Muninn looked at it and remembered a city of domes, very far to the south, where it had been made. Elsie left it where it was.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "market",
+        "when": "t_attack",
+        "facts": [
+          "attack",
+          "+dirhams"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_2c",
+      "role": "between station 3 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h3_3a",
+          "gist": "You climb up off the bank at the staithe, where the Sea-Hart's crew always tie up, to look for Bard.",
+          "echo": "Elsie hauled herself up the slimy steps with her jeans stuck to her legs."
+        },
+        {
+          "to": "h3_3b",
+          "gist": "You wade on to the shipyard, where the Sea-Hart is still sitting up on her rollers.",
+          "echo": "They waded on, and the cold stopped hurting, which Ketil said was a bad sign."
+        }
+      ],
+      "beat": "The bank below the town was a mess of mud and boats pulled up anyhow, and they went along it with the water over their ankles and then over their knees. It was so cold that Elsie stopped feeling her feet. Upstream, where the Foss ran into the Ouse, a boat full of Northumbrian men was rowing hard for the town, and Ketil pulled her down behind a beached boat until it was past.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "riverbank",
+        "when": "t_attack",
+        "facts": [
+          "attack"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_3a",
+      "role": "between station 3 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h3_4a",
+          "gist": "You sit down at an oar when Bard asks for hands, though you have never rowed anything bigger than a pedalo.",
+          "echo": "Bard put her on a sea chest by the mast and showed her once how to hold the oar."
+        },
+        {
+          "to": "h3_4b",
+          "gist": "You tell Bard you are better at looking than rowing, and ask to go up in the bow with Muninn.",
+          "echo": "Bard laughed for the first time that day and pointed her to the bow."
+        }
+      ],
+      "beat": "Bard and his crew were at the staithe, sitting on the steps, and none of them was badly hurt, though one had a cut over his eye that he kept dabbing with his sleeve. The Northumbrians had got into the town, Bard said, but they would not get out of it again; the army was too strong for them. It did not matter to him who won. He wanted his ship in the water and the town behind him by noon, and he wanted every pair of hands he could get.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "staithe",
+        "when": "t_attack",
+        "facts": [
+          "attack"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_3b",
+      "role": "between station 3 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h3_4b",
+          "gist": "You ask to go up in the bow with Muninn, where you can see what is ahead, while the crew get the oars out.",
+          "echo": "Bard looked at the split stake, and then at her, and pointed her to the bow."
+        },
+        {
+          "to": "h3_4c",
+          "gist": "You help Ketil with the sail, which is bigger than your bedroom and striped red and white.",
+          "echo": "Ketil threw her the end of a rope and told her not to let go of it whatever happened."
+        }
+      ],
+      "grants": [
+        "s_blade_1"
+      ],
+      "beat": "The Sea-Hart was still up on her rollers at the shipyard, and nobody was with her but an old shipwright with a white beard, who had stayed because a ship was a ship. One roller had jammed hard against a stake and the keel would not move. He gave Elsie an iron wedge, dark and blunt, the kind he split oak logs with, and showed her where to set it and where to hit. Ships were not sawn out of trees, he said, they were split. She hit it, and hit it again, and the stake split and the ship slid, and down the strand Bard and his crew were coming at a run.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "shipwright"
+        ],
+        "where": "shipyard",
+        "when": "t_attack",
+        "facts": [
+          "attack",
+          "+split_planks"
+        ],
+        "mentions": [
+          "bard",
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_4a",
+      "role": "between station 3 and the next, layer 4, way a",
+      "choices": [
+        {
+          "to": "h4",
+          "gist": "You go ashore with Ketil on the last spit of sand, where Bard is standing and staring at the sky.",
+          "echo": "Elsie climbed over the side into water up to her knees, and did not even feel it."
+        },
+        {
+          "to": "h4_1a",
+          "gist": "You stay at your oar as the Sea-Hart runs straight on past the sand and out into the open sea.",
+          "echo": "Bard did not stop, and nobody asked him to."
+        }
+      ],
+      "beat": "Elsie pulled an oar on the Sea-Hart all the way down the Ouse, sitting on a sea chest because there were no benches, and by the time the town's smoke was a smudge behind them her hands were raw. The rowers kept time with a song about a woman who married a troll. The river wound through flat wet country with nobody in it. Towards evening it widened into the great brown mouth of the Humber, and past that was the sea.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "ouse_river",
+        "when": "t_downriver",
+        "facts": [],
+        "mentions": [
+          "humber_mouth"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_4b",
+      "role": "between station 3 and the next, layer 4, way b",
+      "choices": [
+        {
+          "to": "h4",
+          "gist": "You stay aboard through the tide, and ride the Sea-Hart out to the very mouth of the Humber when it turns.",
+          "echo": "The tide turned in the dark, and the Sea-Hart went out with it."
+        },
+        {
+          "to": "h4_1b",
+          "gist": "You go ashore on the sand with Ketil to stretch your legs while the crew wait for the water.",
+          "echo": "They jumped down onto the sand and ran until they could feel their feet again."
+        }
+      ],
+      "beat": "Elsie rode in the bow with Muninn, looking ahead while the crew rowed, and she saw everything first: herons, a drowned tree, a village whose people stood on the bank to watch the ship go by. Where the Ouse met the Humber the tide was coming in against them, and Bard had them drop anchor and wait for it to turn. Muninn remembered the sea out loud: a grey road with no end to it, and a storm on it. Elsie wished it had not.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "ouse_river",
+        "when": "t_downriver",
+        "facts": [],
+        "mentions": [
+          "humber_mouth"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_4c",
+      "role": "between station 3 and the next, layer 4, way c",
+      "choices": [
+        {
+          "to": "h4",
+          "gist": "You stay on deck with Ketil and watch the river widen into the Humber, all the way to the last spit of sand.",
+          "echo": "They sat on the deck with their backs to the mast and watched the banks go by."
+        },
+        {
+          "to": "h4_1b",
+          "gist": "You tell Bard what Muninn keeps remembering about a storm, and ask him to put in to the beach before the sea.",
+          "echo": "Bard looked at the raven, and at the sky, and turned the ship for the sand."
+        }
+      ],
+      "beat": "On the wide water below the town the wind came from behind, and Bard had the sail up: a great square of wool, striped red and white, that smelled like a wet sheep. Ketil and Elsie hauled on a rope together until the sail filled with a crack and the Sea-Hart leaned over and ran. Behind them the smoke of Jorvik got smaller and smaller. Ketil laughed for the first time since the fires on the hills, and said he was going home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "ouse_river",
+        "when": "t_downriver",
+        "facts": [],
+        "mentions": [
+          "humber_mouth"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4",
+      "role": "station 4",
+      "choices": [
+        {
+          "to": "h4_1a",
+          "gist": "You say go now. Bard has asked what the girl with the raven thinks, and you think the sea looks fine.",
+          "echo": "Bard grunted, and the crew ran out the oars."
+        },
+        {
+          "to": "h4_1b",
+          "gist": "You say wait. Muninn remembers a storm on this sea, and it has not been wrong yet.",
+          "echo": "Bard grunted, and the crew began to drag the Sea-Hart up the sand."
+        },
+        {
+          "to": "h6_1a",
+          "gist": "You keep looking through the stone at the light in the cloud, and step towards it, off the side of the ship.",
+          "echo": "Ketil shouted her name, and then there was no ship at all."
+        }
+      ],
+      "beat": "At the mouth of the Humber a long spit of sand curled out into the sea, and the Sea-Hart lay off it while Bard studied the sky. In the north-east it was the colour of a bruise. They could cross now and try to beat the weather, Bard said, or sit it out on the sand and lose three days. Elsie looked at the cloud through the stone, and in the middle of it, where the sun was hiding, the bright point had opened into something else: a light like a doorway, and green branches beyond it.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "humber_mouth",
+        "when": "t_sea",
+        "facts": [
+          "stone",
+          "+storm_coming"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h4_1a",
+      "role": "between station 4 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h4_2a",
+          "gist": "You go aft to the steering oar, where old Grim has been standing all night, and ask him how he knows where the ship is.",
+          "echo": "Grim made room for her beside him without a word, as though he had been expecting her."
+        },
+        {
+          "to": "h4_2b",
+          "gist": "You shout to Bard about the black line you can see through the stone off to the right. It looks like land.",
+          "echo": "Bard squinted where she pointed, and saw nothing, and turned the ship anyway."
+        }
+      ],
+      "beat": "The storm caught them on the first night, out of sight of land. The Sea-Hart climbed waves as big as houses and slid down the other side, and her oak planks bent and creaked like something alive, which Bard said was exactly what kept her from breaking. Everybody bailed, Elsie too, with a wooden scoop, until she could not feel her arms. Muninn rode inside her coat. In the dark she heard it remember, very quietly, a ship that had not come home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "north_sea",
+        "when": "t_sea",
+        "facts": [
+          "+storm"
+        ],
+        "mentions": [
+          "grim"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4_1b",
+      "role": "between station 4 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h4_2a",
+          "gist": "You side with old Grim, who says the wind has dropped and they should go now, in the dark, before it changes its mind.",
+          "echo": "Bard grumbled, but he trusted Grim's nose for weather more than his own, and they launched."
+        },
+        {
+          "to": "h4_2b",
+          "gist": "You side with Bard, who says wait for the light and land somewhere on the way for fresh water.",
+          "echo": "They sailed at first light, with the barrels half empty and the sea still grey and heaving."
+        }
+      ],
+      "beat": "They pulled the Sea-Hart up on the sand and made her sail into a tent, and the storm came in at dusk and blew for two days. It flattened the grass and threw sand into everybody's food. The crew played a board game with little pegs, and argued about the rules the whole time, as if nobody had ever been sure of them. On the second night Muninn woke Elsie by pulling her hair, and outside, far off along the beach, something howled.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard",
+          "grim"
+        ],
+        "where": "spurn_beach",
+        "when": "t_sea",
+        "facts": [
+          "sun_wolf",
+          "+storm",
+          "+tafl"
+        ],
+        "mentions": []
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h4_2a",
+      "role": "between station 4 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h4_3a",
+          "gist": "You stay up with Grim until morning, watching the dark water on the side where he says the whales come up.",
+          "echo": "Grim said nothing more, and did not need to, and the night went on."
+        },
+        {
+          "to": "h4_3b",
+          "gist": "You go and sleep in the bow with Ketil, because Grim says a crew that does not sleep does not row.",
+          "echo": "Ketil moved over without waking, and Elsie was asleep before she had pulled her coat round her."
+        }
+      ],
+      "grants": [
+        "s_ward_1"
+      ],
+      "beat": "On the first clear night after the storm, Elsie stood with old Grim at the steering oar while the crew slept in heaps. Grim steered by the stars and by the feel of the swell under the ship, and said he had been doing it for fifty years and had never once been lost for long. He saw how she kept looking back at the wake, as if something were following it. He took a little silver hammer on a thong from round his own neck and hung it round hers. Thor kept things off, he said. That was what it was for.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "grim"
+        ],
+        "where": "north_sea",
+        "when": "t_sea_night",
+        "facts": [
+          "sun_wolf"
+        ],
+        "mentions": [
+          "ketil"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4_2b",
+      "role": "between station 4 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h4_3b",
+          "gist": "You sail at once into a sea that is turning white with fog, because Bard will not lose the wind.",
+          "echo": "They pushed off, and within the hour the island had gone behind them into the white."
+        },
+        {
+          "to": "h4_3c",
+          "gist": "You wait out the fog on the rocks with Ketil and the birds, and sail when it lifts, however long that is.",
+          "echo": "They sat on the rocks all afternoon, and the birds screamed at them the whole time."
+        }
+      ],
+      "grants": [
+        "s_ward_2"
+      ],
+      "beat": "They put in for water at a bare island with no trees on it, only rock and grass and a thousand screaming birds, and filled the barrels from a stream. While the crew worked, Bard walked Elsie along the Sea-Hart's side, where the crew's round shields hung in a row on the rail, painted yellow and black. The one at the end was smaller than the rest. It had been his when he was a ship's boy, he said, and everybody who crewed the Sea-Hart had a shield on her rail. He lifted it down and gave it to her.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "bird_island",
+        "when": "t_sea",
+        "facts": [],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h4_3a",
+      "role": "between station 4 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h5",
+          "gist": "You go with Ketil straight up to his mother's farm, which he has been talking about for two winters.",
+          "echo": "Ketil was over the side before the keel touched, and Elsie went after him."
+        },
+        {
+          "to": "h5_1a",
+          "gist": "You go up the fjord to where a crowd is gathering on the hill, because Muninn has already flown there.",
+          "echo": "Muninn was a black speck over the hill, and it did not come back when she called."
+        }
+      ],
+      "beat": "Just before dawn the whales came up beside the Sea-Hart, three of them, longer than the ship, and blew clouds of breath that stank of fish. Grim said they were a good sign. When the sun rose it rose clear, the first time Elsie had seen it since the frozen field, and Grim pointed ahead at a line of white mountains on the edge of the sea. Norway. Ketil woke up and saw it, and stood very still.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "grim",
+          "ketil"
+        ],
+        "where": "north_sea",
+        "when": "t_sea",
+        "facts": [],
+        "mentions": [
+          "fjord"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h4_3b",
+      "role": "between station 4 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h5",
+          "gist": "You keep the stone to your eye and bring them all the way in, up the fjord to Ketil's mother's farm.",
+          "echo": "Elsie did not lower the stone until the keel touched the shore under the farm."
+        },
+        {
+          "to": "h5_1b",
+          "gist": "You hand the steering back to Grim and go ashore with Ketil, who wants to show you the carver on the shore first.",
+          "echo": "Ketil jumped down onto the stones and pulled her after him towards a sound of tapping."
+        }
+      ],
+      "beat": "By the second day the fog was thick and white, and the sea and the sky became the same thing. Nobody could see the sun to steer by. Elsie held the stone up, and there it was, the one bright point, and she pointed. Grim laughed out loud and turned the ship by her finger. The old men talked about stones like this, he said, and he had never believed them. When the fog thinned at last, there were mountains in front of them.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "grim"
+        ],
+        "where": "north_sea",
+        "when": "t_sea",
+        "facts": [
+          "stone",
+          "+sunstone_navigation"
+        ],
+        "mentions": [
+          "fjord"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4_3c",
+      "role": "between station 4 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h5",
+          "gist": "You go with Ketil up the path to his mother's farm the minute the ship touches.",
+          "echo": "Ketil ran the whole way up, and Elsie ran after him with Muninn flapping on her shoulder."
+        },
+        {
+          "to": "h5_1c",
+          "gist": "You go up to the great hall above the shore, where the whole fjord seems to be arriving in its best clothes.",
+          "echo": "Ketil said he would come and find her there, and went up the other path alone."
+        }
+      ],
+      "beat": "The fog lifted all at once, like a sheet pulled off a table, and there was Norway: grey rock going straight up out of the sea, snow on top of it, and a gap in the rock that was a fjord. Ketil stood in the bow and did not say anything for a long time. Then he named every farm and every waterfall as they went in between the cliffs, and Elsie saw that he was crying and pretended not to.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "fjord",
+        "when": "t_fjord",
+        "facts": [
+          "ketil_north"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h5",
+      "role": "station 5",
+      "choices": [
+        {
+          "to": "h5_1a",
+          "gist": "You go with Ketil's mother up to the grave in the morning, where she is taking bread to the people hauling the ship.",
+          "echo": "Ketil's mother gave her a basket of bread to carry and did not ask if she wanted to."
+        },
+        {
+          "to": "h5_1b",
+          "gist": "You go down to the shore with Ketil, to the carver, who is cutting a stone for the lady and needs someone to hold the rope.",
+          "echo": "Ketil said the carver was grumpy but fair, and that he had once let Ketil hold the chisel."
+        },
+        {
+          "to": "h5_1c",
+          "gist": "You go and help at the lady's hall, getting the feast ready, which Ketil's mother says is what a guest does.",
+          "echo": "Ketil's mother tied an apron on her and pointed her up the hill."
+        }
+      ],
+      "beat": "Ketil's mother's farm was a long turf-roofed house above the fjord, with goats on the roof, and his mother came out of it running. She held Ketil so long that Elsie went and looked at the goats. That night by the fire everybody talked about one thing: the great lady of the fjord had died in the winter, and her ship was being hauled up to her grave, and in three days she would be buried in it with everything she would need. Muninn listened from the rafters and did not sleep.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "ketils_mother"
+        ],
+        "where": "ketils_farm",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_1a",
+      "role": "between station 5 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h5_2a",
+          "gist": "You go down to the shore, where the tapping is, to see who is cutting the lady's stone.",
+          "echo": "The tapping stopped as she came down the path, and started again when the carver saw she was only a girl."
+        },
+        {
+          "to": "h5_2b",
+          "gist": "You put your shoulder to a rope with everybody else and help haul the ship the last few yards.",
+          "echo": "A woman made room for her on the rope and told her to pull when everybody else pulled."
+        }
+      ],
+      "beat": "The lady's ship was being hauled up from the shore to her grave on rollers by forty people on ropes, and it was the most beautiful thing Elsie had ever seen: long and low, its prow curling up into a spiral, every inch of it carved with twisting animals. On its deck stood a grave chamber of timber, like a little house. Beds, chests, sledges and a carved wagon waited on the grass to go in with her. Muninn sat on top of the spiral and would not come down.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady"
+        ],
+        "mentions": [
+          "carvers_shore"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_1b",
+      "role": "between station 5 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h5_2a",
+          "gist": "You ask Asgaut to teach you the sixteen, there and then, on a flat stone by the water.",
+          "echo": "Asgaut grunted, which Ketil said afterwards was the nicest thing he had ever heard him say."
+        },
+        {
+          "to": "h5_2b",
+          "gist": "You go up to the grave with Ketil, where the ship has arrived and the lady is to be carried in.",
+          "echo": "Ketil said the carver would still be there tomorrow, and the lady would not."
+        }
+      ],
+      "beat": "The carver was a small bald man called Asgaut with chips of stone in his beard, and he was cutting the lady's stone on the shore, where every passing ship would see it. It said that her daughter raised this stone in memory of her mother. He read it to Elsie with his finger, rune by rune. There were sixteen runes, he said, all straight lines because they were made for cutting, and that was all anybody needed to write anything. He noticed her watching his hands.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady",
+          "+runes16"
+        ],
+        "mentions": [
+          "burial_ground"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_1c",
+      "role": "between station 5 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h5_2a",
+          "gist": "You go down to the shore where the carver is working, and ask him whether he knows anything about the dream.",
+          "echo": "The lady's daughter said the carver knew more than he said, and less than he thought."
+        },
+        {
+          "to": "h5_2b",
+          "gist": "You stay with the lady's daughter and go up with her to the grave, where her mother is to be laid in the ship.",
+          "echo": "The lady's daughter held out her hand, and Elsie found she had taken it."
+        }
+      ],
+      "beat": "The lady's hall was full of people getting the funeral feast ready: barrels of ale, a whole ox, bread stacked like firewood. The lady's daughter, a tall woman with a ring of keys at her belt, was running all of it. When she saw the raven on Elsie's shoulder she stopped, and sent everybody else out. Her mother had seen a raven like that, she said, in a dream, the night before she died. It had been going home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ladys_daughter"
+        ],
+        "where": "ladys_hall",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady"
+        ],
+        "mentions": [
+          "carver",
+          "burial_ground"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h5_2a",
+      "role": "between station 5 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h5_3a",
+          "gist": "You cut your name yourself, one rune at a time, with Asgaut's chisel. It will be crooked, and it will be yours.",
+          "echo": "Asgaut handed her the chisel and the mallet, and winced before she had even started."
+        },
+        {
+          "to": "h5_3b",
+          "gist": "You ask Asgaut to cut it, because he does it beautifully and you have never held a chisel in your life.",
+          "echo": "Asgaut looked pleased, and tried not to."
+        }
+      ],
+      "beat": "Asgaut taught Elsie the sixteen runes on a flat stone by the water, scratching each one with the point of a nail. She learned them faster than he expected, and he was annoyed about it. There was no proper E, so her name would have to be spelled the way it sounded. Then he found a small grey stone about the size of a loaf, and said that everybody who crossed the sea should leave their name behind them somewhere. He could cut it for her, or she could cut it herself, and it would be crooked.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "+runes16"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h5_2b",
+      "role": "between station 5 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h5_3b",
+          "gist": "You go down to the shore, where Asgaut the carver cuts the names of people who have crossed the sea, and ask for yours.",
+          "echo": "Asgaut looked up from his chisel and said he supposed she had better tell him how it was spelled."
+        },
+        {
+          "to": "h5_3c",
+          "gist": "You stay on the hill after everybody else goes down, and watch the grave through the stone as it gets dark.",
+          "echo": "The crowd went down the hill in twos and threes, talking quietly, and left her there."
+        }
+      ],
+      "beat": "They laid the lady in the little timber house on the ship's deck, on a bed with a feather quilt, with her things around her. Her daughter went in last, and came out dry-eyed. Everybody on the hill stood very still. Elsie looked at the grave through the stone and saw, just for a moment, the ship not in a trench at all but on grey water, sailing, with its sail full. Muninn remembered, out loud, that this was a road.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ladys_daughter"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord",
+        "facts": [
+          "stone",
+          "+the_lady",
+          "+ship_burial"
+        ],
+        "mentions": [
+          "carver"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_3a",
+      "role": "between station 5 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h6",
+          "gist": "You go up to the grave with Ketil in the morning, when they close it, to say goodbye properly.",
+          "echo": "Ketil came down to the shore to find her at first light, and they went up the hill together."
+        },
+        {
+          "to": "h6_1a",
+          "gist": "You look through the stone at your own name, where the light is doing something strange, and do not look away.",
+          "echo": "The runes went bright, then brighter, and the shore went grey around them."
+        }
+      ],
+      "beat": "It took Elsie the whole afternoon to cut her name into the stone, and Asgaut did not help once, though he winced a great deal. It was crooked. Asgaut said it was the best crooked name he had ever seen, and he set the stone up on the shore facing the sea, so the ships would see it. Muninn looked at it for a long time, remembering it, the way it remembered everything. The low sun came through the stone round Elsie's neck and did something odd to the runes.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "runes16",
+          "stone"
+        ],
+        "mentions": [
+          "ketil"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_3b",
+      "role": "between station 5 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h6",
+          "gist": "You go up to the grave with Ketil at first light, when the whole fjord is gathering to see it closed.",
+          "echo": "Ketil was waiting at the top of the path, and they went up together without talking."
+        },
+        {
+          "to": "h6_1b",
+          "gist": "You go down to the water's edge after Muninn, who is walking out along the wet stones as if the fjord were a road.",
+          "echo": "Muninn did not look back, and the water did not seem to be where it had been."
+        }
+      ],
+      "beat": "Asgaut cut Elsie's name into a small grey stone while she watched, quick and neat, the chips flying. Then, because she asked, he cut underneath it that she had raised the stone in memory of her grandad, Len, which made no sense to him, since her grandad was not dead, but he did it anyway. He set the stone up on the shore, facing the sea. Elsie found that she had to look at the water for a while.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "+runes16"
+        ],
+        "mentions": [
+          "grandad",
+          "ketil"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h5_3c",
+      "role": "between station 5 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h6",
+          "gist": "You go back down to the farm with Ketil, and come up again in the morning to see the grave closed.",
+          "echo": "Ketil let out a breath he had been holding for an hour, and they went down in the dark."
+        },
+        {
+          "to": "h6_1b",
+          "gist": "You climb down into the trench beside the ship, where the stone shows the water, and put your hand on the planks.",
+          "echo": "The planks were warm, and wet, and moving, and Ketil's voice calling her name got very small."
+        }
+      ],
+      "beat": "Elsie stayed on the hill after everybody had gone down. As the light went, Ketil came back up to find her, because he would not leave her up there alone. As the light went, the grave through the stone got stranger: the ship in its trench was on water, then under a sky that was not this sky, and far off, very big, there was something like a tree. Muninn walked up and down the ship's rail, remembering things faster and faster, too fast to follow. Ketil said he did not like it, and he was not leaving.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord_night",
+        "facts": [
+          "stone",
+          "+ship_burial"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h6",
+      "role": "station 6",
+      "choices": [
+        {
+          "to": "h6_1a",
+          "gist": "You go the way the stone shows the ship going, down over the edge of the grave into the grey.",
+          "echo": "Elsie stepped down off the edge of the mound, and the ground was not there."
+        },
+        {
+          "to": "h6_1b",
+          "gist": "You go the way Muninn goes instead, up onto the top of the mound, into the smoke of the fires.",
+          "echo": "Elsie climbed into the smoke after the raven, and did not look back, and the smoke went on and on."
+        }
+      ],
+      "beat": "In the morning the whole fjord came up the hill to close the grave, and the lady's ship went under turf and stone a spadeful at a time. Before the last of it, Elsie looked through the stone once more and saw the grey water again, and the tree far beyond it, and knew that this was where she got off. She told Ketil. He did not argue. He hugged her so hard it hurt and told her to go and not look back, because looking back was bad luck.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord",
+        "facts": [
+          "stone",
+          "+ship_burial"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_1a",
+      "role": "between station 6 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h6_2a",
+          "gist": "You climb up the root towards the trunk, where something small and red is running up and down very fast.",
+          "echo": "The root was rough enough to climb, and she climbed it with her fingers stinging."
+        },
+        {
+          "to": "h6_2b",
+          "gist": "You go down the root towards the chewing, carefully, because Muninn says it remembers what is down there.",
+          "echo": "Muninn went inside her coat, and she went down into the mist."
+        }
+      ],
+      "beat": "Elsie came out of the grey onto something she thought at first was a road, and then saw was a root, as wide as a road, going down into mist. The cold was worse than anything on the sea. Somewhere below, water roared out of the ground, and under the roar there was another sound, slow and wet and endless, like something very big chewing. Muninn said the tree's name as if remembering an old friend: Yggdrasil. This was the root that went down to the cold.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "cold_root",
+        "when": "t_tree",
+        "facts": [
+          "+tree"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_1b",
+      "role": "between station 6 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h6_2b",
+          "gist": "You climb down the bark towards the slow, wet sound coming up from the roots.",
+          "echo": "She went down hand over hand, and the chewing got louder with every hold."
+        },
+        {
+          "to": "h6_2c",
+          "gist": "You climb up the branch towards the top, where an enormous bird is sitting with something smaller between its eyes.",
+          "echo": "She climbed until her arms shook, and the wind got stronger the higher she went."
+        }
+      ],
+      "beat": "Elsie came out onto a branch as wide as a road, on a tree so big that its trunk went up out of sight and down out of sight. The bark was like a cliff. Dew dripped off the leaves above as thick as honey. Muninn said the tree's name as if remembering an old friend: Yggdrasil. Everything there was, was on it or under it. Far below, something was chewing, slowly, and far above, something enormous shifted its wings.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "trunk",
+        "when": "t_tree",
+        "facts": [
+          "+tree"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_2a",
+      "role": "between station 6 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h6_3a",
+          "gist": "You go round the trunk the way Ratatoskr pointed, towards the sound of women's voices and running water.",
+          "echo": "Ratatoskr shouted something rude after her, and she found she was smiling."
+        },
+        {
+          "to": "h6_3b",
+          "gist": "You go the other way, because Muninn does not trust a squirrel, up to a branch with a rope scar on it.",
+          "echo": "Muninn remembered, loudly, a great many things the squirrel had said over the years."
+        }
+      ],
+      "beat": "The small red thing was a squirrel called Ratatoskr, and it ran up and down the Tree all day carrying insults between the eagle at the top and the dragon at the bottom. It stopped just long enough to insult Elsie too, very rudely and quite funnily, about her trainers. Then it offered to carry an insult for her to anybody she liked. She said she did not have any. It told her, disgusted, that the wells were further round, and it pointed.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ratatoskr"
+        ],
+        "where": "trunk",
+        "when": "t_tree",
+        "facts": [
+          "tree"
+        ],
+        "mentions": []
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h6_2b",
+      "role": "between station 6 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h6_3a",
+          "gist": "You go back up and round the root, towards a well where three women are pouring water over the bark.",
+          "echo": "She went up and round, and the chewing faded behind her."
+        },
+        {
+          "to": "h6_3b",
+          "gist": "You climb straight up, away from the dragon, as fast as you can go, and do not stop until the chewing is quiet.",
+          "echo": "She climbed until the chewing was only a feeling in the bark under her hands."
+        },
+        {
+          "to": "h6_3c",
+          "gist": "You follow the root the other way, towards a pool so still that it looks like a hole in the world.",
+          "echo": "The root ran on level through the mist, and the mist thinned as she went."
+        }
+      ],
+      "beat": "Lower down among the roots the chewing got louder, and at last Elsie saw what made it: a long dark shape far below in the mist, gnawing at the root and never stopping. It was a dragon called Níðhöggr, and it had been at the root since the beginning of the world. It did not look up. Muninn remembered, flatly, that the Tree always grew back as fast as it was eaten, which was the only reason anything was still standing.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "deep_root",
+        "when": "t_tree",
+        "facts": [
+          "tree"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_2c",
+      "role": "between station 6 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h6_3b",
+          "gist": "You go along the branch to the one with a rope scar on it, because Muninn has gone very quiet looking at it.",
+          "echo": "Muninn did not say anything, all the way along the branch, which was not like Muninn."
+        },
+        {
+          "to": "h6_3c",
+          "gist": "You climb down towards the pool you can see from up here, at the foot of a root, where a black bird is drinking.",
+          "echo": "It was a long way down, and the black bird was still there when she got to the bottom."
+        }
+      ],
+      "beat": "High in the branches an eagle sat as big as a house, with a hawk perched between its eyes, and when it moved its wings the wind blew through all the worlds. Four stags were browsing on the leaves around it. The eagle saw everything and said very little, Muninn remembered, and what it did say the squirrel carried down to the dragon in the worst possible way. From up there Elsie saw, far off, a great hall with a roof that shone like scales.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "treetop",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_3a",
+      "role": "between station 6 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h6_4a",
+          "gist": "You ask the youngest Norn what happens next, even though her smile is the kind that makes you not want to know.",
+          "echo": "The youngest Norn only smiled wider, and went on spinning, and the light changed."
+        },
+        {
+          "to": "h6_4b",
+          "gist": "You thank them and go at once, because Muninn is pulling at your sleeve and something has changed in the light.",
+          "echo": "The old Norn said goodbye to her by name, which she had not told them."
+        }
+      ],
+      "grants": [
+        "s_token_1"
+      ],
+      "beat": "At the well at the root three women sat spinning, and they were the Norns: one very old, one Elsie's mother's age, one younger than Elsie. They watered the Tree from the well every day so that it would not die. The old one looked at her and knew everything she had ever done; the youngest looked at her and smiled in a way Elsie did not like. The middle one, who spun what was happening now, bit a length of grey thread off her spindle and tied it round Elsie's wrist. Anyone who saw it, she said, would know the Norns had sent her.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "norns"
+        ],
+        "where": "urds_well",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "+norns"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h6_3b",
+      "role": "between station 6 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h6_4a",
+          "gist": "You sit on the branch for a while with your hand on the scar, and let Muninn finish remembering.",
+          "echo": "Muninn remembered for a long time, and Elsie did not hurry it."
+        },
+        {
+          "to": "h6_4b",
+          "gist": "You get Muninn moving again, because it is remembering too hard and for too long, and the light is going dim.",
+          "echo": "Muninn shook itself all over, like a dog out of water, and came."
+        }
+      ],
+      "beat": "On one branch the bark was worn smooth in a ring, as if a rope had hung there, and below the ring was an old scar where a spear had gone into the wood. Muninn remembered it out loud: nine nights its master had hung there, hurt and hungry and thirsty, to learn the runes, and on the ninth night he had come down knowing them. Elsie put her hand on the scar. It was warm.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "rope_branch",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "muninn",
+          "+nine_nights"
+        ],
+        "mentions": [
+          "odin"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h6_3c",
+      "role": "between station 6 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h6_4a",
+          "gist": "You ask Huginn the question you have been wanting to ask all along: how Muninn got lost in the first place.",
+          "echo": "Huginn answered with three questions of his own, one of them nearly an answer, and flew up into the leaves."
+        },
+        {
+          "to": "h6_4b",
+          "gist": "You go on at once with both ravens, because Huginn keeps asking whether you can hear that, and you can.",
+          "echo": "Huginn flew off ahead to look, and Muninn rode on her shoulder, and neither of them said a word."
+        }
+      ],
+      "grants": [
+        "s_token_2"
+      ],
+      "beat": "The pool was Mímir's well, and whoever drank from it knew things. Far down at the bottom lay an eye, looking up: Odin had paid it for one drink. A black raven stood on the rim, the same size as Muninn and nothing like it, and it spoke only in questions. It was Huginn. Why was she here? Did she know what she was carrying? Would she need help, where she was going? It pulled a feather from its own wing and dropped it into her hand. Wouldn't a stranger help a girl who carried one of Odin's feathers?",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "mimirs_well",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "+mimir"
+        ],
+        "mentions": [
+          "odin"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h6_4a",
+      "role": "between station 6 and the next, layer 4, way a",
+      "choices": [
+        {
+          "to": "h7",
+          "gist": "You run for the open ground below the Tree, where Muninn remembers an island in a lake, and something tied up on it.",
+          "echo": "She ran, and the ground went down and down towards black water."
+        },
+        {
+          "to": "h7_1a",
+          "gist": "You follow the other raven, Huginn, who asks whether you would rather be caught, and flies straight out across the open.",
+          "echo": "Huginn flew low and fast, and Elsie ran under him with her breath hurting."
+        }
+      ],
+      "beat": "The grey light under the Tree went dimmer, and then dimmer again, as if a cloud had crossed a sun Elsie could not see. Through the stone the bright point was moving now, jerking, the way a rabbit runs. And behind it, very big and very far off, something ran after it on long legs. Sköll. Muninn got inside her coat without being asked. A second black raven dropped out of the branches, Huginn, Thought, Muninn's brother, and asked whether she was going to stand there all day.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "under_tree",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+skoll_close"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h6_4b",
+      "role": "between station 6 and the next, layer 4, way b",
+      "choices": [
+        {
+          "to": "h7",
+          "gist": "You run with Muninn down to the lake below the Tree, where there is an island with something enormous lying on it.",
+          "echo": "She ran, and the ground went down and down towards black water."
+        },
+        {
+          "to": "h7_1b",
+          "gist": "You run the way Muninn remembers, back along a road it last flew eleven hundred years ago.",
+          "echo": "Muninn flew ahead of her, low, remembering every turn before she reached it."
+        }
+      ],
+      "beat": "The howl came from everywhere at once, and the leaves of the Tree shivered with it. Muninn remembered, in a small voice, the last time it had heard that howl: over a frozen field, eleven hundred years ago, on the morning it was lost. Elsie held the stone and felt it go hot in her hand, hotter than it had ever been. Sköll had her scent. Then a second black raven dropped out of the leaves, Huginn, Thought, Muninn's brother, and asked whether she meant to wait for it.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "under_tree",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+why_lost"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7",
+      "role": "station 7",
+      "choices": [
+        {
+          "to": "h7_1a",
+          "gist": "You listen to Huginn, who asks why you would go where Sköll expects, and go his way: straight across the open plain.",
+          "echo": "Huginn asked whether she was ready, and did not wait to find out."
+        },
+        {
+          "to": "h7_1b",
+          "gist": "You listen to Muninn, who remembers an old road round by the hills, longer and darker, that nobody uses any more.",
+          "echo": "Muninn settled on her shoulder and began, very quietly, to remember the way."
+        },
+        {
+          "to": "h7_1c",
+          "gist": "You listen to neither of them and go over the shimmering bridge, because at least you can see where it ends.",
+          "echo": "Both ravens went quiet at once, and then followed her."
+        }
+      ],
+      "beat": "On an island in a black lake lay a wolf so big that Elsie took him for a hill until he breathed. He was Fenrir, tied down with a ribbon as thin as silk: Gleipnir, made of six things that do not exist. He opened one yellow eye and said that Sköll was coming. Huginn landed beside Muninn on a rock, and the two ravens did not agree. Huginn asked why she would go the way Sköll expected. Muninn remembered an old road round by the hills, long and dark. And at the far edge of the lake a bridge shimmered.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn",
+          "fenrir"
+        ],
+        "where": "fenrirs_island",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+gleipnir"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h7_1a",
+      "role": "between station 7 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h7_2a",
+          "gist": "You keep running straight on under the open sky, though Huginn asks if you have noticed the riders up there.",
+          "echo": "She kept running, and did not look up, and then she did."
+        },
+        {
+          "to": "h7_2b",
+          "gist": "You swerve towards the sound of a river, where Huginn asks whether a wolf can follow a scent through water.",
+          "echo": "The roar of the river got louder, and the grass gave way to wet stones."
+        }
+      ],
+      "beat": "Huginn's way went straight across an open plain of grass that rippled although there was no wind, and he flew ahead asking questions the whole time. Was she tired? Was she cold? Had she noticed the light getting dimmer? She had. Behind them, where the Tree was, a shadow was coming across the grass faster than any cloud. Huginn asked whether she could run any faster. She could, it turned out.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "plain",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h7_1b",
+      "role": "between station 7 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h7_2a",
+          "gist": "You come up out of the valley onto open ground, where Muninn remembers riders passing over every evening.",
+          "echo": "They came up out of the dark into the grey, and the sky was wide again."
+        },
+        {
+          "to": "h7_2b",
+          "gist": "You stay low along the valley floor, following the stream down to where Muninn says a river crosses the road.",
+          "echo": "The stream got louder, and wider, and colder, until it was not a stream."
+        }
+      ],
+      "beat": "Muninn's old road went round by the hills, through a valley where nobody had walked for a very long time, and all the way Muninn remembered. It remembered the valley green and full of people. It remembered its master riding down it on an eight-legged horse, laughing. It remembered Huginn young. The road was long and it was dark, and nothing followed them down it, and Elsie began to understand why Muninn had been missed so badly.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "old_valley",
+        "when": "t_tree",
+        "facts": [
+          "muninn"
+        ],
+        "mentions": [
+          "huginn",
+          "sleipnir"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_1c",
+      "role": "between station 7 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h7_2a",
+          "gist": "You step off the bridge onto the open ground where the watchman points, with riders passing low overhead.",
+          "echo": "The watchman did not turn to see her go, but she knew he was listening."
+        },
+        {
+          "to": "h7_2b",
+          "gist": "You go down from the bridge towards a roaring river, because that is where both the ravens have flown.",
+          "echo": "Both ravens were waiting on a rock above the water when she got there."
+        }
+      ],
+      "beat": "The bridge was made of something like light and something like ice, in three colours, and it rang under Elsie's trainers like a glass. At the far end a man stood watching her with a horn at his belt, the way somebody watches who can hear grass grow. He did not stop her. He looked at the stone round her neck, and at the ravens, and nodded her past without a word.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn",
+          "heimdall"
+        ],
+        "where": "bifrost",
+        "when": "t_tree",
+        "facts": [
+          "stone"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_2a",
+      "role": "between station 7 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h7_3a",
+          "gist": "You follow the way the riders went, towards a wood where every leaf seems to be shining gold.",
+          "echo": "She followed, and the wood got brighter the closer she came."
+        },
+        {
+          "to": "h7_3b",
+          "gist": "You stop and look back through the stone at the howl, to see how near it really is.",
+          "echo": "She turned round and lifted the stone, and wished she had not."
+        }
+      ],
+      "beat": "The riders came over low, women on horses running on the air, and the light off their mail was like the light off water. They were bringing the brave dead to the hall. One of them looked down at Elsie as she passed, a long look, and Elsie looked back. Then they were gone, and the grey light was ordinary again, except for the howl, which was nearer.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "plain",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+valkyries"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h7_2b",
+      "role": "between station 7 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h7_3b",
+          "gist": "You climb the bank and look back through the stone across the river, to see whether the wolf has stopped.",
+          "echo": "She climbed the bank with her trainers still round her neck and turned round."
+        },
+        {
+          "to": "h7_3c",
+          "gist": "You go straight on up the bank to a high old gate standing all on its own, and no wall on either side of it.",
+          "echo": "She put her trainers back on with shaking fingers and walked up to the gate."
+        }
+      ],
+      "beat": "The river was called Thund, and it roared, and it was so wide and cold that Muninn remembered people who had tried to wade it and been swept away. Elsie did not want to be remembered like that. There were stepping stones, green with weed, a long way apart. She took her trainers off, tied them round her neck, and went across one stone at a time, and on the far side she stood and shook for a while.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "thund",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_3a",
+      "role": "between station 7 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h8",
+          "gist": "You walk out of the wood and up to the great hall's doors, all of them, to find the one that is open.",
+          "echo": "She walked out of the gold into the grey, and the hall got bigger with every step."
+        },
+        {
+          "to": "h8_1a",
+          "gist": "You go round the side of the hall, where a noise of shouting and iron is coming from.",
+          "echo": "The noise got louder as she went round, and so did the laughing."
+        }
+      ],
+      "beat": "The wood was Glasir, and every leaf in it was gold and rang when the wind touched it. It was the most beautiful place Elsie had ever been, and the hardest to leave: she wanted to lie down under the gold and look up at it for ever. Muninn pecked her ear. Through the trees she could see a roof made entirely of shields, and it went on further than any roof should.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "glasir",
+        "when": "t_tree",
+        "facts": [
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_3b",
+      "role": "between station 7 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h8",
+          "gist": "You run for the doors of the hall, whichever is nearest, as fast as you have ever run in your life.",
+          "echo": "She ran, and the doors came towards her, hundreds of them."
+        },
+        {
+          "to": "h8_1b",
+          "gist": "You go round to the back of the hall, where there is smoke and a smell of cooking and a door standing open.",
+          "echo": "She went round the back, keeping low, towards the smell of meat."
+        }
+      ],
+      "beat": "Through the stone Elsie saw it plainly for the first time: a grey wolf the size of a barn, running flat out after a sun that ran ahead of him, and every so often turning his great head to sniff for the other sun, the small one round her neck. He was nearer than she had thought. Much nearer. Muninn remembered that the hall ahead had five hundred and forty doors and that no wolf could come in by any of them. Then it remembered, less happily, that it had never seen a wolf try.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "hall_approach",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+valhalla",
+          "+skoll_close"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h7_3c",
+      "role": "between station 7 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h8",
+          "gist": "You go up to the front of the hall and its doors, where a wolf and an eagle hang carved over the one facing west.",
+          "echo": "She walked up to the doors, and the carved wolf seemed to watch her come."
+        },
+        {
+          "to": "h8_1b",
+          "gist": "You go round to where the smoke comes out of the roof, towards a smell of roasting meat.",
+          "echo": "She went round the back, keeping low, towards the smell of meat."
+        }
+      ],
+      "beat": "The gate stood on its own on the hillside, very old, with no wall on either side of it, and it was locked. Muninn remembered that it was called Valgrind and that very few knew how its lock was shut. Elsie walked round it, since there was no wall, and felt silly, and then on the far side the whole of the hall was in front of her, where it had not been a moment before. Its roof was shields. Its rafters were spears.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "valgrind",
+        "when": "t_tree",
+        "facts": [
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h8",
+      "role": "station 8",
+      "choices": [
+        {
+          "to": "h8_1a",
+          "gist": "You go through the nearest gate into the yard, into the noise, where the warriors are coming in from their day's fighting.",
+          "echo": "Nobody stopped her at the gate. Nobody even looked."
+        },
+        {
+          "to": "h8_1b",
+          "gist": "You go in at the back, through the kitchen, the way a stranger who does not want to be looked at would.",
+          "echo": "She went round the side of the hall to where the smoke came out."
+        }
+      ],
+      "beat": "Valhalla had five hundred and forty doors, and eight hundred warriors could march out of each one side by side; that was what the old poem said, and looking at it Elsie believed it. Its roof was shields and its rafters were spears, and over the west door a wolf and an eagle hung carved. It was evening in there, and loud. Muninn stood up on her shoulder and said one memory, very clearly, as though it had been waiting eleven hundred years to say it: that it was home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "valhalla_doors",
+        "when": "t_valhalla",
+        "facts": [
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h8_1a",
+      "role": "between station 8 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h8_2a",
+          "gist": "You tell the red-bearded warrior the truth, and he lifts you onto his shoulders to show you the goat on the roof.",
+          "echo": "He roared with laughter and swung her up as if she weighed nothing."
+        },
+        {
+          "to": "h8_2b",
+          "gist": "You tell him nothing at all and slip inside with the crowd, into the hall, where the benches are filling up.",
+          "echo": "He shrugged and let her go, and the crowd carried her in through the door."
+        }
+      ],
+      "beat": "In the yard before the hall the einherjar were coming in from their day's fighting: the brave dead, laughing and limping and slapping each other on the back, with every cut on them closing as Elsie watched. Tomorrow they would do it all again, and every day after, until the end of the world. A huge red-bearded warrior with grooves filed across his front teeth stopped in front of her and asked whose girl she was, and why a raven was riding on her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "einherjar",
+          "red_beard"
+        ],
+        "where": "valhalla_yard",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+einherjar"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_1b",
+      "role": "between station 8 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h8_2b",
+          "gist": "You go through into the hall with the cook's boys and a tray of bread, as if you worked here.",
+          "echo": "Nobody looks at a girl with a tray, and nobody looked at her."
+        },
+        {
+          "to": "h8_2c",
+          "gist": "You go up the back stair from the kitchen to the rafters, where you can see the whole hall and nobody looks up.",
+          "echo": "The stair was steep and dark and smelled of smoke, and it went up a long way."
+        }
+      ],
+      "beat": "The kitchen was a cave of steam, and in the middle of it the cook was boiling a whole boar in a cauldron as big as a pond. The boar was called Sæhrímnir. It was eaten every night and was whole again every morning, and the cook said it did not seem to mind. He did not ask Elsie who she was. He gave her a bowl of broth and watched Muninn with a cook's eye, as if wondering how it would go with onions.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "cook"
+        ],
+        "where": "valhalla_kitchen",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+boar"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h8_2a",
+      "role": "between station 8 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h8_3a",
+          "gist": "You get down and go in to the feast, and sit on the end of a bench where the red-bearded warrior makes room.",
+          "echo": "He set her down on the end of the bench and pushed a plate in front of her."
+        },
+        {
+          "to": "h8_3b",
+          "gist": "You get him to carry you inside and stand by the west door, because you are sure you heard a howl under all the noise.",
+          "echo": "He carried her in on his shoulders and stood by the west door with her, watching it."
+        }
+      ],
+      "beat": "On the roof, eating the leaves of a tree that grew up through the middle of the hall, stood a goat called Heiðrún, and mead ran from her instead of milk, enough for every warrior every night. From up on the red-bearded warrior's shoulders Elsie could see everything: the long benches filling, the fires, and at the far end a high seat with a man in it, wearing a wide hat, with one eye. He had not looked at her yet.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "red_beard"
+        ],
+        "where": "valhalla_yard",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+heidrun"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_2b",
+      "role": "between station 8 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h8_3a",
+          "gist": "You sit down on the end of a bench among the warriors, where nobody will notice you, and eat.",
+          "echo": "The warrior next to her pushed a plate in front of her without even looking round."
+        },
+        {
+          "to": "h8_3b",
+          "gist": "You stay near the doors in the shadow and watch them, because Muninn keeps turning to look behind.",
+          "echo": "She backed into the shadow by the west door, and Muninn's claws tightened on her shoulder."
+        }
+      ],
+      "beat": "Inside, the hall was so long that its far end was blue with smoke, and the benches down both sides were filling with warriors, hundreds and hundreds, shouting for mead. Nobody minded a girl with a raven. At the far end, on a high seat raised above everything, sat a man in a wide hat, with one eye and two wolves lying at his feet. Elsie knew him. She had last seen him on a bench in Museum Gardens.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "lent"
+        ],
+        "mentions": [
+          "wanderer",
+          "museum_gardens"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_2c",
+      "role": "between station 8 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h8_3a",
+          "gist": "You climb down into the feast and sit on the end of a bench, as near to the high seat as you dare.",
+          "echo": "She came down a pillar hand over hand and slid onto the end of a bench."
+        },
+        {
+          "to": "h8_3b",
+          "gist": "You stay up in the rafters over the doors, where you can see out, because the feast has gone suddenly quiet.",
+          "echo": "She crept along the rafters until she was right above the west door."
+        }
+      ],
+      "beat": "Up among the rafters, which were spears laid side by side, Elsie could see the whole hall at once: the long fires, the benches, hundreds of warriors, the goat's mead going round in horns. At the far end, on the high seat, a man in a wide hat sat with one eye and two wolves at his feet, and he did not eat. Muninn went very still. It remembered him, it said. It remembered him so hard that it could not say anything else.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "rafters",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_3a",
+      "role": "between station 8 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "z_gate",
+          "gist": "You stand up, because everybody is looking at you anyway.",
+          "echo": "Elsie stood up, and every face in Valhalla turned with her."
+        }
+      ],
+      "beat": "Elsie sat at the end of a bench with Muninn on her shoulder and ate boar, which was better than it had any right to be. The warriors on either side of her told the stories of their deaths as if they were funny, which mostly they were. Halfway through, the man on the high seat stood up. The hall went quiet, bench by bench, all the way down, and he looked straight at her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+boar"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "h8_3b",
+      "role": "between station 8 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "z_gate",
+          "gist": "You back away from the door into the hall.",
+          "echo": "Elsie backed away, one step and then another, and the door began to bend."
+        }
+      ],
+      "beat": "The howl came again, and this time it was not far off: it was at the doors. Something huge and grey pressed its nose to the west door, and the carved wolf over it seemed to shrink. The warriors nearest the door stood up and reached for their shields. Sköll had followed the stone all the way here, and he was not going to wait outside.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll"
+        ],
+        "where": "valhalla_doors",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "sun_wolf"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "z_gate",
+      "role": "the last square before it, and the way down is open",
+      "choices": [
+        {
+          "to": "z_vault",
+          "gist": "You go down the steps under the hall, where the smell of horses comes from, and the dark is warm.",
+          "requires": [
+            "ward"
+          ],
+          "echo": "Elsie went down into the dark, and the noise of the hall went muffled over her head."
+        },
+        {
+          "to": "z_plain",
+          "gist": "You walk straight down the middle of the floor, in front of everybody, with the stone in your hand.",
+          "echo": "Elsie stepped out onto the open floor, and the whole hall watched her do it."
+        },
+        {
+          "to": "z_side",
+          "gist": "You go round by the wall, under the hanging shields in the shadow, the long way.",
+          "echo": "Elsie slipped into the shadow under the wall, and the firelight went past her."
+        }
+      ],
+      "beat": "The west door burst open and Sköll came into Valhalla, grey and enormous, and the fires bent away from him. The warriors went for their shields. The one-eyed man on the high seat did not move at all; he was watching Elsie, to see what she would do. Between her and him lay the whole length of the hall: the open floor down the middle where everybody would see her, the wall of hanging shields along the side in shadow, and close by her feet a trapdoor standing open, with steps going down under the hall and a smell of horses.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "sun_wolf"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      },
+      "decision": "method",
+      "joins": true
+    },
+    {
+      "id": "z_vault",
+      "role": "below, where what was left is still waiting",
+      "choices": [
+        {
+          "to": "z_last",
+          "gist": "You ride up out of the dark on Sleipnir.",
+          "echo": "Sleipnir went up the steps as if they were nothing, came out into the hall, and knelt to set her down at the foot of the high seat."
+        }
+      ],
+      "grants": [
+        "s_guide_vault"
+      ],
+      "beat": "Under the hall was a stable, warm and dark, and the door at the bottom of the steps would not open until Elsie held up what she had been given on the crossing to keep danger off her; then it swung back as if it knew. In the one stall stood a grey horse with eight legs. He had stood there, shut in, since the morning his master's raven did not come home. His name was Sleipnir. He put his nose down to Muninn and blew very softly, and then he knelt, all eight knees, so that Elsie could climb on.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "sleipnir"
+        ],
+        "where": "stable",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla"
+        ],
+        "mentions": [
+          "wanderer",
+          "skoll"
+        ]
+      }
+    },
+    {
+      "id": "z_plain",
+      "role": "the open square, crossed in full view",
+      "choices": [
+        {
+          "to": "z_last",
+          "gist": "You walk on, right up to the high seat.",
+          "echo": "Elsie reached the steps of the high seat, and stopped."
+        }
+      ],
+      "beat": "Elsie walked down the middle of Valhalla with every face in it turned towards her and the stone held up in her fist, shining, the one small sun in the hall. Sköll came down the floor behind her, not hurrying. Nobody stopped him. Nobody stopped her either. It was the longest walk of her life, and she did not look back once.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "sun_wolf",
+          "stone"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "z_side",
+      "role": "the long way round, under the wall",
+      "choices": [
+        {
+          "to": "z_last",
+          "gist": "You step out of the shadow at the foot of the high seat.",
+          "echo": "Elsie stepped out of the shadow, and the one-eyed man was already looking at her."
+        }
+      ],
+      "beat": "Elsie went round by the wall, under the hanging shields where the firelight did not reach, with Muninn inside her coat and the stone hidden in her fist. She could hear Sköll coming down the middle of the hall, sniffing, sure of himself. Twice he stopped, and she stopped too and held her breath. At the end of the wall there was only the high seat, and the steps up to it, and the one-eyed man, waiting.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "sun_wolf",
+          "stone"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "z_last",
+      "role": "the last hour, and two ways to arrive",
+      "choices": [
+        {
+          "to": "f_open",
+          "gist": "You climb the steps of the high seat in full view of the whole hall, and hold up Muninn and the stone together.",
+          "echo": "Elsie went up the steps one at a time, and every warrior in Valhalla held his breath."
+        },
+        {
+          "to": "f_shadow",
+          "gist": "You drop into the shadow behind the high seat, where the two wolves are lying, and let Sköll come to you.",
+          "echo": "Elsie ducked behind the high seat, between the two wolves, and they did not move."
+        }
+      ],
+      "beat": "At the foot of the high seat Elsie stopped. The one-eyed man looked down at her. He was the man from the bench in Museum Gardens and from the gate of the frozen field, and he did not pretend he was not. Sköll was a dozen paces behind her, and the whole hall was silent. The man held out his hand for the raven. He had paid an eye once for what he wanted, he said, and nothing worth having was free, and the wolf would have the stone unless somebody stopped him.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": "high_seat",
+        "when": "t_valhalla",
+        "facts": [
+          "sun_wolf",
+          "lent",
+          "+the_price"
+        ],
+        "mentions": [
+          "museum_gardens",
+          "field"
+        ]
+      },
+      "decision": "action",
+      "joins": true
+    },
+    {
+      "id": "f_open",
+      "role": "the last scene, met face on",
+      "resolve": {
+        "by_count": {
+          "5": "e_hero",
+          "4": "e_clean",
+          "3": "e_scarred",
+          "2": "e_wounded",
+          "1": "e_costly",
+          "0": "e_pyrrhic"
+        }
+      },
+      "beat": "Elsie stood on the steps of the high seat in front of all Valhalla, with Muninn on one fist and the stone in the other, and Sköll came up the hall for the stone. She did not run. She turned to face him with the one-eyed man at her back, and the light of the stone on the wolf's grey face.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": "high_seat",
+        "when": "t_valhalla",
+        "facts": [
+          "the_price",
+          "sun_wolf"
+        ],
+        "mentions": []
+      }
+    },
+    {
+      "id": "f_shadow",
+      "role": "the last scene, met from the dark",
+      "resolve": {
+        "by_count": {
+          "5": "e_hero",
+          "4": "e_clean",
+          "3": "e_scarred",
+          "2": "e_wounded",
+          "1": "e_costly",
+          "0": "e_pyrrhic"
+        }
+      },
+      "beat": "Elsie crouched in the shadow behind the high seat, between the one-eyed man's two sleeping wolves, with Muninn inside her coat and the stone in her fist. Sköll came round the seat after her, slow and sure, following the smell of the sun. When his head came round the corner she stepped out to meet him.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": "high_seat",
+        "when": "t_valhalla",
+        "facts": [
+          "the_price",
+          "sun_wolf"
+        ],
+        "mentions": []
+      }
+    },
+    {
+      "id": "e_hero",
+      "ending": {
+        "count": 5,
+        "tier": "best",
+        "outline": "Everything carried does a job and the jobs fit together. It ends the way it was meant to and the walk home is under their own power."
+      },
+      "beat": "Everything Elsie had carried did its job, and the jobs fitted together, and Sköll went back out of the west door with nothing, after the sun where he belonged. Muninn went home to its master's shoulder, and the one-eyed man, who was Odin, sent her back to York at dusk on the same Monday with every memory she had, and Grandad calling her name. Two weeks later the stone went into a case in the Yorkshire Museum, with Grandad's name and hers on the label. On the museum roof there was a raven, and it seemed to be remembering something.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "yorkshire_museum"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      }
+    },
+    {
+      "id": "e_clean",
+      "ending": {
+        "count": 4,
+        "tier": "clean",
+        "outline": "One thing short, and the gap shows. It holds anyway, and the cost is paid by something that can be mended."
+      },
+      "beat": "One thing short, and it showed, but it held. Sköll went out of the west door with nothing, and Muninn went home. The one-eyed man, who was Odin, kept the stone for his price, and said it was fair: a raven lent for a sun found. Elsie came back to York at dusk on the same Monday with every memory she had. There was nothing to show the coroner, and Grandad laughed about it for a week. Lent, not found, he said, and the next Saturday he took her detecting anyway.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "field"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "lent",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      }
+    },
+    {
+      "id": "e_scarred",
+      "ending": {
+        "count": 3,
+        "tier": "scarred",
+        "outline": "Enough to finish it and not enough to finish it whole. Something is lost on the way that is not coming back."
+      },
+      "beat": "Enough to finish it and not enough to finish it whole. Sköll went away with nothing and Muninn went home, and then the one-eyed man, who was Odin, asked his price, as he had once paid his: one memory. Elsie paid it. She came back to York at dusk on the same Monday, and the stone went into a case in the Yorkshire Museum. Something was missing, and she could not have said what, and the passage never says which memory it was.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer"
+        ],
+        "where": [
+          "high_seat",
+          "yorkshire_museum"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "skoll",
+          "grandad"
+        ]
+      }
+    },
+    {
+      "id": "e_wounded",
+      "ending": {
+        "count": 2,
+        "tier": "wounded",
+        "outline": "Two things and a great deal of luck. It ends, and the ending has to be carried afterwards."
+      },
+      "beat": "Two things and a great deal of luck. Sköll went out empty and Muninn went home, but the road the one-eyed man, Odin, opened for Elsie ran back through Jorvik, and it did not open again for a whole summer. She lived that summer. When she stepped out onto Ouse Bridge at dusk on the same Monday, Grandad said she looked older, and she did not tell him why. In the Yorkshire Museum there was a runestone with her name on it in sixteen runes, crooked, that nobody could have cut but her.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "ouse_bridge"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin",
+          "+runes16"
+        ],
+        "mentions": [
+          "skoll",
+          "yorkshire_museum"
+        ]
+      }
+    },
+    {
+      "id": "e_costly",
+      "ending": {
+        "count": 1,
+        "tier": "costly",
+        "outline": "One thing, and it is only just enough. Everyone is standing at the end except the part of them that set out."
+      },
+      "beat": "One thing, and it was only just enough. Sköll went out empty and Muninn went home, and the price the one-eyed man, Odin, asked for it was everything Elsie remembered of the road. She woke in the frozen field with frost on her coat and Grandad bending over her. He asked what she had been saying about ravens. She did not know. Far off a raven called, and she did not look up.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "field"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "muninn",
+          "skoll",
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "e_pyrrhic",
+      "ending": {
+        "count": 0,
+        "tier": "pyrrhic",
+        "outline": "Empty-handed the whole way. It still ends, and it takes everything they had to give to end it."
+      },
+      "beat": "Empty-handed the whole way, and it still ended. Muninn went home to the one-eyed man's shoulder, because Elsie gave everything she had to get it there, but Sköll took the stone out of her hand and swallowed it, and went out of the west door with its light inside him. Odin sent her back to York at dusk on the same Monday with nothing round her neck. The next day the sun came up dim, and at noon the whole city stood in a strange brown twilight that nobody could explain. Elsie walked home through it, and she knew.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": [
+          "high_seat",
+          "york"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": []
+      }
+    }
+  ],
+  "lang": "en"
+}
