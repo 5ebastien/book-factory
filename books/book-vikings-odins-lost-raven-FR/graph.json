@@ -1,0 +1,3534 @@
+{
+  "id": "book-vikings-odins-lost-raven-FR",
+  "title": "Le Mystère d'Odin",
+  "skeleton": "long-hubs",
+  "shape": "eight stations; between them short braided stretches of three or four layers; the last page of a stretch reaches the station or past it; one express skips a stretch and a station and carries nothing",
+  "start": "p1_field",
+  "item_types": [
+    {
+      "type": "light",
+      "role": "the thing you see by, and in the dark it is also the thing that shows where you are"
+    },
+    {
+      "type": "blade",
+      "role": "the thing you open a way with; not a weapon so much as a lever"
+    },
+    {
+      "type": "ward",
+      "role": "the thing that keeps the danger off you, and the only thing the last door will answer to"
+    },
+    {
+      "type": "token",
+      "role": "the thing that makes a stranger help you instead of moving you on"
+    },
+    {
+      "type": "guide",
+      "role": "what was shut in below and knows the last mile better than any map"
+    }
+  ],
+  "cover": {
+    "image": "cover.jpg",
+    "alt": "Une gravure d'Odin chevauchant Sleipnir, le cheval à huit jambes, entouré de ses deux corbeaux et de ses deux loups.",
+    "credit": "Lorenz Frølich, 1895, tiré de Den ældre Eddas Gudesange. Domaine public, via Wikimedia Commons."
+  },
+  "items": [
+    {
+      "slot": "s_light_1",
+      "type": "light",
+      "hint": "between station 1 and the next",
+      "name": "la lampe frontale de Papi",
+      "description": "La lampe frontale que Papi porte pour la détection les soirs d'hiver : une lampe sur un bandeau élastique, trop grande pour Elsie, qui sent son bonnet. Elle projette un faisceau blanc très loin dans le noir, et tant qu'elle est allumée, quiconque la cherche peut voir exactement où elle est.",
+      "pickup": "Elsie garda la lampe frontale de Papi. Elle était trop grande et elle sentait son bonnet, et partout où elle irait désormais, quiconque la chercherait pourrait voir exactement où elle était."
+    },
+    {
+      "slot": "s_blade_1",
+      "type": "blade",
+      "hint": "between station 3 and the next",
+      "name": "le coin du charpentier",
+      "description": "Un coin de fer long comme une main, sombre et émoussé, fait pour fendre les troncs de chêne en planches dans le sens du fil, parce que les navires étaient fendus et non sciés. Pas une arme. Un outil pour ouvrir ce qui est coincé.",
+      "pickup": "Elsie garda le coin du charpentier. Il était lourd, émoussé et noirci par l'usage, et il était fait pour ouvrir les choses qui ne voulaient pas s'ouvrir."
+    },
+    {
+      "slot": "s_ward_1",
+      "type": "ward",
+      "hint": "between station 4 and the next",
+      "name": "le petit marteau d'argent",
+      "description": "Un petit marteau d'argent au bout d'un lacet de cuir, le signe de Thor, poli par cinquante ans contre la poitrine d'un vieux barreur. Thor tient à distance les géants et le serpent de mer, et le marteau est la façon dont un marin le lui demande.",
+      "pickup": "Elsie portait maintenant le petit marteau d'argent, encore tiède du cou du vieux Grim. Thor tenait les choses à distance, avait-il dit, et c'était à ça qu'il servait."
+    },
+    {
+      "slot": "s_ward_2",
+      "type": "ward",
+      "hint": "between station 4 and the next",
+      "name": "le petit bouclier",
+      "description": "Un bouclier rond en bois de tilleul, peint en jaune et noir comme les autres sur le plat-bord du Cerf-des-Mers, et plus petit que tous, parce qu'il a été fait pour un mousse. Il a déjà protégé un enfant des embruns, du vent et de pire encore.",
+      "pickup": "Elsie avait maintenant un bouclier à elle, jaune et noir, le plus petit du plat-bord du Cerf-des-Mers. Il avait protégé Bard quand il était petit, et maintenant il était à elle."
+    },
+    {
+      "slot": "s_token_1",
+      "type": "token",
+      "hint": "between station 6 and the next",
+      "name": "le fil des Nornes",
+      "description": "Un bout de simple fil gris, arraché d'un coup de dents au fuseau de la Norne qui file ce qui se passe maintenant, noué autour du poignet d'Elsie. Quiconque le voit parmi les mondes de l'Arbre sait que les Nornes l'ont envoyée, et personne ne discute avec les Nornes.",
+      "pickup": "Elsie garda le fil des Nornes noué autour de son poignet. Ce n'était qu'un fil gris, mais quiconque le verrait sous l'Arbre saurait qui l'avait envoyée."
+    },
+    {
+      "slot": "s_token_2",
+      "type": "token",
+      "hint": "between station 6 and the next",
+      "name": "la plume de Huginn",
+      "description": "Une longue plume noire de l'aile de Huginn, le corbeau de la Pensée d'Odin, qui a des reflets bleu-vert quand elle bouge. Un inconnu qui la voit sait pour qui elle travaille, et l'aide au lieu de la chasser.",
+      "pickup": "Elsie garda la plume de Huginn dans la poche zippée de son manteau. Elle était longue et noire, avec des reflets bleu-vert quand elle bougeait, et quiconque savait à qui elle appartenait l'aiderait."
+    },
+    {
+      "slot": "s_guide_vault",
+      "type": "guide",
+      "hint": "shut in below since it happened, and the door only opens for the ward",
+      "name": "Sleipnir",
+      "description": "Le cheval gris d'Odin, à huit jambes, enfermé dans sa stalle sous la grande salle depuis le matin où Muninn n'est pas rentré. Il connaît toutes les routes entre les mondes, et le dernier kilomètre de celle-ci mieux que n'importe quelle carte.",
+      "pickup": "Après cela, Sleipnir ne quitta plus Elsie. Le cheval à huit jambes connaissait le chemin pour remonter de sous la grande salle, et toutes les autres routes qui existaient."
+    }
+  ],
+  "nodes": [
+    {
+      "id": "p1_field",
+      "role": "the opening, before the reader is asked anything",
+      "prologue": true,
+      "hand": true,
+      "beat": "The detector gave its double note by the hedge at the bottom of the field, and Elsie dug for it because Grandad's knees were worse in the cold. It was not a ring-pull. It was a clear crystal in a silver mount, on a thong of black leather, and when she held it up to the cloud one bright point showed through it where the sun had to be. When they looked round, a one-eyed man in a wide hat was leaning on the gate, and he asked if they had found anything. Grandad said only rubbish. When he looked again the lane was empty.",
+      "choices": [
+        {
+          "to": "p2_kitchen",
+          "gist": "Tu rentres à la maison avec Papi, et la trouvaille rentre dans sa poche."
+        }
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "opening": [
+        "Elsie Thorpe, thirteen, from York: stubborn, funny, and bored stiff by museums",
+        "Grandad Len Thorpe, seventy-one, retired bus driver: out metal-detecting every Saturday of the year, whatever the weather, and Elsie comes with him",
+        "where: a ploughed field outside York, a Saturday in early January, frost in the furrows and the sun lost behind cloud",
+        "the find: a clear crystal in a silver mount on a leather thong; held up to the cloud it shows the hidden sun as one bright point",
+        "what goes wrong: a one-eyed man in a wide hat is watching them from the gate, and he wants to know what they have found"
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "wanderer"
+        ],
+        "where": "field",
+        "when": "t_saturday",
+        "facts": [
+          "+stone",
+          "+wanderer_asked"
+        ],
+        "mentions": [
+          "york"
+        ]
+      }
+    },
+    {
+      "id": "p2_kitchen",
+      "role": "the opening, before the reader is asked anything",
+      "prologue": true,
+      "hand": true,
+      "beat": "At the kitchen table that evening Grandad looked the stone up, reading bits off the laptop with his glasses pushed up on his forehead. The old stories talked about a sunstone that could find the sun behind cloud, but nobody had ever dug one up at a real Viking site. Then he went serious and told her the law: a find like this had to be reported to the coroner within fourteen days, and they would take it to the museum on Monday. Elsie went to bed with it round her neck anyway. A raven was sitting on the sill of the back bedroom, and when she banged on the glass it did not go away.",
+      "choices": [
+        {
+          "to": "p3_muninn",
+          "gist": "Tu tires les rideaux sur le corbeau et tu essaies de dormir, la pierre toujours autour du cou."
+        }
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad"
+        ],
+        "where": "grandads_house",
+        "when": "t_saturday_night",
+        "facts": [
+          "stone",
+          "+sunstone_saga",
+          "+treasure_law",
+          "+raven"
+        ],
+        "mentions": [
+          "yorkshire_museum"
+        ]
+      },
+      "joins": true
+    },
+    {
+      "id": "p3_muninn",
+      "role": "the opening, before the reader is asked anything",
+      "prologue": true,
+      "hand": true,
+      "beat": "The raven was still there on Sunday morning, in the frost. Elsie looked at it through the stone, and it spoke: one memory, of the morning it flew from its master's shoulder and did not come back, eleven hundred winters ago. At breakfast Grandad did not laugh. Odin had two ravens, he said, Thought and Memory, Huginn and Muninn, and an old poem said Odin feared for Thought but feared more for Memory. And there was a wolf, Sköll, who ran after the sun and would catch it at the end of the world. Elsie looked at the bright point in the stone and did not finish her toast.",
+      "choices": [
+        {
+          "to": "h1",
+          "gist": "Tu vas à York avec Papi lundi, et le corbeau suit la voiture."
+        }
+      ],
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "grandads_house",
+        "when": "t_sunday",
+        "facts": [
+          "stone",
+          "raven",
+          "+muninn",
+          "+sun_wolf"
+        ],
+        "mentions": [
+          "odin"
+        ]
+      }
+    },
+    {
+      "id": "h1",
+      "role": "station 1",
+      "choices": [
+        {
+          "to": "h1_1a",
+          "gist": "Tu écoutes Papi. C'est la loi, et en quarante ans de conduite de bus, il n'a jamais brûlé un seul feu rouge.",
+          "echo": "Elsie se leva, et Papi eut l'air si soulagé qu'elle faillit changer d'avis."
+        },
+        {
+          "to": "h1_1b",
+          "gist": "Tu écoutes l'homme au large chapeau, qui semble en savoir plus que Papi sur la pierre, et tu marches avec lui jusqu'à la rivière.",
+          "echo": "L'homme se leva, toucha son chapeau pour saluer Papi et partit le long du chemin, comme s'il avait toujours su qu'elle viendrait."
+        },
+        {
+          "to": "h1_1c",
+          "gist": "Tu écoutes Muninn. Il s'est envolé des ruines vers la grille, et il se retourne sans cesse pour voir si tu viens.",
+          "echo": "Elsie était debout et courait avant que Papi ait fini de dire son prénom."
+        }
+      ],
+      "beat": "On Monday afternoon they sat on a bench in Museum Gardens with the stone in a sandwich bag, waiting to show the finds officer, and the raven sat on the abbey ruins and watched them. Then the one-eyed man in the wide hat was sitting at the other end of the bench, and nobody had seen him sit down. Grandad said the find was going in today, because it was the law and because a museum case was where everybody could see it. The man said some things were lent, not found. And the raven, when Elsie looked at it through the stone, remembered a long road home that did not start in a museum.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "wanderer",
+          "muninn"
+        ],
+        "where": "museum_gardens",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "treasure_law",
+          "muninn",
+          "+lent"
+        ],
+        "mentions": [
+          "yorkshire_museum"
+        ]
+      },
+      "decision": "listen",
+      "joins": true
+    },
+    {
+      "id": "h1_1a",
+      "role": "between station 1 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h1_2a",
+          "gist": "Tu dis à Papi que tu as besoin d'air, et tu descends avec lui jusqu'à la rivière par le chemin le plus long, pour tuer le temps jusqu'à seize heures.",
+          "echo": "Papi dit qu'une petite marche lui ferait du bien à lui aussi, et ils sortirent ensemble en passant devant la billetterie."
+        },
+        {
+          "to": "h1_2b",
+          "gist": "Tu t'éclipses pendant que Papi est penché sur l'étiquette, et tu suis le tapotement tout autour du bâtiment.",
+          "echo": "Papi avait presque le nez collé à la vitre, et il ne leva pas les yeux."
+        }
+      ],
+      "beat": "The finds officer was out until four, so they waited in the Viking gallery in front of the Vale of York Hoard. Grandad told its story as if he had been there: a father and son with detectors, a January day near Harrogate, and a silver cup full of coins, one of them from as far away as Samarkand. Elsie looked at the cup through the stone, and for a second it was new and bright and full. Behind her something tapped on the gallery window. The raven was on the sill outside, waiting.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "yorkshire_museum",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "+vale_hoard"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_1b",
+      "role": "between station 1 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h1_2a",
+          "gist": "Tu appelles Papi et tu l'attends sur Ouse Bridge, même si Muninn s'envole déjà sans toi.",
+          "echo": "Papi répondit à la première sonnerie, et il n'avait pas l'air fâché, ce qui était pire."
+        },
+        {
+          "to": "h1_2b",
+          "gist": "Tu suis Muninn, en haut des marches qui partent de la rivière et dans les rues étroites, avant de le perdre de vue.",
+          "echo": "Le corbeau la laissa approcher à dix pas, puis repartit, bas, comme s'il faisait preuve de patience avec elle."
+        }
+      ],
+      "beat": "The man in the wide hat walked Elsie down to the river and along it, and he talked about names. York was full of the settlers who had come over the sea: a -by was a farm, a -thorpe was a farm further out. So her own name was a farm, he said, and he seemed to find that very funny. He asked her what she would give to get back something she had lost. She was still thinking about it when she noticed he was gone, and the raven was standing on the path where he had been.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "wanderer",
+          "muninn"
+        ],
+        "where": "ouse_path",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "lent",
+          "+place_names"
+        ],
+        "mentions": [
+          "grandad"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_1c",
+      "role": "between station 1 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h1_2a",
+          "gist": "Tu reviens vers la rivière, tu appelles Papi et tu lui dis de te retrouver sur Ouse Bridge.",
+          "echo": "Papi dit qu'il arrivait, et qu'ils allaient avoir une petite discussion."
+        },
+        {
+          "to": "h1_2b",
+          "gist": "Tu laisses sonner le téléphone et tu continues à suivre Muninn, vers les vieilles rues où il se dirige.",
+          "echo": "Elsie glissa le téléphone dans sa poche, l'écran contre elle, et le sentit vibrer encore deux fois contre sa jambe."
+        }
+      ],
+      "beat": "The raven led Elsie out of the gardens and up Stonegate, from one hanging sign to the next, and every time she caught up with it, it remembered something out loud: a hall with a roof of shields, a man on a high seat with one eye, a wolf running under the sun. At the top of the street the Minster stood up grey against the sky. The raven settled on a lamp bracket and waited. Elsie's phone buzzed in her pocket: Grandad, for the third time.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "stonegate",
+        "when": "t_monday",
+        "facts": [
+          "stone",
+          "muninn"
+        ],
+        "mentions": [
+          "grandad",
+          "minster"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h1_2a",
+      "role": "between station 1 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h1_3a",
+          "gist": "Tu descends les marches vers King's Staith, où Muninn t'attend, avec Papi juste derrière toi.",
+          "echo": "Papi descendit les marches une à une, en tenant la rampe et en ronchonnant à cause de ses genoux."
+        },
+        {
+          "to": "h1_3b",
+          "gist": "Tu suis plutôt l'idée de Papi : d'abord quelque chose de chaud sur Coppergate, et le corbeau viendra à toi.",
+          "echo": "Papi entra dans le café chercher deux chocolats chauds et lui dit de ne pas bouger d'un pouce."
+        }
+      ],
+      "grants": [
+        "s_light_1"
+      ],
+      "beat": "The light was going by half past three, and Elsie and Grandad stood on Ouse Bridge with the river running brown and high beneath them. Grandad said that if there were going to be ravens and dusk and a granddaughter all at once, he wanted to be able to see where she was, and he took off the head-torch he wore for detecting on winter evenings and put it on her. Downstream, the raven sat on the railings of King's Staith and waited.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "ouse_bridge",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "muninn"
+        ],
+        "mentions": [
+          "kings_staith",
+          "coppergate"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h1_2b",
+      "role": "between station 1 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h1_3b",
+          "gist": "Tu suis Muninn jusqu'à Coppergate, vers le centre viking de Jorvik où tu t'étais tant ennuyée pendant la sortie scolaire.",
+          "echo": "Le corbeau sautillait sur le trottoir devant elle comme un chien qui voulait sa promenade."
+        },
+        {
+          "to": "h1_3c",
+          "gist": "Tu regardes à travers la pierre la tour de la cathédrale au-dessus des toits, et tu marches vers ce que tu y vois.",
+          "echo": "Elsie garda la pierre contre son œil et marcha, et personne dans les Shambles ne sembla remarquer une fille qui marchait un œil fermé."
+        }
+      ],
+      "beat": "The Shambles was dark already between its leaning houses, with the shop lights on and the tourists going home. The raven walked along a shop sign above Elsie's head. Every window she passed showed her something odd through the stone: not her own reflection but a girl in a wool dress, and then a lane of mud. She let the stone drop against her coat and the windows were windows again. At the bottom of the street the raven hopped down onto the cobbles and looked back at her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "shambles",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "muninn"
+        ],
+        "mentions": [
+          "coppergate",
+          "minster"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_3a",
+      "role": "between station 1 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h1_4a",
+          "gist": "Tu regardes de nouveau à travers la pierre, exprès cette fois, une ruelle de boue qui monte depuis les pontons.",
+          "echo": "Elsie leva la pierre, et cette fois elle ne la baissa pas."
+        },
+        {
+          "to": "h1_4b",
+          "gist": "Tu t'accroches à la manche de Papi et tu regardes les navires à travers la pierre, pour lui montrer ce que tu vois.",
+          "echo": "Elle tendit la main vers la manche de Papi, et sa main se referma sur le vide."
+        }
+      ],
+      "beat": "At the bottom of the steps the river had come up over the staith, the way it did most winters, and the lamps along it were coming on. Elsie looked through the stone at the water and the lamps went out. The stone showed her the same river with no embankment at all, only mud and a row of wooden jetties, and long low ships drawn up on the bank. When she lowered it Grandad was saying her name, and he sounded a very long way away.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad",
+          "muninn"
+        ],
+        "where": "kings_staith",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "+the_fading"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h1_3b",
+      "role": "between station 1 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h1_4a",
+          "gist": "Tu entres dans la ruelle que tu vois à travers la pierre, en la gardant contre ton œil pour ne pas la perdre.",
+          "echo": "Elsie marcha, et ses baskets passèrent des pavés à quelque chose de mou qui les aspirait."
+        },
+        {
+          "to": "h1_4b",
+          "gist": "Tu suis Muninn en descendant vers la rivière, où il est parti, en regardant à travers la pierre.",
+          "echo": "Le corbeau volait bas le long de la rue, et la rue changeait sous lui à mesure qu'il avançait."
+        }
+      ],
+      "beat": "Coppergate was a shopping street with a museum underneath it, where they had dug up a whole Viking street in the seventies. The raven sat on the sign of the Jorvik Viking Centre. Elsie held the stone up to the queue and the queue was gone: a woman in a wool dress was carrying a bucket through mud, and a man was turning a wooden cup on a lathe at his door. The street had kept its name, she realised. Coppergate was the street of the cup-makers.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "coppergate",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "+the_fading",
+          "+coppergate_dig"
+        ],
+        "mentions": [
+          "grandad"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h1_3c",
+      "role": "between station 1 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h1_4a",
+          "gist": "Tu marches vers la porte que tu vois à travers la pierre, où Muninn t'attend.",
+          "echo": "Elsie marcha, et ses baskets passèrent des pavés à quelque chose de mou qui les aspirait."
+        },
+        {
+          "to": "h1_4b",
+          "gist": "Tu te détournes des tours et tu suis le bruit de l'eau vers le bas, la pierre contre ton œil.",
+          "echo": "Les cloches s'arrêtèrent toutes en même temps, et le bruit de l'eau devint plus fort."
+        }
+      ],
+      "beat": "Elsie came out under the west front of the Minster as the bells started, and looked up at the towers through the stone. They faded. The great church went thin, like breath on glass, and under it stood something older and lower, of timber and stone, with a wall of Roman stone round everything and a gate in the wall. The raven was on the gate. It remembered, out loud, that it had been in this town before, when the town had another name.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "minster",
+        "when": "t_dusk",
+        "facts": [
+          "stone",
+          "+the_fading"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h1_4a",
+      "role": "between station 1 and the next, layer 4, way a",
+      "choices": [
+        {
+          "to": "h2",
+          "gist": "Tu demandes à la femme au seau où devrait aller une étrangère, et tu vas là où elle montre.",
+          "echo": "La femme montra du menton le bas de la ruelle, une porte avec une aile de corbeau clouée au-dessus."
+        },
+        {
+          "to": "h2_1a",
+          "gist": "Tu suis le bruit au bout de la ruelle, où on dirait que la moitié de la ville crie des prix.",
+          "echo": "Le bruit enflait à chaque pas, et l'odeur de poisson aussi."
+        }
+      ],
+      "beat": "Elsie stood in a lane of mud between houses of woven wattle, in a cold that smelled of smoke and pigs and wet wood, and when she lowered the stone the lane stayed. York had gone, and Grandad with it, and the dusk: it was morning here, a raw spring morning. A woman with a bucket stopped and stared at her jeans, and said the town was the army's now, and Elsie understood every word. The raven dropped onto her shoulder as if it had always sat there.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "coppergate_867",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+jorvik"
+        ],
+        "mentions": []
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h1_4b",
+      "role": "between station 1 and the next, layer 4, way b",
+      "choices": [
+        {
+          "to": "h2",
+          "gist": "Tu montes de la rivière vers la ville avec Muninn sur l'épaule, jusqu'à une maison avec une aile clouée au-dessus de la porte.",
+          "echo": "Devant la porte à l'aile, le corbeau se pencha de son épaule et frappa du bec."
+        },
+        {
+          "to": "h2_1b",
+          "gist": "Tu restes près des navires, là où il y a du travail, pour voir si quelqu'un a besoin d'une paire de mains en plus.",
+          "echo": "Personne ne lui dit de partir, ce qui, sur cette grève, revenait à dire oui."
+        }
+      ],
+      "beat": "Elsie came down onto a riverbank of trampled mud where a dozen long ships lay drawn up, and when she lowered the stone the ships stayed. It was morning here, a grey spring morning, and the cold smelled of tar and smoke and fish. Men were rolling barrels up a plank. One of them told her the town was the army's now and she had better keep out of its way, and Elsie understood every word. The raven dropped onto her shoulder as if it had always sat there.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "strand_867",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+jorvik"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2",
+      "role": "station 2",
+      "choices": [
+        {
+          "to": "h2_1a",
+          "gist": "Tu vas au marché et tu demandes aux marchands lequel d'entre eux part vers le nord, comme le ferait, d'après Aud, une fille raisonnable.",
+          "echo": "Aud hocha la tête comme si l'affaire était réglée, et se retourna vers son feu."
+        },
+        {
+          "to": "h2_1b",
+          "gist": "Tu descends vers les navires et tu interroges les mousses, qui, d'après Aud, apprennent les départs avant leurs maîtres.",
+          "echo": "Aud rit, d'un petit rire sec, et dit que c'est ce qu'elle aurait fait à treize ans."
+        }
+      ],
+      "beat": "The door with the raven's wing over it belonged to Aud, a very old woman with a staff and a string of glass beads, and she knew what the stone was before Elsie had it out of her coat. A sun-stone, she said, and clearer than any she had heard of. She bowed her head to the raven. Muninn's road home went north, she said, over the sea to where the ships went every spring, and on past that to where only the dead went. The market would have traders going north, and so would the ships.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "aud"
+        ],
+        "where": "auds_house",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "jorvik",
+          "+north"
+        ],
+        "mentions": [
+          "market",
+          "shipyard"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h2_1a",
+      "role": "between station 2 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h2_2a",
+          "gist": "Tu aides Ketil à gagner sa dispute sur les patins, et tu vas avec lui les essayer sur la dernière glace.",
+          "echo": "Le vendeur de patins céda enfin, surtout pour se débarrasser d'eux deux."
+        },
+        {
+          "to": "h2_2b",
+          "gist": "Tu demandes à Ketil de te montrer l'armée qui a pris cette ville, puisqu'il en parle comme de la météo.",
+          "echo": "Ketil haussa les épaules et dit qu'il la lui montrerait, mais qu'elle devait tenir sa langue près de la porte."
+        }
+      ],
+      "beat": "Jorvik's market was mud and noise and more things for sale than Elsie had ever seen in one place: walrus tusks from the far north, amber, furs, and silver coins with curly writing that had come all the way from the Caliphate. Nobody counted the coins. They cut them up and weighed the bits on little folding scales. A boy of about thirteen in a tar-stained tunic was arguing over a pair of bone skates and losing. He was Ketil, a ship's boy on the Sea-Hart, which was going home to Norway as soon as the army let it, and he wanted to know why a raven was sitting on her shoulder.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "market",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+north",
+          "+ketil_north",
+          "+dirhams"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_1b",
+      "role": "between station 2 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h2_2b",
+          "gist": "Tu accompagnes Ketil jusqu'à la porte de l'armée, où on l'a envoyé porter un message et où il ne veut pas aller seul.",
+          "echo": "Ketil s'essuya les mains sur sa tunique, ce qui ne les rendit pas plus propres, et ouvrit la marche."
+        },
+        {
+          "to": "h2_2c",
+          "gist": "Tu prends un fer à calfater qui traîne et tu aides Ketil à finir la jointure, pour qu'il puisse te faire visiter son navire.",
+          "echo": "Ketil lui montra comment enfoncer la laine sans la faire passer de l'autre côté, et elle y arriva à la troisième fois."
+        }
+      ],
+      "beat": "Down on the strand the ships were being got ready for the sea, and every one of them smelled of tar. A boy about Elsie's age was pushing tarred wool into a seam with a blunt iron and muttering at it. He was Ketil, the ship's boy on the Sea-Hart, and the Sea-Hart was going home to Norway the day the army let it go. He had not seen his mother's fjord for two winters. He looked at the raven on her shoulder for a long time before he asked about it.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "shipyard",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "+north",
+          "+ketil_north"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_2a",
+      "role": "between station 2 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h2_3a",
+          "gist": "Tu montes sur le vieux rempart avec Ketil, où tout le monde semble soudain regarder vers les collines.",
+          "echo": "Des gens couraient le long du rempart, et personne n'arrêta deux enfants qui grimpaient."
+        },
+        {
+          "to": "h2_3b",
+          "gist": "Tu rentres avec Ketil à la maison de l'équipage, parce que la nuit tombe et que son oncle va compter les têtes.",
+          "echo": "Ketil enleva les patins, les accrocha autour de son cou, et ils rentrèrent d'un pas rapide."
+        }
+      ],
+      "beat": "The last ice of the winter was still on the marsh by the river Foss, grey and thin at the edges, and half the children of Jorvik were out on it. Ketil strapped the bone skates over his shoes and pushed himself along with an iron-tipped stick, the way everybody did, and fell over twice. Elsie was better at it. When they sat on the bank afterwards Ketil told her about his fjord, where the ice stayed in the shadows until summer, and about his mother, who would be watching the sea for him.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "foss_marsh",
+        "when": "t_867",
+        "facts": [
+          "ketil_north",
+          "+bone_skates"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h2_2b",
+      "role": "between station 2 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h2_3a",
+          "gist": "Tu grimpes sur le vieux mur à côté de la porte pour voir ce que les hommes de l'armée n'arrêtent pas de fixer, au-delà de la ville.",
+          "echo": "Personne sur le mur n'avait de temps pour deux enfants, ce qui leur convenait à tous les deux."
+        },
+        {
+          "to": "h2_3b",
+          "gist": "Tu éloignes Ketil de la porte et tu le ramènes à la maison de l'équipage, avant que quelqu'un demande ce que fait un corbeau ici.",
+          "echo": "Ketil ne se le fit pas dire deux fois. Il marcha vite et ne se retourna pas."
+        }
+      ],
+      "beat": "The Great Army had taken Jorvik on the first day of November, Ketil said, and the army's men were everywhere around the old Roman gate, big and loud, and not one of them had horns on his helmet. Ketil pointed out their leaders from a long way off: Ivar, and Ubba, and Halfdan. They were not people anybody went near. A man at the gate looked at the raven on Elsie's shoulder, made a sign with his fingers, and let them by.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "army_gate",
+        "when": "t_867",
+        "facts": [
+          "jorvik",
+          "ketil_north",
+          "+great_army"
+        ],
+        "mentions": [
+          "army_leaders"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_2c",
+      "role": "between station 2 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h2_3a",
+          "gist": "Tu montes sur le rempart avec Ketil, là où les gens se sont mis à courir, pour voir pourquoi.",
+          "echo": "Bard leur cria d'être rentrés avant la nuit, et ils avaient déjà sauté par-dessus bord."
+        },
+        {
+          "to": "h2_3b",
+          "gist": "Tu restes à bord et tu demandes franchement à Bard une place sur le Cerf-des-Mers quand il partira vers le nord.",
+          "echo": "Bard la regarda longuement, puis il regarda le corbeau, et dit qu'il y réfléchirait au souper."
+        }
+      ],
+      "beat": "The Sea-Hart was long and low, built of oak planks that overlapped like the scales of a fish. Ketil's uncle Bard, her master, was in the stern, and when he heard about the stone he wanted to see it. He held it up to the cloud, found the bright point, and whistled. Some said there were stones like this that found the sun in fog, he said, but he had never met a man who owned one. He asked her what she wanted for it. She said it was not hers to sell.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "sea_hart",
+        "when": "t_867",
+        "facts": [
+          "stone",
+          "ketil_north",
+          "+sunstone_navigation"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_3a",
+      "role": "between station 2 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h3",
+          "gist": "Tu restes sur le rempart avec Ketil toute la nuit, à regarder les feux, pour voir venir ce qui arrive.",
+          "echo": "Personne ne les fit descendre, et ils ne descendirent pas."
+        },
+        {
+          "to": "h3_1a",
+          "gist": "Tu fais descendre Ketil du rempart et tu trouves une cachette sous terre avant que le jour se lève.",
+          "echo": "Ketil la laissa le guider le long des marches, et sa main tremblait."
+        }
+      ],
+      "beat": "From the top of the old wall the hills to the west were dotted with fires, too many to count. The Northumbrians had come back for their town, people were saying, both their kings together, and they would come at first light. Men ran along the wall with shields and spears. Ketil went white. Muninn, on Elsie's shoulder, remembered out loud a wolf running, and the sun running ahead of it, and she shivered.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "town_wall",
+        "when": "t_867_evening",
+        "facts": [
+          "jorvik",
+          "sun_wolf",
+          "+attack_coming"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h2_3b",
+      "role": "between station 2 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h3",
+          "gist": "Tu restes dans la maison de l'équipage toute la nuit, et tu dors si tu peux, comme Bard le dit à tout le monde.",
+          "echo": "Elsie s'allongea près du feu sans penser dormir, et vers l'aube Muninn revint par le trou à fumée et se glissa sous son manteau."
+        },
+        {
+          "to": "h3_1b",
+          "gist": "Tu sors à la poursuite de Muninn, qui s'est envolé dans le noir vers la porte, avant que quelqu'un puisse t'en empêcher.",
+          "echo": "Ketil jura entre ses dents et la suivit, parce qu'il n'allait pas la laisser partir seule."
+        }
+      ],
+      "beat": "The Sea-Hart's crew slept in a long hall by the river, and that evening nobody in it was sleeping. The news had come in with a boy on a pony: the Northumbrians had gathered in the hills, both their kings together, to take their town back in the morning. Bard said the Sea-Hart would sail when the fighting was over, whoever won it. Ketil sat by the fire and told Elsie, very quietly, that he had never been in a fight and did not want to start now.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "crew_hall",
+        "when": "t_867_evening",
+        "facts": [
+          "ketil_north",
+          "+attack_coming"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h3",
+      "role": "station 3",
+      "choices": [
+        {
+          "to": "h3_1a",
+          "gist": "Tu aides Ketil à se cacher. Les maisons d'ici ont une fosse creusée sous le plancher, et personne ne regarde dans une fosse quand il est pressé.",
+          "echo": "Ketil l'attrapa par la manche et la tira à l'intérieur par la porte la plus proche."
+        },
+        {
+          "to": "h3_1b",
+          "gist": "Tu suis Muninn dans la fumée, parce que le corbeau a eu raison sur tout jusqu'ici.",
+          "echo": "Elsie courut, pliée en deux, et entendit les pas de Ketil derrière elle, qui courait aussi."
+        },
+        {
+          "to": "h3_1c",
+          "gist": "Tu cours avec les femmes et les enfants jusqu'à la rivière, là où sont les navires, sans te retourner.",
+          "echo": "La foule les emporta tous les deux, le long de la ruelle, vers l'eau."
+        }
+      ],
+      "beat": "The horns went at first light. The Northumbrians came over the broken part of the old wall, and after that the noise was everywhere at once: shouting, iron on wood, running feet, and smoke from a thatch that had caught. Ketil stood very still, then said he was going to hide, and asked Elsie to come with him. Muninn flew up off her shoulder into the smoke, straight towards the noise, remembering a road that ran through a battle. Down the lanes, the women and children were running for the river.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "jorvik_lanes",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": [
+          "strand_867"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_1a",
+      "role": "between station 3 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h3_2a",
+          "gist": "Tu sors par l'arrière, par les cours derrière les maisons, où les clôtures sont basses et où il ne semble y avoir personne.",
+          "echo": "Ils sortirent par un trou dans le mur du fond qui était fait pour le cochon."
+        },
+        {
+          "to": "h3_2b",
+          "gist": "Tu sors par-devant, dans le marché, le chemin le plus direct vers la rivière, même s'il est le plus à découvert.",
+          "echo": "Elsie compta jusqu'à dix à voix basse, puis ils coururent."
+        }
+      ],
+      "beat": "Elsie and Ketil crouched in the pit under a house floor, which was cold and smelled of earth and apples, with the boards over their heads, while the fighting went past outside: horns, running feet, shouting. Ketil talked to keep himself steady: about his mother's farm, the goats, the waterfall that froze solid every winter. Once somebody came into the house above them and stood still for a long moment, and went out again. When it was quieter, Elsie pushed up a board and looked out.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "ketil"
+        ],
+        "where": "sunken_house",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": [
+          "muninn"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h3_1b",
+      "role": "between station 3 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h3_2a",
+          "gist": "Tu te détournes de la porte et tu emmènes Ketil par les cours derrière les maisons, par le chemin tranquille.",
+          "echo": "Ketil ne discuta pas. Il passa la première clôture avant elle."
+        },
+        {
+          "to": "h3_2b",
+          "gist": "Tu coupes à travers le marché vide, où les étals sont renversés et où il n'y a nulle part où se cacher.",
+          "echo": "Ils sortirent en courant de la ruelle, à découvert, avec Muninn qui volait bas devant eux."
+        },
+        {
+          "to": "h3_2c",
+          "gist": "Tu continues à suivre Muninn, au-delà du bout du mur, jusqu'au bord de l'eau, où il vole maintenant.",
+          "echo": "Le corbeau plongea par-dessus le mur vers la rivière, et ils le suivirent."
+        }
+      ],
+      "beat": "By the time the light came the fighting was everywhere, and Muninn flew low through the smoke and Elsie went after it with her sleeve over her mouth, and Ketil came after her. She never saw the fighting properly, only the edge of it: a wall of shields across the end of a lane, a horse with no rider, a man sitting against a fence holding his arm. Muninn led them round all of it as if it had done this before. When it stopped on a gatepost, it remembered, very calmly, another battle in another town.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "by_the_gate",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_1c",
+      "role": "between station 3 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h3_2b",
+          "gist": "Tu remontes à travers le marché à contre-courant de la foule, parce que c'est le plus court pour aller au chantier naval.",
+          "echo": "Ils remontèrent la ruelle en jouant des coudes, les deux seules personnes de Jorvik à aller dans le mauvais sens."
+        },
+        {
+          "to": "h3_2c",
+          "gist": "Tu restes au bord de l'eau et tu longes la rive jusqu'au chantier naval, en marchant dans l'eau quand il le faut.",
+          "echo": "Elsie descendit de la grève dans la rivière, et le froid lui coupa le souffle."
+        }
+      ],
+      "beat": "Elsie ran with the crowd down the lanes towards the river, women with babies and old men and children carrying hens. Ketil ran beside her carrying a small girl who had lost her mother, until a woman shouted a name and took the girl from him without a word. Muninn found them at the strand and dropped onto Elsie's shoulder. The first ships were already pushing off, full. The Sea-Hart was not one of them: she was still up on her rollers at the shipyard, further along, and nobody was with her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "strand_867",
+        "when": "t_attack",
+        "facts": [
+          "+attack"
+        ],
+        "mentions": [
+          "sea_hart",
+          "shipyard"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h3_2a",
+      "role": "between station 3 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h3_3a",
+          "gist": "Tu crois la vieille femme et tu cherches d'abord Bard, en bas près du quai, là où elle dit que l'équipage est allé.",
+          "echo": "La vieille femme hocha la tête et étendit encore une chemise, comme si la journée pouvait encore la sécher."
+        },
+        {
+          "to": "h3_3b",
+          "gist": "Tu vas tout droit au chantier naval et au Cerf-des-Mers, même s'il n'y a personne pour le mener.",
+          "echo": "Ketil dit qu'un navire sans personne à bord restait un navire, et il courut."
+        }
+      ],
+      "beat": "Behind the houses every yard had a fence of woven hazel, a pig or two, a pit for rubbish and a privy, and Elsie and Ketil went through them one after another, over fences and round pigs. It was nearly quiet back here. In one yard an old woman was calmly taking her washing in, as if the fighting were rain. She told them the Sea-Hart was still on the shipyard slip, and that Bard and his crew had gone down to the staithe and not come back.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "washing_woman"
+        ],
+        "where": "back_yards",
+        "when": "t_attack",
+        "facts": [
+          "attack"
+        ],
+        "mentions": [
+          "bard",
+          "sea_hart"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_2b",
+      "role": "between station 3 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h3_3a",
+          "gist": "Tu descends la ruelle vers le quai, derrière les hommes aux boucliers, parce que Bard et l'équipage sont peut-être avec eux.",
+          "echo": "Ils restèrent sur le côté de la ruelle, dans l'ombre des maisons, et ne coururent pas."
+        },
+        {
+          "to": "h3_3b",
+          "gist": "Tu pars dans l'autre sens, vers le chantier naval, en espérant que le Cerf-des-Mers est toujours là où Ketil l'a laissé.",
+          "echo": "Ketil dit qu'il y serait. Il le dit deux fois, comme si le dire le rendait vrai."
+        }
+      ],
+      "beat": "The market was empty and wrecked: stalls pushed over, a whole basket of eggs broken in the mud and a dog eating them. On the far side a line of men with shields went past at a run, and Elsie and Ketil lay flat behind a stall until they were gone. A cut half of one of the curly-lettered silver coins lay in the mud by her hand. Muninn looked at it and remembered a city of domes, very far to the south, where it had been made. Elsie left it where it was.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "market",
+        "when": "t_attack",
+        "facts": [
+          "attack",
+          "+dirhams"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_2c",
+      "role": "between station 3 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h3_3a",
+          "gist": "Tu remontes de la rive au quai, là où l'équipage du Cerf-des-Mers s'amarre toujours, pour chercher Bard.",
+          "echo": "Elsie se hissa sur les marches gluantes, son jean collé aux jambes."
+        },
+        {
+          "to": "h3_3b",
+          "gist": "Tu continues dans l'eau jusqu'au chantier naval, où le Cerf-des-Mers attend toujours sur ses rouleaux.",
+          "echo": "Ils avancèrent dans l'eau, et le froid cessa de faire mal, ce qui, d'après Ketil, était mauvais signe."
+        }
+      ],
+      "beat": "The bank below the town was a mess of mud and boats pulled up anyhow, and they went along it with the water over their ankles and then over their knees. It was so cold that Elsie stopped feeling her feet. Upstream, where the Foss ran into the Ouse, a boat full of Northumbrian men was rowing hard for the town, and Ketil pulled her down behind a beached boat until it was past.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "riverbank",
+        "when": "t_attack",
+        "facts": [
+          "attack"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_3a",
+      "role": "between station 3 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h3_4a",
+          "gist": "Tu t'assois à une rame quand Bard demande des bras, même si tu n'as jamais ramé sur rien de plus grand qu'un pédalo.",
+          "echo": "Bard l'installa sur un coffre de marin près du mât et lui montra une fois comment tenir la rame."
+        },
+        {
+          "to": "h3_4b",
+          "gist": "Tu dis à Bard que tu es meilleure pour regarder que pour ramer, et tu demandes à monter à la proue avec Muninn.",
+          "echo": "Bard rit pour la première fois de la journée et lui montra la proue."
+        }
+      ],
+      "beat": "Bard and his crew were at the staithe, sitting on the steps, and none of them was badly hurt, though one had a cut over his eye that he kept dabbing with his sleeve. The Northumbrians had got into the town, Bard said, but they would not get out of it again; the army was too strong for them. It did not matter to him who won. He wanted his ship in the water and the town behind him by noon, and he wanted every pair of hands he could get.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "staithe",
+        "when": "t_attack",
+        "facts": [
+          "attack"
+        ],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_3b",
+      "role": "between station 3 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h3_4b",
+          "gist": "Tu demandes à monter à la proue avec Muninn, d'où tu peux voir ce qui arrive, pendant que l'équipage sort les rames.",
+          "echo": "Bard regarda le pieu fendu, puis la regarda, elle, et lui montra la proue."
+        },
+        {
+          "to": "h3_4c",
+          "gist": "Tu aides Ketil avec la voile, plus grande que ta chambre et rayée de rouge et de blanc.",
+          "echo": "Ketil lui lança le bout d'une corde et lui dit de ne pas la lâcher, quoi qu'il arrive."
+        }
+      ],
+      "grants": [
+        "s_blade_1"
+      ],
+      "beat": "The Sea-Hart was still up on her rollers at the shipyard, and nobody was with her but an old shipwright with a white beard, who had stayed because a ship was a ship. One roller had jammed hard against a stake and the keel would not move. He gave Elsie an iron wedge, dark and blunt, the kind he split oak logs with, and showed her where to set it and where to hit. Ships were not sawn out of trees, he said, they were split. She hit it, and hit it again, and the stake split and the ship slid, and down the strand Bard and his crew were coming at a run.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "shipwright"
+        ],
+        "where": "shipyard",
+        "when": "t_attack",
+        "facts": [
+          "attack",
+          "+split_planks"
+        ],
+        "mentions": [
+          "bard",
+          "sea_hart"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_4a",
+      "role": "between station 3 and the next, layer 4, way a",
+      "choices": [
+        {
+          "to": "h4",
+          "gist": "Tu descends à terre avec Ketil sur la dernière langue de sable, où Bard se tient debout, les yeux fixés sur le ciel.",
+          "echo": "Elsie enjamba le bord et descendit dans l'eau jusqu'aux genoux, sans même la sentir."
+        },
+        {
+          "to": "h4_1a",
+          "gist": "Tu restes à ta rame pendant que le Cerf-des-Mers file tout droit au-delà du sable, vers la haute mer.",
+          "echo": "Bard ne s'arrêta pas, et personne ne le lui demanda."
+        }
+      ],
+      "beat": "Elsie pulled an oar on the Sea-Hart all the way down the Ouse, sitting on a sea chest because there were no benches, and by the time the town's smoke was a smudge behind them her hands were raw. The rowers kept time with a song about a woman who married a troll. The river wound through flat wet country with nobody in it. Towards evening it widened into the great brown mouth of the Humber, and past that was the sea.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "ouse_river",
+        "when": "t_downriver",
+        "facts": [],
+        "mentions": [
+          "humber_mouth"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h3_4b",
+      "role": "between station 3 and the next, layer 4, way b",
+      "choices": [
+        {
+          "to": "h4",
+          "gist": "Tu restes à bord pendant la marée, et tu sors avec le Cerf-des-Mers jusqu'à l'embouchure de l'Humber quand elle tourne.",
+          "echo": "La marée tourna dans le noir, et le Cerf-des-Mers sortit avec elle."
+        },
+        {
+          "to": "h4_1b",
+          "gist": "Tu descends sur le sable avec Ketil pour te dégourdir les jambes pendant que l'équipage attend la marée.",
+          "echo": "Ils sautèrent sur le sable et coururent jusqu'à sentir de nouveau leurs pieds."
+        }
+      ],
+      "beat": "Elsie rode in the bow with Muninn, looking ahead while the crew rowed, and she saw everything first: herons, a drowned tree, a village whose people stood on the bank to watch the ship go by. Where the Ouse met the Humber the tide was coming in against them, and Bard had them drop anchor and wait for it to turn. Muninn remembered the sea out loud: a grey road with no end to it, and a storm on it. Elsie wished it had not.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "ouse_river",
+        "when": "t_downriver",
+        "facts": [],
+        "mentions": [
+          "humber_mouth"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h3_4c",
+      "role": "between station 3 and the next, layer 4, way c",
+      "choices": [
+        {
+          "to": "h4",
+          "gist": "Tu restes sur le pont avec Ketil et tu regardes la rivière s'élargir jusqu'à l'Humber, jusqu'à la dernière langue de sable.",
+          "echo": "Ils s'assirent sur le pont, le dos contre le mât, et regardèrent défiler les rives."
+        },
+        {
+          "to": "h4_1b",
+          "gist": "Tu racontes à Bard la tempête dont Muninn n'arrête pas de se souvenir, et tu lui demandes d'aborder sur la plage avant la mer.",
+          "echo": "Bard regarda le corbeau, puis le ciel, et tourna le navire vers le sable."
+        }
+      ],
+      "beat": "On the wide water below the town the wind came from behind, and Bard had the sail up: a great square of wool, striped red and white, that smelled like a wet sheep. Ketil and Elsie hauled on a rope together until the sail filled with a crack and the Sea-Hart leaned over and ran. Behind them the smoke of Jorvik got smaller and smaller. Ketil laughed for the first time since the fires on the hills, and said he was going home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "ouse_river",
+        "when": "t_downriver",
+        "facts": [],
+        "mentions": [
+          "humber_mouth"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4",
+      "role": "station 4",
+      "choices": [
+        {
+          "to": "h4_1a",
+          "gist": "Tu dis de partir maintenant. Bard a demandé ce qu'en pense la fille au corbeau, et toi, tu trouves que la mer a l'air calme.",
+          "echo": "Bard grogna, et l'équipage sortit les rames."
+        },
+        {
+          "to": "h4_1b",
+          "gist": "Tu dis d'attendre. Muninn se souvient d'une tempête sur cette mer, et il ne s'est encore jamais trompé.",
+          "echo": "Bard grogna, et l'équipage commença à tirer le Cerf-des-Mers sur le sable."
+        },
+        {
+          "to": "h6_1a",
+          "gist": "Tu continues de regarder à travers la pierre la lumière dans le nuage, et tu fais un pas vers elle, par-dessus le bord du navire.",
+          "echo": "Ketil cria son prénom, et puis il n'y eut plus de navire du tout."
+        }
+      ],
+      "beat": "At the mouth of the Humber a long spit of sand curled out into the sea, and the Sea-Hart lay off it while Bard studied the sky. In the north-east it was the colour of a bruise. They could cross now and try to beat the weather, Bard said, or sit it out on the sand and lose three days. Elsie looked at the cloud through the stone, and in the middle of it, where the sun was hiding, the bright point had opened into something else: a light like a doorway, and green branches beyond it.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "humber_mouth",
+        "when": "t_sea",
+        "facts": [
+          "stone",
+          "+storm_coming"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h4_1a",
+      "role": "between station 4 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h4_2a",
+          "gist": "Tu vas à l'arrière, à l'aviron de gouverne, où le vieux Grim se tient depuis toute la nuit, et tu lui demandes comment il sait où est le navire.",
+          "echo": "Grim lui fit de la place à côté de lui sans un mot, comme s'il l'attendait."
+        },
+        {
+          "to": "h4_2b",
+          "gist": "Tu cries à Bard qu'il y a une ligne noire, là, sur la droite, que tu vois à travers la pierre. On dirait une terre.",
+          "echo": "Bard plissa les yeux là où elle montrait, ne vit rien, et tourna le navire quand même."
+        }
+      ],
+      "beat": "The storm caught them on the first night, out of sight of land. The Sea-Hart climbed waves as big as houses and slid down the other side, and her oak planks bent and creaked like something alive, which Bard said was exactly what kept her from breaking. Everybody bailed, Elsie too, with a wooden scoop, until she could not feel her arms. Muninn rode inside her coat. In the dark she heard it remember, very quietly, a ship that had not come home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "north_sea",
+        "when": "t_sea",
+        "facts": [
+          "+storm"
+        ],
+        "mentions": [
+          "grim"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4_1b",
+      "role": "between station 4 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h4_2a",
+          "gist": "Tu donnes raison au vieux Grim, qui dit que le vent est tombé et qu'il faut partir maintenant, dans le noir, avant qu'il change d'avis.",
+          "echo": "Bard ronchonna, mais il se fiait plus au flair de Grim pour le temps qu'au sien, et ils mirent à l'eau."
+        },
+        {
+          "to": "h4_2b",
+          "gist": "Tu donnes raison à Bard, qui dit d'attendre le jour et d'aborder quelque part en route pour prendre de l'eau douce.",
+          "echo": "Ils partirent aux premières lueurs, les tonneaux à moitié vides et la mer encore grise et houleuse."
+        }
+      ],
+      "beat": "They pulled the Sea-Hart up on the sand and made her sail into a tent, and the storm came in at dusk and blew for two days. It flattened the grass and threw sand into everybody's food. The crew played a board game with little pegs, and argued about the rules the whole time, as if nobody had ever been sure of them. On the second night Muninn woke Elsie by pulling her hair, and outside, far off along the beach, something howled.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard",
+          "grim"
+        ],
+        "where": "spurn_beach",
+        "when": "t_sea",
+        "facts": [
+          "sun_wolf",
+          "+storm",
+          "+tafl"
+        ],
+        "mentions": []
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h4_2a",
+      "role": "between station 4 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h4_3a",
+          "gist": "Tu veilles avec Grim jusqu'au matin, à regarder l'eau noire du côté où, dit-il, les baleines remontent.",
+          "echo": "Grim n'ajouta rien, et il n'en avait pas besoin, et la nuit continua."
+        },
+        {
+          "to": "h4_3b",
+          "gist": "Tu vas dormir à la proue avec Ketil, parce que Grim dit qu'un équipage qui ne dort pas ne rame pas.",
+          "echo": "Ketil se poussa sans se réveiller, et Elsie dormait avant d'avoir refermé son manteau sur elle."
+        }
+      ],
+      "grants": [
+        "s_ward_1"
+      ],
+      "beat": "On the first clear night after the storm, Elsie stood with old Grim at the steering oar while the crew slept in heaps. Grim steered by the stars and by the feel of the swell under the ship, and said he had been doing it for fifty years and had never once been lost for long. He saw how she kept looking back at the wake, as if something were following it. He took a little silver hammer on a thong from round his own neck and hung it round hers. Thor kept things off, he said. That was what it was for.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "grim"
+        ],
+        "where": "north_sea",
+        "when": "t_sea_night",
+        "facts": [
+          "sun_wolf"
+        ],
+        "mentions": [
+          "ketil"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4_2b",
+      "role": "between station 4 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h4_3b",
+          "gist": "Tu pars tout de suite sur une mer qui blanchit sous le brouillard, parce que Bard ne veut pas perdre le vent.",
+          "echo": "Ils poussèrent au large, et en moins d'une heure l'île avait disparu derrière eux dans le blanc."
+        },
+        {
+          "to": "h4_3c",
+          "gist": "Tu attends la fin du brouillard sur les rochers avec Ketil et les oiseaux, et tu pars quand il se lève, quel que soit le temps que ça prenne.",
+          "echo": "Ils restèrent assis sur les rochers tout l'après-midi, et les oiseaux leur crièrent dessus tout le temps."
+        }
+      ],
+      "grants": [
+        "s_ward_2"
+      ],
+      "beat": "They put in for water at a bare island with no trees on it, only rock and grass and a thousand screaming birds, and filled the barrels from a stream. While the crew worked, Bard walked Elsie along the Sea-Hart's side, where the crew's round shields hung in a row on the rail, painted yellow and black. The one at the end was smaller than the rest. It had been his when he was a ship's boy, he said, and everybody who crewed the Sea-Hart had a shield on her rail. He lifted it down and gave it to her.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "bard"
+        ],
+        "where": "bird_island",
+        "when": "t_sea",
+        "facts": [],
+        "mentions": [
+          "sea_hart"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h4_3a",
+      "role": "between station 4 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h5",
+          "gist": "Tu montes avec Ketil tout droit à la ferme de sa mère, dont il parle depuis deux hivers.",
+          "echo": "Ketil sauta par-dessus bord avant que la quille touche le fond, et Elsie le suivit."
+        },
+        {
+          "to": "h5_1a",
+          "gist": "Tu remontes le fjord jusqu'à l'endroit où une foule se rassemble sur la colline, parce que Muninn s'y est déjà envolé.",
+          "echo": "Muninn n'était plus qu'un point noir au-dessus de la colline, et il ne revint pas quand elle l'appela."
+        }
+      ],
+      "beat": "Just before dawn the whales came up beside the Sea-Hart, three of them, longer than the ship, and blew clouds of breath that stank of fish. Grim said they were a good sign. When the sun rose it rose clear, the first time Elsie had seen it since the frozen field, and Grim pointed ahead at a line of white mountains on the edge of the sea. Norway. Ketil woke up and saw it, and stood very still.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "grim",
+          "ketil"
+        ],
+        "where": "north_sea",
+        "when": "t_sea",
+        "facts": [],
+        "mentions": [
+          "fjord"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h4_3b",
+      "role": "between station 4 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h5",
+          "gist": "Tu gardes la pierre contre ton œil et tu les mènes jusqu'au bout, en remontant le fjord jusqu'à la ferme de la mère de Ketil.",
+          "echo": "Elsie ne baissa pas la pierre avant que la quille touche le rivage sous la ferme."
+        },
+        {
+          "to": "h5_1b",
+          "gist": "Tu rends l'aviron de gouverne à Grim et tu descends à terre avec Ketil, qui veut d'abord te montrer le graveur sur le rivage.",
+          "echo": "Ketil sauta sur les galets et l'entraîna vers un bruit de tapotements."
+        }
+      ],
+      "beat": "By the second day the fog was thick and white, and the sea and the sky became the same thing. Nobody could see the sun to steer by. Elsie held the stone up, and there it was, the one bright point, and she pointed. Grim laughed out loud and turned the ship by her finger. The old men talked about stones like this, he said, and he had never believed them. When the fog thinned at last, there were mountains in front of them.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "grim"
+        ],
+        "where": "north_sea",
+        "when": "t_sea",
+        "facts": [
+          "stone",
+          "+sunstone_navigation"
+        ],
+        "mentions": [
+          "fjord"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h4_3c",
+      "role": "between station 4 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h5",
+          "gist": "Tu montes avec Ketil par le sentier jusqu'à la ferme de sa mère, dès que le navire touche terre.",
+          "echo": "Ketil fit toute la montée en courant, et Elsie courut derrière lui avec Muninn qui battait des ailes sur son épaule."
+        },
+        {
+          "to": "h5_1c",
+          "gist": "Tu montes à la grande salle au-dessus du rivage, où tout le fjord semble arriver dans ses plus beaux habits.",
+          "echo": "Ketil dit qu'il viendrait la retrouver là-haut, et prit seul l'autre sentier."
+        }
+      ],
+      "beat": "The fog lifted all at once, like a sheet pulled off a table, and there was Norway: grey rock going straight up out of the sea, snow on top of it, and a gap in the rock that was a fjord. Ketil stood in the bow and did not say anything for a long time. Then he named every farm and every waterfall as they went in between the cliffs, and Elsie saw that he was crying and pretended not to.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "fjord",
+        "when": "t_fjord",
+        "facts": [
+          "ketil_north"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h5",
+      "role": "station 5",
+      "choices": [
+        {
+          "to": "h5_1a",
+          "gist": "Tu montes avec la mère de Ketil à la tombe le matin, où elle apporte du pain aux gens qui hissent le navire.",
+          "echo": "La mère de Ketil lui donna un panier de pain à porter sans lui demander si elle voulait bien."
+        },
+        {
+          "to": "h5_1b",
+          "gist": "Tu descends au rivage avec Ketil, chez le graveur, qui taille une pierre pour la dame et a besoin de quelqu'un pour tenir la corde.",
+          "echo": "Ketil dit que le graveur était grincheux mais juste, et qu'une fois il l'avait laissé tenir le ciseau."
+        },
+        {
+          "to": "h5_1c",
+          "gist": "Tu vas aider à la grande salle de la dame, à préparer le festin, parce que la mère de Ketil dit que c'est ce que fait une invitée.",
+          "echo": "La mère de Ketil lui noua un tablier et lui montra la colline."
+        }
+      ],
+      "beat": "Ketil's mother's farm was a long turf-roofed house above the fjord, with goats on the roof, and his mother came out of it running. She held Ketil so long that Elsie went and looked at the goats. That night by the fire everybody talked about one thing: the great lady of the fjord had died in the winter, and her ship was being hauled up to her grave, and in three days she would be buried in it with everything she would need. Muninn listened from the rafters and did not sleep.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "ketils_mother"
+        ],
+        "where": "ketils_farm",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_1a",
+      "role": "between station 5 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h5_2a",
+          "gist": "Tu descends au rivage, là où on tapote, pour voir qui taille la pierre de la dame.",
+          "echo": "Le tapotement cessa quand elle descendit le chemin, et reprit quand le graveur vit que ce n'était qu'une fille."
+        },
+        {
+          "to": "h5_2b",
+          "gist": "Tu tires sur une corde avec tout le monde et tu aides à hisser le navire sur les derniers mètres.",
+          "echo": "Une femme lui fit de la place sur la corde et lui dit de tirer quand tout le monde tirait."
+        }
+      ],
+      "beat": "The lady's ship was being hauled up from the shore to her grave on rollers by forty people on ropes, and it was the most beautiful thing Elsie had ever seen: long and low, its prow curling up into a spiral, every inch of it carved with twisting animals. On its deck stood a grave chamber of timber, like a little house. Beds, chests, sledges and a carved wagon waited on the grass to go in with her. Muninn sat on top of the spiral and would not come down.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady"
+        ],
+        "mentions": [
+          "carvers_shore"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_1b",
+      "role": "between station 5 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h5_2a",
+          "gist": "Tu demandes à Asgaut de t'apprendre les seize, tout de suite, sur une pierre plate au bord de l'eau.",
+          "echo": "Asgaut grogna, et Ketil dit plus tard que c'était la chose la plus gentille qu'il l'ait jamais entendu dire."
+        },
+        {
+          "to": "h5_2b",
+          "gist": "Tu montes à la tombe avec Ketil, où le navire est arrivé et où la dame va être portée.",
+          "echo": "Ketil dit que le graveur serait encore là demain, mais pas la dame."
+        }
+      ],
+      "beat": "The carver was a small bald man called Asgaut with chips of stone in his beard, and he was cutting the lady's stone on the shore, where every passing ship would see it. It said that her daughter raised this stone in memory of her mother. He read it to Elsie with his finger, rune by rune. There were sixteen runes, he said, all straight lines because they were made for cutting, and that was all anybody needed to write anything. He noticed her watching his hands.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady",
+          "+runes16"
+        ],
+        "mentions": [
+          "burial_ground"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_1c",
+      "role": "between station 5 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h5_2a",
+          "gist": "Tu descends au rivage où travaille le graveur, et tu lui demandes s'il sait quelque chose sur le rêve.",
+          "echo": "La fille de la dame dit que le graveur en savait plus qu'il n'en disait, et moins qu'il ne le croyait."
+        },
+        {
+          "to": "h5_2b",
+          "gist": "Tu restes avec la fille de la dame et tu montes avec elle à la tombe, où sa mère doit être couchée dans le navire.",
+          "echo": "La fille de la dame tendit la main, et Elsie s'aperçut qu'elle l'avait prise."
+        }
+      ],
+      "beat": "The lady's hall was full of people getting the funeral feast ready: barrels of ale, a whole ox, bread stacked like firewood. The lady's daughter, a tall woman with a ring of keys at her belt, was running all of it. When she saw the raven on Elsie's shoulder she stopped, and sent everybody else out. Her mother had seen a raven like that, she said, in a dream, the night before she died. It had been going home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ladys_daughter"
+        ],
+        "where": "ladys_hall",
+        "when": "t_fjord",
+        "facts": [
+          "+the_lady"
+        ],
+        "mentions": [
+          "carver",
+          "burial_ground"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h5_2a",
+      "role": "between station 5 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h5_3a",
+          "gist": "Tu graves ton nom toi-même, une rune après l'autre, avec le ciseau d'Asgaut. Il sera de travers, et il sera à toi.",
+          "echo": "Asgaut lui tendit le ciseau et le maillet, et grimaça avant même qu'elle ait commencé."
+        },
+        {
+          "to": "h5_3b",
+          "gist": "Tu demandes à Asgaut de le graver, parce qu'il le fait magnifiquement et que tu n'as jamais tenu un ciseau de ta vie.",
+          "echo": "Asgaut eut l'air content, et essaya de ne pas le montrer."
+        }
+      ],
+      "beat": "Asgaut taught Elsie the sixteen runes on a flat stone by the water, scratching each one with the point of a nail. She learned them faster than he expected, and he was annoyed about it. There was no proper E, so her name would have to be spelled the way it sounded. Then he found a small grey stone about the size of a loaf, and said that everybody who crossed the sea should leave their name behind them somewhere. He could cut it for her, or she could cut it herself, and it would be crooked.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "+runes16"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h5_2b",
+      "role": "between station 5 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h5_3b",
+          "gist": "Tu descends au rivage, où Asgaut le graveur taille les noms de ceux qui ont traversé la mer, et tu demandes le tien.",
+          "echo": "Asgaut leva les yeux de son ciseau et dit qu'elle ferait bien de lui dire comment ça s'écrivait."
+        },
+        {
+          "to": "h5_3c",
+          "gist": "Tu restes sur la colline quand tout le monde redescend, et tu regardes la tombe à travers la pierre pendant que la nuit tombe.",
+          "echo": "La foule redescendit la colline par deux ou par trois, en parlant bas, et la laissa là."
+        }
+      ],
+      "beat": "They laid the lady in the little timber house on the ship's deck, on a bed with a feather quilt, with her things around her. Her daughter went in last, and came out dry-eyed. Everybody on the hill stood very still. Elsie looked at the grave through the stone and saw, just for a moment, the ship not in a trench at all but on grey water, sailing, with its sail full. Muninn remembered, out loud, that this was a road.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ladys_daughter"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord",
+        "facts": [
+          "stone",
+          "+the_lady",
+          "+ship_burial"
+        ],
+        "mentions": [
+          "carver"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_3a",
+      "role": "between station 5 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h6",
+          "gist": "Tu montes à la tombe avec Ketil le matin, quand on la referme, pour dire vraiment au revoir.",
+          "echo": "Ketil descendit la chercher sur le rivage aux premières lueurs, et ils montèrent la colline ensemble."
+        },
+        {
+          "to": "h6_1a",
+          "gist": "Tu regardes ton nom à travers la pierre, là où la lumière fait quelque chose d'étrange, et tu ne détournes pas les yeux.",
+          "echo": "Les runes s'éclairèrent, puis brillèrent davantage, et le rivage devint gris autour d'elles."
+        }
+      ],
+      "beat": "It took Elsie the whole afternoon to cut her name into the stone, and Asgaut did not help once, though he winced a great deal. It was crooked. Asgaut said it was the best crooked name he had ever seen, and he set the stone up on the shore facing the sea, so the ships would see it. Muninn looked at it for a long time, remembering it, the way it remembered everything. The low sun came through the stone round Elsie's neck and did something odd to the runes.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "runes16",
+          "stone"
+        ],
+        "mentions": [
+          "ketil"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h5_3b",
+      "role": "between station 5 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h6",
+          "gist": "Tu montes à la tombe avec Ketil aux premières lueurs, quand tout le fjord se rassemble pour la voir refermée.",
+          "echo": "Ketil attendait en haut du sentier, et ils montèrent ensemble sans parler."
+        },
+        {
+          "to": "h6_1b",
+          "gist": "Tu descends au bord de l'eau derrière Muninn, qui marche sur les galets mouillés comme si le fjord était une route.",
+          "echo": "Muninn ne se retourna pas, et l'eau ne semblait plus être là où elle était."
+        }
+      ],
+      "beat": "Asgaut cut Elsie's name into a small grey stone while she watched, quick and neat, the chips flying. Then, because she asked, he cut underneath it that she had raised the stone in memory of her grandad, Len, which made no sense to him, since her grandad was not dead, but he did it anyway. He set the stone up on the shore, facing the sea. Elsie found that she had to look at the water for a while.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "carver"
+        ],
+        "where": "carvers_shore",
+        "when": "t_fjord",
+        "facts": [
+          "+runes16"
+        ],
+        "mentions": [
+          "grandad",
+          "ketil"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h5_3c",
+      "role": "between station 5 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h6",
+          "gist": "Tu redescends à la ferme avec Ketil, et tu remontes le matin pour voir refermer la tombe.",
+          "echo": "Ketil laissa échapper un souffle qu'il retenait depuis une heure, et ils redescendirent dans le noir."
+        },
+        {
+          "to": "h6_1b",
+          "gist": "Tu descends dans la tranchée à côté du navire, là où la pierre montre l'eau, et tu poses la main sur les planches.",
+          "echo": "Les planches étaient tièdes, et mouillées, et elles bougeaient, et la voix de Ketil qui l'appelait devint toute petite."
+        }
+      ],
+      "beat": "Elsie stayed on the hill after everybody had gone down. As the light went, Ketil came back up to find her, because he would not leave her up there alone. As the light went, the grave through the stone got stranger: the ship in its trench was on water, then under a sky that was not this sky, and far off, very big, there was something like a tree. Muninn walked up and down the ship's rail, remembering things faster and faster, too fast to follow. Ketil said he did not like it, and he was not leaving.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord_night",
+        "facts": [
+          "stone",
+          "+ship_burial"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h6",
+      "role": "station 6",
+      "choices": [
+        {
+          "to": "h6_1a",
+          "gist": "Tu prends le chemin que la pierre montre au navire, par-dessus le bord de la tombe, dans le gris.",
+          "echo": "Elsie descendit du bord du tertre, et le sol n'était plus là."
+        },
+        {
+          "to": "h6_1b",
+          "gist": "Tu prends plutôt le chemin de Muninn, en haut du tertre, dans la fumée des feux.",
+          "echo": "Elsie grimpa dans la fumée derrière le corbeau, sans se retourner, et la fumée continua encore et encore."
+        }
+      ],
+      "beat": "In the morning the whole fjord came up the hill to close the grave, and the lady's ship went under turf and stone a spadeful at a time. Before the last of it, Elsie looked through the stone once more and saw the grey water again, and the tree far beyond it, and knew that this was where she got off. She told Ketil. He did not argue. He hugged her so hard it hurt and told her to go and not look back, because looking back was bad luck.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ketil"
+        ],
+        "where": "burial_ground",
+        "when": "t_fjord",
+        "facts": [
+          "stone",
+          "+ship_burial"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_1a",
+      "role": "between station 6 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h6_2a",
+          "gist": "Tu grimpes le long de la racine vers le tronc, où quelque chose de minuscule et de roux monte et descend très vite.",
+          "echo": "La racine était assez rugueuse pour qu'on l'escalade, et elle l'escalada, les doigts piquants."
+        },
+        {
+          "to": "h6_2b",
+          "gist": "Tu descends le long de la racine vers le bruit de mâchonnement, prudemment, parce que Muninn dit qu'il se souvient de ce qu'il y a en bas.",
+          "echo": "Muninn se glissa sous son manteau, et elle descendit dans la brume."
+        }
+      ],
+      "beat": "Elsie came out of the grey onto something she thought at first was a road, and then saw was a root, as wide as a road, going down into mist. The cold was worse than anything on the sea. Somewhere below, water roared out of the ground, and under the roar there was another sound, slow and wet and endless, like something very big chewing. Muninn said the tree's name as if remembering an old friend: Yggdrasil. This was the root that went down to the cold.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "cold_root",
+        "when": "t_tree",
+        "facts": [
+          "+tree"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_1b",
+      "role": "between station 6 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h6_2b",
+          "gist": "Tu descends l'écorce vers le bruit lent et mouillé qui monte des racines.",
+          "echo": "Elle descendit main après main, et le mâchonnement grandissait à chaque prise."
+        },
+        {
+          "to": "h6_2c",
+          "gist": "Tu grimpes le long de la branche vers le sommet, où un oiseau énorme est posé avec un autre, minuscule, entre les yeux.",
+          "echo": "Elle grimpa jusqu'à ce que ses bras tremblent, et le vent forcissait à mesure qu'elle montait."
+        }
+      ],
+      "beat": "Elsie came out onto a branch as wide as a road, on a tree so big that its trunk went up out of sight and down out of sight. The bark was like a cliff. Dew dripped off the leaves above as thick as honey. Muninn said the tree's name as if remembering an old friend: Yggdrasil. Everything there was, was on it or under it. Far below, something was chewing, slowly, and far above, something enormous shifted its wings.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "trunk",
+        "when": "t_tree",
+        "facts": [
+          "+tree"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_2a",
+      "role": "between station 6 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h6_3a",
+          "gist": "Tu fais le tour du tronc dans la direction que Ratatoskr a montrée, vers un bruit de voix de femmes et d'eau qui coule.",
+          "echo": "Ratatoskr lui cria quelque chose de grossier, et elle s'aperçut qu'elle souriait."
+        },
+        {
+          "to": "h6_3b",
+          "gist": "Tu pars dans l'autre sens, parce que Muninn ne fait pas confiance à un écureuil, vers une branche qui porte la marque d'une corde.",
+          "echo": "Muninn se souvint, à voix haute, d'un grand nombre de choses que l'écureuil avait dites au fil des ans."
+        }
+      ],
+      "beat": "The small red thing was a squirrel called Ratatoskr, and it ran up and down the Tree all day carrying insults between the eagle at the top and the dragon at the bottom. It stopped just long enough to insult Elsie too, very rudely and quite funnily, about her trainers. Then it offered to carry an insult for her to anybody she liked. She said she did not have any. It told her, disgusted, that the wells were further round, and it pointed.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "ratatoskr"
+        ],
+        "where": "trunk",
+        "when": "t_tree",
+        "facts": [
+          "tree"
+        ],
+        "mentions": []
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h6_2b",
+      "role": "between station 6 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h6_3a",
+          "gist": "Tu remontes et tu contournes la racine, vers un puits où trois femmes versent de l'eau sur l'écorce.",
+          "echo": "Elle remonta et contourna la racine, et le mâchonnement s'éteignit derrière elle."
+        },
+        {
+          "to": "h6_3b",
+          "gist": "Tu grimpes tout droit, loin du dragon, aussi vite que tu peux, et tu ne t'arrêtes pas avant que le mâchonnement se taise.",
+          "echo": "Elle grimpa jusqu'à ce que le mâchonnement ne soit plus qu'une sensation dans l'écorce sous ses mains."
+        },
+        {
+          "to": "h6_3c",
+          "gist": "Tu suis la racine dans l'autre sens, vers une mare si immobile qu'elle ressemble à un trou dans le monde.",
+          "echo": "La racine continuait à plat dans la brume, et la brume s'éclaircissait à mesure qu'elle avançait."
+        }
+      ],
+      "beat": "Lower down among the roots the chewing got louder, and at last Elsie saw what made it: a long dark shape far below in the mist, gnawing at the root and never stopping. It was a dragon called Níðhöggr, and it had been at the root since the beginning of the world. It did not look up. Muninn remembered, flatly, that the Tree always grew back as fast as it was eaten, which was the only reason anything was still standing.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "deep_root",
+        "when": "t_tree",
+        "facts": [
+          "tree"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_2c",
+      "role": "between station 6 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h6_3b",
+          "gist": "Tu longes la branche jusqu'à celle qui porte la marque d'une corde, parce que Muninn est devenu très silencieux en la regardant.",
+          "echo": "Muninn ne dit rien, tout le long de la branche, ce qui ne lui ressemblait pas."
+        },
+        {
+          "to": "h6_3c",
+          "gist": "Tu descends vers la mare que tu vois d'ici, au pied d'une racine, où un oiseau noir est en train de boire.",
+          "echo": "La descente fut longue, et l'oiseau noir était toujours là quand elle arriva en bas."
+        }
+      ],
+      "beat": "High in the branches an eagle sat as big as a house, with a hawk perched between its eyes, and when it moved its wings the wind blew through all the worlds. Four stags were browsing on the leaves around it. The eagle saw everything and said very little, Muninn remembered, and what it did say the squirrel carried down to the dragon in the worst possible way. From up there Elsie saw, far off, a great hall with a roof that shone like scales.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "treetop",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h6_3a",
+      "role": "between station 6 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h6_4a",
+          "gist": "Tu demandes à la plus jeune Norne ce qui va se passer ensuite, même si son sourire est de ceux qui donnent envie de ne pas savoir.",
+          "echo": "La plus jeune Norne se contenta de sourire plus largement, et continua de filer, et la lumière changea."
+        },
+        {
+          "to": "h6_4b",
+          "gist": "Tu les remercies et tu pars tout de suite, parce que Muninn tire sur ta manche et que quelque chose a changé dans la lumière.",
+          "echo": "La vieille Norne lui dit au revoir par son prénom, qu'elle ne leur avait pas dit."
+        }
+      ],
+      "grants": [
+        "s_token_1"
+      ],
+      "beat": "At the well at the root three women sat spinning, and they were the Norns: one very old, one Elsie's mother's age, one younger than Elsie. They watered the Tree from the well every day so that it would not die. The old one looked at her and knew everything she had ever done; the youngest looked at her and smiled in a way Elsie did not like. The middle one, who spun what was happening now, bit a length of grey thread off her spindle and tied it round Elsie's wrist. Anyone who saw it, she said, would know the Norns had sent her.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "norns"
+        ],
+        "where": "urds_well",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "+norns"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h6_3b",
+      "role": "between station 6 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h6_4a",
+          "gist": "Tu t'assois un moment sur la branche, la main sur la marque, et tu laisses Muninn finir de se souvenir.",
+          "echo": "Muninn se souvint longtemps, et Elsie ne le pressa pas."
+        },
+        {
+          "to": "h6_4b",
+          "gist": "Tu fais repartir Muninn, parce qu'il se souvient trop fort et trop longtemps, et que la lumière baisse.",
+          "echo": "Muninn s'ébroua de partout, comme un chien qui sort de l'eau, et vint."
+        }
+      ],
+      "beat": "On one branch the bark was worn smooth in a ring, as if a rope had hung there, and below the ring was an old scar where a spear had gone into the wood. Muninn remembered it out loud: nine nights its master had hung there, hurt and hungry and thirsty, to learn the runes, and on the ninth night he had come down knowing them. Elsie put her hand on the scar. It was warm.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "rope_branch",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "muninn",
+          "+nine_nights"
+        ],
+        "mentions": [
+          "odin"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h6_3c",
+      "role": "between station 6 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h6_4a",
+          "gist": "Tu poses à Huginn la question que tu voulais poser depuis le début : comment Muninn s'est perdu.",
+          "echo": "Huginn répondit par trois questions à lui, dont l'une était presque une réponse, et s'envola dans les feuilles."
+        },
+        {
+          "to": "h6_4b",
+          "gist": "Tu repars tout de suite avec les deux corbeaux, parce que Huginn n'arrête pas de demander si tu entends ça, et tu l'entends.",
+          "echo": "Huginn partit devant pour voir, et Muninn resta sur son épaule, et aucun des deux ne dit un mot."
+        }
+      ],
+      "grants": [
+        "s_token_2"
+      ],
+      "beat": "The pool was Mímir's well, and whoever drank from it knew things. Far down at the bottom lay an eye, looking up: Odin had paid it for one drink. A black raven stood on the rim, the same size as Muninn and nothing like it, and it spoke only in questions. It was Huginn. Why was she here? Did she know what she was carrying? Would she need help, where she was going? It pulled a feather from its own wing and dropped it into her hand. Wouldn't a stranger help a girl who carried one of Odin's feathers?",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "mimirs_well",
+        "when": "t_tree",
+        "facts": [
+          "tree",
+          "+mimir"
+        ],
+        "mentions": [
+          "odin"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h6_4a",
+      "role": "between station 6 and the next, layer 4, way a",
+      "choices": [
+        {
+          "to": "h7",
+          "gist": "Tu cours vers les terres découvertes sous l'Arbre, où Muninn se souvient d'une île dans un lac, et de quelque chose attaché dessus.",
+          "echo": "Elle courut, et le sol descendait, descendait vers une eau noire."
+        },
+        {
+          "to": "h7_1a",
+          "gist": "Tu suis l'autre corbeau, Huginn, qui te demande si tu préfères te faire attraper, et qui s'envole tout droit à découvert.",
+          "echo": "Huginn volait bas et vite, et Elsie courait sous lui, le souffle douloureux."
+        }
+      ],
+      "beat": "The grey light under the Tree went dimmer, and then dimmer again, as if a cloud had crossed a sun Elsie could not see. Through the stone the bright point was moving now, jerking, the way a rabbit runs. And behind it, very big and very far off, something ran after it on long legs. Sköll. Muninn got inside her coat without being asked. A second black raven dropped out of the branches, Huginn, Thought, Muninn's brother, and asked whether she was going to stand there all day.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "under_tree",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+skoll_close"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h6_4b",
+      "role": "between station 6 and the next, layer 4, way b",
+      "choices": [
+        {
+          "to": "h7",
+          "gist": "Tu cours avec Muninn jusqu'au lac sous l'Arbre, où il y a une île avec quelque chose d'énorme couché dessus.",
+          "echo": "Elle courut, et le sol descendait, descendait vers une eau noire."
+        },
+        {
+          "to": "h7_1b",
+          "gist": "Tu cours par où Muninn se souvient, en reprenant une route qu'il a survolée pour la dernière fois il y a onze cents ans.",
+          "echo": "Muninn volait devant elle, bas, et se souvenait de chaque virage avant qu'elle l'atteigne."
+        }
+      ],
+      "beat": "The howl came from everywhere at once, and the leaves of the Tree shivered with it. Muninn remembered, in a small voice, the last time it had heard that howl: over a frozen field, eleven hundred years ago, on the morning it was lost. Elsie held the stone and felt it go hot in her hand, hotter than it had ever been. Sköll had her scent. Then a second black raven dropped out of the leaves, Huginn, Thought, Muninn's brother, and asked whether she meant to wait for it.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "under_tree",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+why_lost"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7",
+      "role": "station 7",
+      "choices": [
+        {
+          "to": "h7_1a",
+          "gist": "Tu écoutes Huginn, qui demande pourquoi tu irais là où Sköll t'attend, et tu prends son chemin : tout droit à travers la plaine.",
+          "echo": "Huginn demanda si elle était prête, et n'attendit pas la réponse."
+        },
+        {
+          "to": "h7_1b",
+          "gist": "Tu écoutes Muninn, qui se souvient d'une vieille route qui fait le tour par les collines, plus longue et plus sombre, que plus personne ne prend.",
+          "echo": "Muninn se posa sur son épaule et commença, très doucement, à se souvenir du chemin."
+        },
+        {
+          "to": "h7_1c",
+          "gist": "Tu n'écoutes ni l'un ni l'autre et tu passes par le pont scintillant, parce qu'au moins tu vois où il finit.",
+          "echo": "Les deux corbeaux se turent d'un coup, puis la suivirent."
+        }
+      ],
+      "beat": "On an island in a black lake lay a wolf so big that Elsie took him for a hill until he breathed. He was Fenrir, tied down with a ribbon as thin as silk: Gleipnir, made of six things that do not exist. He opened one yellow eye and said that Sköll was coming. Huginn landed beside Muninn on a rock, and the two ravens did not agree. Huginn asked why she would go the way Sköll expected. Muninn remembered an old road round by the hills, long and dark. And at the far edge of the lake a bridge shimmered.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn",
+          "fenrir"
+        ],
+        "where": "fenrirs_island",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+gleipnir"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "listen"
+    },
+    {
+      "id": "h7_1a",
+      "role": "between station 7 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h7_2a",
+          "gist": "Tu continues à courir tout droit sous le ciel ouvert, même si Huginn te demande si tu as remarqué les cavaliers là-haut.",
+          "echo": "Elle continua de courir, et ne leva pas les yeux, et puis elle les leva."
+        },
+        {
+          "to": "h7_2b",
+          "gist": "Tu fais un écart vers le bruit d'une rivière, où Huginn demande si un loup peut suivre une odeur dans l'eau.",
+          "echo": "Le grondement de la rivière s'amplifia, et l'herbe laissa place aux pierres mouillées."
+        }
+      ],
+      "beat": "Huginn's way went straight across an open plain of grass that rippled although there was no wind, and he flew ahead asking questions the whole time. Was she tired? Was she cold? Had she noticed the light getting dimmer? She had. Behind them, where the Tree was, a shadow was coming across the grass faster than any cloud. Huginn asked whether she could run any faster. She could, it turned out.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn"
+        ],
+        "where": "plain",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h7_1b",
+      "role": "between station 7 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h7_2a",
+          "gist": "Tu sors de la vallée sur un terrain découvert, où Muninn se souvient de cavaliers qui passent chaque soir.",
+          "echo": "Ils sortirent du noir dans le gris, et le ciel redevint immense."
+        },
+        {
+          "to": "h7_2b",
+          "gist": "Tu restes au fond de la vallée, en suivant le ruisseau jusqu'à l'endroit où, d'après Muninn, une rivière croise la route.",
+          "echo": "Le ruisseau devint plus bruyant, et plus large, et plus froid, jusqu'à ne plus être un ruisseau."
+        }
+      ],
+      "beat": "Muninn's old road went round by the hills, through a valley where nobody had walked for a very long time, and all the way Muninn remembered. It remembered the valley green and full of people. It remembered its master riding down it on an eight-legged horse, laughing. It remembered Huginn young. The road was long and it was dark, and nothing followed them down it, and Elsie began to understand why Muninn had been missed so badly.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "old_valley",
+        "when": "t_tree",
+        "facts": [
+          "muninn"
+        ],
+        "mentions": [
+          "huginn",
+          "sleipnir"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_1c",
+      "role": "between station 7 and the next, layer 1, way c",
+      "choices": [
+        {
+          "to": "h7_2a",
+          "gist": "Tu descends du pont sur le terrain découvert que montre le guetteur, avec des cavaliers qui passent bas au-dessus de toi.",
+          "echo": "Le guetteur ne se retourna pas pour la voir partir, mais elle savait qu'il écoutait."
+        },
+        {
+          "to": "h7_2b",
+          "gist": "Tu descends du pont vers une rivière qui gronde, parce que c'est là que les deux corbeaux sont partis.",
+          "echo": "Les deux corbeaux attendaient sur un rocher au-dessus de l'eau quand elle arriva."
+        }
+      ],
+      "beat": "The bridge was made of something like light and something like ice, in three colours, and it rang under Elsie's trainers like a glass. At the far end a man stood watching her with a horn at his belt, the way somebody watches who can hear grass grow. He did not stop her. He looked at the stone round her neck, and at the ravens, and nodded her past without a word.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "huginn",
+          "heimdall"
+        ],
+        "where": "bifrost",
+        "when": "t_tree",
+        "facts": [
+          "stone"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_2a",
+      "role": "between station 7 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h7_3a",
+          "gist": "Tu suis le chemin des cavaliers, vers un bois où chaque feuille semble briller comme de l'or.",
+          "echo": "Elle les suivit, et le bois devenait plus lumineux à mesure qu'elle approchait."
+        },
+        {
+          "to": "h7_3b",
+          "gist": "Tu t'arrêtes et tu regardes en arrière à travers la pierre, vers le hurlement, pour voir à quelle distance il est vraiment.",
+          "echo": "Elle se retourna et leva la pierre, et regretta de l'avoir fait."
+        }
+      ],
+      "beat": "The riders came over low, women on horses running on the air, and the light off their mail was like the light off water. They were bringing the brave dead to the hall. One of them looked down at Elsie as she passed, a long look, and Elsie looked back. Then they were gone, and the grey light was ordinary again, except for the howl, which was nearer.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "plain",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+valkyries"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h7_2b",
+      "role": "between station 7 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h7_3b",
+          "gist": "Tu grimpes sur la berge et tu regardes en arrière à travers la pierre, de l'autre côté de la rivière, pour voir si le loup s'est arrêté.",
+          "echo": "Elle grimpa sur la berge, ses baskets encore autour du cou, et se retourna."
+        },
+        {
+          "to": "h7_3c",
+          "gist": "Tu montes tout droit la berge jusqu'à une haute et vieille porte, toute seule, sans mur de chaque côté.",
+          "echo": "Elle remit ses baskets avec des doigts tremblants et marcha jusqu'à la porte."
+        }
+      ],
+      "beat": "The river was called Thund, and it roared, and it was so wide and cold that Muninn remembered people who had tried to wade it and been swept away. Elsie did not want to be remembered like that. There were stepping stones, green with weed, a long way apart. She took her trainers off, tied them round her neck, and went across one stone at a time, and on the far side she stood and shook for a while.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "thund",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_3a",
+      "role": "between station 7 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "h8",
+          "gist": "Tu sors du bois et tu marches jusqu'aux portes de la grande salle, toutes, pour trouver celle qui est ouverte.",
+          "echo": "Elle sortit de l'or dans le gris, et la grande salle grandissait à chaque pas."
+        },
+        {
+          "to": "h8_1a",
+          "gist": "Tu fais le tour de la grande salle par le côté, d'où viennent des cris et un bruit de fer.",
+          "echo": "Le bruit enflait à mesure qu'elle avançait, et les rires aussi."
+        }
+      ],
+      "beat": "The wood was Glasir, and every leaf in it was gold and rang when the wind touched it. It was the most beautiful place Elsie had ever been, and the hardest to leave: she wanted to lie down under the gold and look up at it for ever. Muninn pecked her ear. Through the trees she could see a roof made entirely of shields, and it went on further than any roof should.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "glasir",
+        "when": "t_tree",
+        "facts": [
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h7_3b",
+      "role": "between station 7 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "h8",
+          "gist": "Tu cours vers les portes de la grande salle, la plus proche, aussi vite que tu n'as jamais couru de ta vie.",
+          "echo": "Elle courut, et les portes venaient vers elle, des centaines de portes."
+        },
+        {
+          "to": "h8_1b",
+          "gist": "Tu fais le tour jusqu'à l'arrière de la grande salle, où il y a de la fumée, une odeur de cuisine et une porte ouverte.",
+          "echo": "Elle fit le tour par l'arrière, en restant baissée, vers l'odeur de viande."
+        }
+      ],
+      "beat": "Through the stone Elsie saw it plainly for the first time: a grey wolf the size of a barn, running flat out after a sun that ran ahead of him, and every so often turning his great head to sniff for the other sun, the small one round her neck. He was nearer than she had thought. Much nearer. Muninn remembered that the hall ahead had five hundred and forty doors and that no wolf could come in by any of them. Then it remembered, less happily, that it had never seen a wolf try.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "hall_approach",
+        "when": "t_tree",
+        "facts": [
+          "sun_wolf",
+          "+valhalla",
+          "+skoll_close"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h7_3c",
+      "role": "between station 7 and the next, layer 3, way c",
+      "choices": [
+        {
+          "to": "h8",
+          "gist": "Tu montes jusqu'à l'entrée de la grande salle et ses portes, où un loup et un aigle sont sculptés au-dessus de celle qui fait face à l'ouest.",
+          "echo": "Elle marcha jusqu'aux portes, et le loup sculpté semblait la regarder venir."
+        },
+        {
+          "to": "h8_1b",
+          "gist": "Tu fais le tour jusqu'à l'endroit où la fumée sort du toit, vers une odeur de viande rôtie.",
+          "echo": "Elle fit le tour par l'arrière, en restant baissée, vers l'odeur de viande."
+        }
+      ],
+      "beat": "The gate stood on its own on the hillside, very old, with no wall on either side of it, and it was locked. Muninn remembered that it was called Valgrind and that very few knew how its lock was shut. Elsie walked round it, since there was no wall, and felt silly, and then on the far side the whole of the hall was in front of her, where it had not been a moment before. Its roof was shields. Its rafters were spears.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "valgrind",
+        "when": "t_tree",
+        "facts": [
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "direction"
+    },
+    {
+      "id": "h8",
+      "role": "station 8",
+      "choices": [
+        {
+          "to": "h8_1a",
+          "gist": "Tu passes par la porte la plus proche dans la cour, dans le bruit, où les guerriers rentrent de leur journée de combat.",
+          "echo": "Personne ne l'arrêta à la porte. Personne ne la regarda, même."
+        },
+        {
+          "to": "h8_1b",
+          "gist": "Tu entres par l'arrière, par la cuisine, comme le ferait une étrangère qui ne veut pas qu'on la regarde.",
+          "echo": "Elle fit le tour de la grande salle jusqu'à l'endroit d'où sortait la fumée."
+        }
+      ],
+      "beat": "Valhalla had five hundred and forty doors, and eight hundred warriors could march out of each one side by side; that was what the old poem said, and looking at it Elsie believed it. Its roof was shields and its rafters were spears, and over the west door a wolf and an eagle hung carved. It was evening in there, and loud. Muninn stood up on her shoulder and said one memory, very clearly, as though it had been waiting eleven hundred years to say it: that it was home.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "valhalla_doors",
+        "when": "t_valhalla",
+        "facts": [
+          "+valhalla"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h8_1a",
+      "role": "between station 8 and the next, layer 1, way a",
+      "choices": [
+        {
+          "to": "h8_2a",
+          "gist": "Tu dis la vérité au guerrier à la barbe rousse, et il te hisse sur ses épaules pour te montrer la chèvre sur le toit.",
+          "echo": "Il éclata d'un grand rire et la souleva comme si elle ne pesait rien."
+        },
+        {
+          "to": "h8_2b",
+          "gist": "Tu ne lui dis rien du tout et tu te glisses à l'intérieur avec la foule, dans la grande salle, où les bancs se remplissent.",
+          "echo": "Il haussa les épaules et la laissa partir, et la foule l'emporta par la porte."
+        }
+      ],
+      "beat": "In the yard before the hall the einherjar were coming in from their day's fighting: the brave dead, laughing and limping and slapping each other on the back, with every cut on them closing as Elsie watched. Tomorrow they would do it all again, and every day after, until the end of the world. A huge red-bearded warrior with grooves filed across his front teeth stopped in front of her and asked whose girl she was, and why a raven was riding on her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "einherjar",
+          "red_beard"
+        ],
+        "where": "valhalla_yard",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+einherjar"
+        ],
+        "mentions": []
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_1b",
+      "role": "between station 8 and the next, layer 1, way b",
+      "choices": [
+        {
+          "to": "h8_2b",
+          "gist": "Tu passes dans la grande salle avec les garçons du cuisinier et un plateau de pain, comme si tu travaillais ici.",
+          "echo": "Personne ne regarde une fille qui porte un plateau, et personne ne la regarda."
+        },
+        {
+          "to": "h8_2c",
+          "gist": "Tu montes l'escalier de service de la cuisine jusqu'aux poutres, d'où tu vois toute la grande salle sans que personne lève les yeux.",
+          "echo": "L'escalier était raide et sombre, il sentait la fumée, et il montait très haut."
+        }
+      ],
+      "beat": "The kitchen was a cave of steam, and in the middle of it the cook was boiling a whole boar in a cauldron as big as a pond. The boar was called Sæhrímnir. It was eaten every night and was whole again every morning, and the cook said it did not seem to mind. He did not ask Elsie who she was. He gave her a bowl of broth and watched Muninn with a cook's eye, as if wondering how it would go with onions.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "cook"
+        ],
+        "where": "valhalla_kitchen",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+boar"
+        ],
+        "mentions": []
+      },
+      "decision": "method"
+    },
+    {
+      "id": "h8_2a",
+      "role": "between station 8 and the next, layer 2, way a",
+      "choices": [
+        {
+          "to": "h8_3a",
+          "gist": "Tu descends et tu entres au festin, et tu t'assois au bout d'un banc où le guerrier à la barbe rousse te fait de la place.",
+          "echo": "Il la posa au bout du banc et poussa une assiette devant elle."
+        },
+        {
+          "to": "h8_3b",
+          "gist": "Tu lui demandes de te porter à l'intérieur et de rester près de la porte ouest, parce que tu es sûre d'avoir entendu un hurlement sous tout ce bruit.",
+          "echo": "Il la porta à l'intérieur sur ses épaules et resta près de la porte ouest avec elle, à la surveiller."
+        }
+      ],
+      "beat": "On the roof, eating the leaves of a tree that grew up through the middle of the hall, stood a goat called Heiðrún, and mead ran from her instead of milk, enough for every warrior every night. From up on the red-bearded warrior's shoulders Elsie could see everything: the long benches filling, the fires, and at the far end a high seat with a man in it, wearing a wide hat, with one eye. He had not looked at her yet.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "red_beard"
+        ],
+        "where": "valhalla_yard",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+heidrun"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_2b",
+      "role": "between station 8 and the next, layer 2, way b",
+      "choices": [
+        {
+          "to": "h8_3a",
+          "gist": "Tu t'assois au bout d'un banc parmi les guerriers, là où personne ne te remarquera, et tu manges.",
+          "echo": "Le guerrier à côté d'elle poussa une assiette devant elle sans même se retourner."
+        },
+        {
+          "to": "h8_3b",
+          "gist": "Tu restes près des portes, dans l'ombre, et tu les surveilles, parce que Muninn n'arrête pas de se retourner.",
+          "echo": "Elle recula dans l'ombre près de la porte ouest, et les griffes de Muninn se serrèrent sur son épaule."
+        }
+      ],
+      "beat": "Inside, the hall was so long that its far end was blue with smoke, and the benches down both sides were filling with warriors, hundreds and hundreds, shouting for mead. Nobody minded a girl with a raven. At the far end, on a high seat raised above everything, sat a man in a wide hat, with one eye and two wolves lying at his feet. Elsie knew him. She had last seen him on a bench in Museum Gardens.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "lent"
+        ],
+        "mentions": [
+          "wanderer",
+          "museum_gardens"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_2c",
+      "role": "between station 8 and the next, layer 2, way c",
+      "choices": [
+        {
+          "to": "h8_3a",
+          "gist": "Tu descends au festin et tu t'assois au bout d'un banc, aussi près du haut siège que tu l'oses.",
+          "echo": "Elle descendit le long d'un pilier, main après main, et se glissa au bout d'un banc."
+        },
+        {
+          "to": "h8_3b",
+          "gist": "Tu restes dans les poutres au-dessus des portes, d'où tu vois dehors, parce que le festin est soudain devenu silencieux.",
+          "echo": "Elle rampa le long des poutres jusqu'à se trouver juste au-dessus de la porte ouest."
+        }
+      ],
+      "beat": "Up among the rafters, which were spears laid side by side, Elsie could see the whole hall at once: the long fires, the benches, hundreds of warriors, the goat's mead going round in horns. At the far end, on the high seat, a man in a wide hat sat with one eye and two wolves at his feet, and he did not eat. Muninn went very still. It remembered him, it said. It remembered him so hard that it could not say anything else.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn"
+        ],
+        "where": "rafters",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      },
+      "decision": "action"
+    },
+    {
+      "id": "h8_3a",
+      "role": "between station 8 and the next, layer 3, way a",
+      "choices": [
+        {
+          "to": "z_gate",
+          "gist": "Tu te lèves, parce que tout le monde te regarde de toute façon.",
+          "echo": "Elsie se leva, et tous les visages du Valhalla se tournèrent avec elle."
+        }
+      ],
+      "beat": "Elsie sat at the end of a bench with Muninn on her shoulder and ate boar, which was better than it had any right to be. The warriors on either side of her told the stories of their deaths as if they were funny, which mostly they were. Halfway through, the man on the high seat stood up. The hall went quiet, bench by bench, all the way down, and he looked straight at her.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "+boar"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "h8_3b",
+      "role": "between station 8 and the next, layer 3, way b",
+      "choices": [
+        {
+          "to": "z_gate",
+          "gist": "Tu recules de la porte vers l'intérieur de la grande salle.",
+          "echo": "Elsie recula, un pas, puis un autre, et la porte se mit à plier."
+        }
+      ],
+      "beat": "The howl came again, and this time it was not far off: it was at the doors. Something huge and grey pressed its nose to the west door, and the carved wolf over it seemed to shrink. The warriors nearest the door stood up and reached for their shields. Sköll had followed the stone all the way here, and he was not going to wait outside.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll"
+        ],
+        "where": "valhalla_doors",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "sun_wolf"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "z_gate",
+      "role": "the last square before it, and the way down is open",
+      "choices": [
+        {
+          "to": "z_vault",
+          "gist": "Tu descends les marches sous la grande salle, d'où vient l'odeur des chevaux, et où le noir est tiède.",
+          "requires": [
+            "ward"
+          ],
+          "echo": "Elsie descendit dans le noir, et le bruit de la grande salle s'étouffa au-dessus de sa tête."
+        },
+        {
+          "to": "z_plain",
+          "gist": "Tu marches droit au milieu de la salle, devant tout le monde, la pierre à la main.",
+          "echo": "Elsie s'avança sur le sol à découvert, et toute la salle la regarda faire."
+        },
+        {
+          "to": "z_side",
+          "gist": "Tu fais le tour le long du mur, sous les boucliers suspendus, dans l'ombre, par le chemin le plus long.",
+          "echo": "Elsie se glissa dans l'ombre sous le mur, et la lumière du feu passa à côté d'elle."
+        }
+      ],
+      "beat": "The west door burst open and Sköll came into Valhalla, grey and enormous, and the fires bent away from him. The warriors went for their shields. The one-eyed man on the high seat did not move at all; he was watching Elsie, to see what she would do. Between her and him lay the whole length of the hall: the open floor down the middle where everybody would see her, the wall of hanging shields along the side in shadow, and close by her feet a trapdoor standing open, with steps going down under the hall and a smell of horses.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla",
+          "sun_wolf"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      },
+      "decision": "method",
+      "joins": true
+    },
+    {
+      "id": "z_vault",
+      "role": "below, where what was left is still waiting",
+      "choices": [
+        {
+          "to": "z_last",
+          "gist": "Tu remontes hors du noir sur Sleipnir.",
+          "echo": "Sleipnir monta les marches comme si ce n'était rien, entra dans la grande salle et s'agenouilla pour la déposer au pied du haut siège."
+        }
+      ],
+      "grants": [
+        "s_guide_vault"
+      ],
+      "beat": "Under the hall was a stable, warm and dark, and the door at the bottom of the steps would not open until Elsie held up what she had been given on the crossing to keep danger off her; then it swung back as if it knew. In the one stall stood a grey horse with eight legs. He had stood there, shut in, since the morning his master's raven did not come home. His name was Sleipnir. He put his nose down to Muninn and blew very softly, and then he knelt, all eight knees, so that Elsie could climb on.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "sleipnir"
+        ],
+        "where": "stable",
+        "when": "t_valhalla",
+        "facts": [
+          "valhalla"
+        ],
+        "mentions": [
+          "wanderer",
+          "skoll"
+        ]
+      }
+    },
+    {
+      "id": "z_plain",
+      "role": "the open square, crossed in full view",
+      "choices": [
+        {
+          "to": "z_last",
+          "gist": "Tu continues à marcher, jusqu'au haut siège.",
+          "echo": "Elsie atteignit les marches du haut siège, et s'arrêta."
+        }
+      ],
+      "beat": "Elsie walked down the middle of Valhalla with every face in it turned towards her and the stone held up in her fist, shining, the one small sun in the hall. Sköll came down the floor behind her, not hurrying. Nobody stopped him. Nobody stopped her either. It was the longest walk of her life, and she did not look back once.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll",
+          "einherjar"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "sun_wolf",
+          "stone"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "z_side",
+      "role": "the long way round, under the wall",
+      "choices": [
+        {
+          "to": "z_last",
+          "gist": "Tu sors de l'ombre au pied du haut siège.",
+          "echo": "Elsie sortit de l'ombre, et l'homme borgne la regardait déjà."
+        }
+      ],
+      "beat": "Elsie went round by the wall, under the hanging shields where the firelight did not reach, with Muninn inside her coat and the stone hidden in her fist. She could hear Sköll coming down the middle of the hall, sniffing, sure of himself. Twice he stopped, and she stopped too and held her breath. At the end of the wall there was only the high seat, and the steps up to it, and the one-eyed man, waiting.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "skoll"
+        ],
+        "where": "valhalla_hall",
+        "when": "t_valhalla",
+        "facts": [
+          "sun_wolf",
+          "stone"
+        ],
+        "mentions": [
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "z_last",
+      "role": "the last hour, and two ways to arrive",
+      "choices": [
+        {
+          "to": "f_open",
+          "gist": "Tu montes les marches du haut siège sous les yeux de toute la grande salle, et tu brandis ensemble Muninn et la pierre.",
+          "echo": "Elsie monta les marches une à une, et tous les guerriers du Valhalla retinrent leur souffle."
+        },
+        {
+          "to": "f_shadow",
+          "gist": "Tu te glisses dans l'ombre derrière le haut siège, où sont couchés les deux loups, et tu laisses Sköll venir à toi.",
+          "echo": "Elsie se baissa derrière le haut siège, entre les deux loups, et ils ne bougèrent pas."
+        }
+      ],
+      "beat": "At the foot of the high seat Elsie stopped. The one-eyed man looked down at her. He was the man from the bench in Museum Gardens and from the gate of the frozen field, and he did not pretend he was not. Sköll was a dozen paces behind her, and the whole hall was silent. The man held out his hand for the raven. He had paid an eye once for what he wanted, he said, and nothing worth having was free, and the wolf would have the stone unless somebody stopped him.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": "high_seat",
+        "when": "t_valhalla",
+        "facts": [
+          "sun_wolf",
+          "lent",
+          "+the_price"
+        ],
+        "mentions": [
+          "museum_gardens",
+          "field"
+        ]
+      },
+      "decision": "action",
+      "joins": true
+    },
+    {
+      "id": "f_open",
+      "role": "the last scene, met face on",
+      "resolve": {
+        "by_count": {
+          "5": "e_hero",
+          "4": "e_clean",
+          "3": "e_scarred",
+          "2": "e_wounded",
+          "1": "e_costly",
+          "0": "e_pyrrhic"
+        }
+      },
+      "beat": "Elsie stood on the steps of the high seat in front of all Valhalla, with Muninn on one fist and the stone in the other, and Sköll came up the hall for the stone. She did not run. She turned to face him with the one-eyed man at her back, and the light of the stone on the wolf's grey face.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": "high_seat",
+        "when": "t_valhalla",
+        "facts": [
+          "the_price",
+          "sun_wolf"
+        ],
+        "mentions": []
+      }
+    },
+    {
+      "id": "f_shadow",
+      "role": "the last scene, met from the dark",
+      "resolve": {
+        "by_count": {
+          "5": "e_hero",
+          "4": "e_clean",
+          "3": "e_scarred",
+          "2": "e_wounded",
+          "1": "e_costly",
+          "0": "e_pyrrhic"
+        }
+      },
+      "beat": "Elsie crouched in the shadow behind the high seat, between the one-eyed man's two sleeping wolves, with Muninn inside her coat and the stone in her fist. Sköll came round the seat after her, slow and sure, following the smell of the sun. When his head came round the corner she stepped out to meet him.",
+      "words": [
+        220,
+        320
+      ],
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": "high_seat",
+        "when": "t_valhalla",
+        "facts": [
+          "the_price",
+          "sun_wolf"
+        ],
+        "mentions": []
+      }
+    },
+    {
+      "id": "e_hero",
+      "ending": {
+        "count": 5,
+        "tier": "best",
+        "outline": "Everything carried does a job and the jobs fit together. It ends the way it was meant to and the walk home is under their own power."
+      },
+      "beat": "Everything Elsie had carried did its job, and the jobs fitted together, and Sköll went back out of the west door with nothing, after the sun where he belonged. Muninn went home to its master's shoulder, and the one-eyed man, who was Odin, sent her back to York at dusk on the same Monday with every memory she had, and Grandad calling her name. Two weeks later the stone went into a case in the Yorkshire Museum, with Grandad's name and hers on the label. On the museum roof there was a raven, and it seemed to be remembering something.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "yorkshire_museum"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      }
+    },
+    {
+      "id": "e_clean",
+      "ending": {
+        "count": 4,
+        "tier": "clean",
+        "outline": "One thing short, and the gap shows. It holds anyway, and the cost is paid by something that can be mended."
+      },
+      "beat": "One thing short, and it showed, but it held. Sköll went out of the west door with nothing, and Muninn went home. The one-eyed man, who was Odin, kept the stone for his price, and said it was fair: a raven lent for a sun found. Elsie came back to York at dusk on the same Monday with every memory she had. There was nothing to show the coroner, and Grandad laughed about it for a week. Lent, not found, he said, and the next Saturday he took her detecting anyway.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "field"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "lent",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "skoll"
+        ]
+      }
+    },
+    {
+      "id": "e_scarred",
+      "ending": {
+        "count": 3,
+        "tier": "scarred",
+        "outline": "Enough to finish it and not enough to finish it whole. Something is lost on the way that is not coming back."
+      },
+      "beat": "Enough to finish it and not enough to finish it whole. Sköll went away with nothing and Muninn went home, and then the one-eyed man, who was Odin, asked his price, as he had once paid his: one memory. Elsie paid it. She came back to York at dusk on the same Monday, and the stone went into a case in the Yorkshire Museum. Something was missing, and she could not have said what, and the passage never says which memory it was.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer"
+        ],
+        "where": [
+          "high_seat",
+          "yorkshire_museum"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "skoll",
+          "grandad"
+        ]
+      }
+    },
+    {
+      "id": "e_wounded",
+      "ending": {
+        "count": 2,
+        "tier": "wounded",
+        "outline": "Two things and a great deal of luck. It ends, and the ending has to be carried afterwards."
+      },
+      "beat": "Two things and a great deal of luck. Sköll went out empty and Muninn went home, but the road the one-eyed man, Odin, opened for Elsie ran back through Jorvik, and it did not open again for a whole summer. She lived that summer. When she stepped out onto Ouse Bridge at dusk on the same Monday, Grandad said she looked older, and she did not tell him why. In the Yorkshire Museum there was a runestone with her name on it in sixteen runes, crooked, that nobody could have cut but her.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "ouse_bridge"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin",
+          "+runes16"
+        ],
+        "mentions": [
+          "skoll",
+          "yorkshire_museum"
+        ]
+      }
+    },
+    {
+      "id": "e_costly",
+      "ending": {
+        "count": 1,
+        "tier": "costly",
+        "outline": "One thing, and it is only just enough. Everyone is standing at the end except the part of them that set out."
+      },
+      "beat": "One thing, and it was only just enough. Sköll went out empty and Muninn went home, and the price the one-eyed man, Odin, asked for it was everything Elsie remembered of the road. She woke in the frozen field with frost on her coat and Grandad bending over her. He asked what she had been saying about ravens. She did not know. Far off a raven called, and she did not look up.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "grandad"
+        ],
+        "where": [
+          "high_seat",
+          "field"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": [
+          "muninn",
+          "skoll",
+          "wanderer"
+        ]
+      }
+    },
+    {
+      "id": "e_pyrrhic",
+      "ending": {
+        "count": 0,
+        "tier": "pyrrhic",
+        "outline": "Empty-handed the whole way. It still ends, and it takes everything they had to give to end it."
+      },
+      "beat": "Empty-handed the whole way, and it still ended. Muninn went home to the one-eyed man's shoulder, because Elsie gave everything she had to get it there, but Sköll took the stone out of her hand and swallowed it, and went out of the west door with its light inside him. Odin sent her back to York at dusk on the same Monday with nothing round her neck. The next day the sun came up dim, and at noon the whole city stood in a strange brown twilight that nobody could explain. Elsie walked home through it, and she knew.",
+      "words": [
+        220,
+        320
+      ],
+      "hand": true,
+      "uses": {
+        "who": [
+          "elsie",
+          "muninn",
+          "wanderer",
+          "skoll"
+        ],
+        "where": [
+          "high_seat",
+          "york"
+        ],
+        "when": "t_after",
+        "facts": [
+          "the_price",
+          "+wanderer_is_odin"
+        ],
+        "mentions": []
+      }
+    }
+  ],
+  "lang": "fr"
+}

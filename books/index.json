@@ -2,6 +2,11 @@
   {
     "id": "book-vikings-odins-lost-raven",
     "title": "ODIN'S LOST RAVEN",
-    "status": "draft"
+    "status": "English"
+  },
+  {
+    "id": "book-vikings-odins-lost-raven-FR",
+    "title": "LE MYSTÈRE D'ODIN",
+    "status": "Français"
   }
 ]

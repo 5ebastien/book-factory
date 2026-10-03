@@ -1,0 +1,75 @@
+{
+  "note": "Pictures the reader shows between chapters and after each ending. A chapter is a station: its start node and every node named <prefix>_*. Leaving a chapter shows its picture and a 'Next chapter' button. Made with illustration-prompts.json. `cover` replaces the graph's cover in the reader (`titled`: the title is in the picture, so it is not printed again); `back_cover` closes the book after an ending.",
+  "back_cover": {
+    "image": "images/cover_back.webp",
+    "alt": "Un corbeau noir sur un vieux poteau, entouré de feuilles de chêne, avec l'Arbre du Monde à peine visible derrière."
+  },
+  "chapters": [
+    {
+      "prefix": "h1",
+      "image": "images/ch1_end.webp",
+      "alt": "Elsie, un corbeau sur l'épaule, dans une ruelle boueuse de maisons en torchis, à Jorvik, à l'époque viking, de longs navires au loin."
+    },
+    {
+      "prefix": "h2",
+      "image": "images/ch2_end.webp",
+      "alt": "Elsie et Ketil sur le vieux rempart, la nuit, devant les innombrables feux ennemis sur les collines de l'ouest."
+    },
+    {
+      "prefix": "h3",
+      "image": "images/ch3_end.webp",
+      "alt": "Le Cerf-des-Mers sous sa voile rayée sur la large rivière, Elsie et Ketil tirant sur une corde, la fumée de la ville loin derrière."
+    },
+    {
+      "prefix": "h4",
+      "image": "images/ch4_end.webp",
+      "alt": "Le brouillard se lève sur la mer et découvre les falaises et les cascades d'un fjord de Norvège, Ketil à la proue."
+    },
+    {
+      "prefix": "h5",
+      "image": "images/ch5_end.webp",
+      "alt": "La petite pierre runique d'Elsie sur le rivage du fjord au crépuscule, un corbeau posé dessus, la tombe-navire sur la colline et un arbre géant à peine visible dans le ciel."
+    },
+    {
+      "prefix": "h6",
+      "image": "images/ch6_end.webp",
+      "alt": "Elsie sur une racine de l'Arbre du Monde avec deux corbeaux, un loup géant poursuivant le soleil au loin dans le ciel."
+    },
+    {
+      "prefix": "h7",
+      "image": "images/ch7_end.webp",
+      "alt": "La porte solitaire Valgrind sur une colline, Elsie à côté, et l'immense grande salle du Valhalla au toit de boucliers au-delà."
+    },
+    {
+      "prefix": "h8",
+      "image": "images/ch8_end.webp",
+      "alt": "La porte ouest du Valhalla qui se fend quand le loup Sköll y passe le museau, Elsie toute petite au premier plan."
+    }
+  ],
+  "endings": {
+    "e_hero": {
+      "image": "images/e_hero.webp",
+      "alt": "Elsie et Papi devant la vitrine du musée où se trouve la pierre de soleil, un corbeau sur le toit derrière la fenêtre."
+    },
+    "e_clean": {
+      "image": "images/e_clean.webp",
+      "alt": "Elsie et Papi en pleine détection dans un champ givré, un corbeau tournant très haut au-dessus d'eux."
+    },
+    "e_scarred": {
+      "image": "images/e_scarred.webp",
+      "alt": "Elsie seule devant la vitrine du musée avec la pierre de soleil, perplexe, une plume noire à ses pieds."
+    },
+    "e_wounded": {
+      "image": "images/e_wounded.webp",
+      "alt": "Elsie touchant les runes de travers d'une vieille pierre au musée, Papi qui la regarde derrière elle."
+    },
+    "e_costly": {
+      "image": "images/e_costly.webp",
+      "alt": "Elsie qui se réveille dans le champ gelé, Papi penché sur elle, un corbeau au loin qu'elle ne voit pas."
+    },
+    "e_pyrrhic": {
+      "image": "images/e_pyrrhic.webp",
+      "alt": "York à midi sous un soleil brun et pâle, des gens qui lèvent les yeux, Elsie qui rentre seule, la forme d'un loup à peine visible dans les nuages."
+    }
+  }
+}
