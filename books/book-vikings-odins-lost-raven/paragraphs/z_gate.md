@@ -1,1 +1,15 @@
-The west door did not open. It shattered inward, sending splinters of oak skittering across the polished floor. Sköll stood in the breach, a mountain of grey fur and muscle that seemed to swallow the light. The great fires along the hall floor hissed and bent away, their flames turning pale and thin as though they were shy of him. Roars erupted from the benches, a wave of noise that hit Elsie in the chest. The warriors, the dead who had risen again to feast, were already on their feet. They moved with a speed that belied their size, grabbing shields from the racks along the walls. The metal clanked against the wood, a sharp, rhythmic sound that cut through the shouting. Elsie froze, her trainers flat on the stone floor. Her heart hammered against her ribs, a frantic bird trapped in a cage. She looked up toward the far end of the hall, where the air turned blue with smoke. On the high seat, the one-eyed man sat perfectly still. He did not reach for a weapon. He did not shout. He only watched her, his gaze heavy and quiet, waiting to see how the girl from York would react to the beast. The space between her feet and his seat was a long, open stretch of floor. Every eye in the hall would see her move there. To her left, a wall of hanging shields cast deep shadows, hiding the edge of the room. But right at her heels, the floor had given way. A trapdoor lay open, hinged wide to reveal a steep set of stairs leading down into the dark. The air rising from the hole smelled of old straw and damp earth, mixed with the sharp scent of horses. Sköll took a step forward, his claws scraping against the stone. The dust of the split door settled around his paws. Elsie looked down at the dark drop, then back at the waiting wolf.
+The west door burst open, and the cold came in with Sköll.
+The wolf was grey and enormous, and the long fires bent away from him.
+He filled the whole mouth of the hall, and his breath steamed in the warm air.
+The warriors at the benches went for their shields, which hung along the walls.
+A low murmur ran down the sides of the room, and the noise of the feast stopped.
+Every eye turned to the open space in the middle, where the wood was worn smooth.
+Between Elsie and the high seat lay that open floor, where everybody would see her.
+She stood still, and the trainers on her feet felt heavy and plain against the wood.
+Muninn sat on her shoulder, and his feathers were flat and close.
+At the far end, the one-eyed man on the high seat did not move at all.
+He watched Elsie, and he waited to see what she would do.
+The shadow of the shields hung deep along the side, and it did not breathe.
+Close by her feet, a trapdoor stood open in the dark of the floor.
+Steps went down under the hall, and a smell of horses rose up from below.
+Elsie looked at the steps, and the smell of wet earth grew stronger.
