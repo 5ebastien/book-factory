@@ -1,10 +1,10 @@
-Sköll ouvrit la gueule pour la pierre.
+Sköll ouvrit la gueule pour happer la pierre.
 
-Elsie avait quatre choses pour l'affronter, et chacune faisait ce qu'elle pouvait. Une manquait ; elle sentait le vide là où la dernière aurait dû être, comme une marche manquante sur un escalier sombre. Mais cela tenait. Les mâchoires du loup se fermèrent sur le vide. Il grogna et recula le long de la grande salle jusqu'à sortir par la porte de l'ouest sans rien, après le soleil, là où était sa place.
+Elsie avait quatre choses pour l'affronter, et chacune fit ce qu'elle put. Il en manquait une ; elle sentait le vide là où la dernière aurait dû être, comme une marche manquante sur un escalier sombre. Mais ça tint. Les mâchoires du loup se fermèrent sur le vide. Il grogna, recula le long de la grande salle, puis sortit par la porte ouest sans rien, et retourna poursuivre le soleil, là où était sa place.
 
-Muninn monta sur son bras et sauta sur l'épaule de l'homme borgne. Il se souvint à voix haute d'un champ gelé, puis il se tut, et il était chez lui.
+Muninn remonta son bras et sauta sur l'épaule de l'homme borgne. Il se souvint à voix haute d'un champ gelé, puis il se tut : il était chez lui.
 
-L'homme borgne enleva son large chapeau. Elsie le reconnut alors ; elle l'avait reconnu, vraiment, depuis la porte du champ. Odin.
+L'homme borgne enleva son large chapeau. Elsie le reconnut alors ; au fond, elle l'avait reconnu dès la barrière du champ. Odin.
 
 « Rien de ce qui vaut la peine n'est gratuit », dit-il, et il tendit la main.
 
